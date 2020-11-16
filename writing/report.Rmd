@@ -1,6 +1,6 @@
 ---
 title: "Group 1 Report"
-author: "Valerie Lindstrom, Beth Lunsford, Sophia Montoya, Kellin Slater"
+author: "Valerie A. Lindstrom, Beth Lunsford, Sophia Montoya, Kellin Slater"
 date: "11/16/2020"
 output: html_document
 ---
