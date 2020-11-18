@@ -1,2 +1,2 @@
 # group_1
-# frbwnjkvv
+# Kellin, Valerie, Sophia, Beth
