@@ -5,6 +5,7 @@ library(dplyr)
 library(ggplot2)
 library(readxl)
 library(lubridate)
+library(stringr)
 
 college_raw <- 
   read_csv(
@@ -36,9 +37,14 @@ top_3 <- college_raw %>%
   arrange(desc(cases)) %>%
   head(3)
 
+city_location <- read_csv("uscities.csv") %>%
+  rename(state = "state_name")
 
-
-
+college_location <- top_state %>%
+  left_join(y = city_location,
+            by = c("city", "state")) %>%
+  select(state, county, city, college, cases, county_fips, lat, lng, population)
+            
 
 
 
