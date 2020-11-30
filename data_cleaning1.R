@@ -10,7 +10,7 @@ college_raw <-
   read_csv(
     "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv") 
 
-
+### Beth
 #top 5 colleges by state with highest COVID cases
 top_5 <- college_raw %>%
   select(state, county, city, college, cases) %>%
@@ -36,6 +36,16 @@ top_3 <- college_raw %>%
   arrange(desc(cases)) %>%
   head(3)
 
+
+
+
+
+
+
+
+
+
+### Val
 # add and clean clemson's covid data
 clemson <- read_excel("clemsonDashboard.xlsx", sheet = "Daily Data") 
 
@@ -47,15 +57,20 @@ osu <- read_excel("Ohio State COVID-19 Dashboard Data Tables.xlsx", skip = 5)
 
 osu_cases <- osu %>%
   select(`Test Date`, `Positive Tests...9`) %>%
-  rename(Data = `Test Date`, 
-         Positive = `Positive Tests...9`)
+  rename(Date = `Test Date`, 
+         Positive = `Positive Tests...9`) %>%
+  mutate(Date = week(Date))
+
 
 # add and clean penn state data
 penn_state <- read_excel("PennStateCovidTables.xlsx")
 
-#all_colleges %>%
-  #join datasets
+penn_covid <- penn_state %>%
+  mutate()
 
+#join datasets
+#all_colleges %>%
+  
 #top_3_timeseries <- top_3
   #add in data from each college's covid tracking to track # of cases by week
 
@@ -63,7 +78,7 @@ penn_state <- read_excel("PennStateCovidTables.xlsx")
 #UF: Aug 31
 #penn state: Aug 24
 
-#top school with COVID for density map 
+#density map for South Carolina
 
 county_data <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/live/us-counties.csv")
 
