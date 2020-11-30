@@ -5,27 +5,14 @@ library(dplyr)
 library(ggplot2)
 library(readxl)
 library(lubridate)
+library(stringr)
 
 college_raw <- 
   read_csv(
     "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv") 
 
 ### Beth
-#top 5 colleges by state with highest COVID cases
-top_5 <- college_raw %>%
-  select(state, county, city, college, cases) %>%
-  group_by(state) %>%
-  arrange(desc(cases)) %>%
-  head(5)
-
-top_state <- college_raw %>%
-  select(state, county, city, college, cases) %>%
-  group_by(state) %>%
-  arrange(state, -cases) %>%
-  slice_head(n = 5)
-
-ggplot(data = top_state, mapping = aes(x = cases, y = state)) +
-  geom_point(mapping = aes(x = cases))
+#top 3 & 5 colleges by state with highest COVID cases
 
 #top 3 schools with highest cases for time series data, include reference point
 #of when school started
@@ -36,10 +23,35 @@ top_3 <- college_raw %>%
   arrange(desc(cases)) %>%
   head(3)
 
+top_5 <- college_raw %>%
+  select(state, county, city, college, cases) %>%
+  group_by(state) %>%
+  arrange(desc(cases)) %>%
+  head(5)
 
+top5_by_state <- college_raw %>%
+  select(state, county, city, college, cases) %>%
+  group_by(state) %>%
+  arrange(state, -cases) %>%
+  slice_head(n = 5)
 
+ggplot(data = top_state, mapping = aes(x = cases, y = state)) +
+  geom_point(mapping = aes(x = cases))
 
+# Adding lat/long to each college to map into flexdashboard
 
+city_location <- read_csv("uscities.csv") %>%
+  rename(state = "state_name",
+         county = "county_name")
+
+college_location <- top5_by_state %>%
+  left_join(y = city_location,
+            by = c("city", "state"))
+
+college_location <- college_location %>%
+  select(state:cases, state_id:county_fips, lat:lng)
+
+# add college population size for rate. 
 
 
 
