@@ -50,21 +50,26 @@ osu_cases <- osu %>%
   rename(Data = `Test Date`, 
          Positive = `Positive Tests...9`)
 
+# add and clean penn state data
+penn_state <- read_excel("PennStateCovidTables.xlsx")
 
-all_colleges %>%
+#all_colleges %>%
   #join datasets
 
-top_3_timeseries <- top_3 %>%
+#top_3_timeseries <- top_3
   #add in data from each college's covid tracking to track # of cases by week
 
 #clemson start date: Aug 19
 #UF: Aug 31
-#OSU: Aug 25
+#penn state: Aug 24
 
 #top school with COVID for density map 
 
+county_data <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/live/us-counties.csv")
 
-
+sc_counties <- county_data %>%
+  filter(state == "South Carolina") %>%
+  select(date:deaths)
 
 
 
