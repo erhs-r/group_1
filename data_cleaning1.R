@@ -46,27 +46,40 @@ top_3 <- college_raw %>%
 
 
 ### Val
+
+## done
 # add and clean clemson's covid data
 clemson <- read_excel("clemsonDashboard.xlsx", sheet = "Daily Data") 
 
 clemson_cases <- clemson %>%
-  select(Date, Positive) 
+  select(Date, Positive) %>%
+  mutate(Date = week(Date)) %>%
+  group_by(Date) %>%
+  summarise(sum(Positive)) %>%
+  slice(1:10) %>%
+  rename(Week = Date)
 
 # add and clean OSU covid data
 osu <- read_excel("Ohio State COVID-19 Dashboard Data Tables.xlsx", skip = 5)
 
+#just noticed that the data we got from their website actually is only for November
+# need to try to get data since the start of semester
 osu_cases <- osu %>%
   select(`Test Date`, `Positive Tests...9`) %>%
-  rename(Date = `Test Date`, 
+  rename(Week = `Test Date`, 
          Positive = `Positive Tests...9`) %>%
-  mutate(Date = week(Date))
+  mutate(Week = week(Week)) %>%
+  group_by(Week) %>%
+  summarise(sum(Positive))
 
-
+## done but data only goes until Nov. 1
 # add and clean penn state data
-penn_state <- read_excel("PennStateCovidTables.xlsx")
+penn_state <- read_excel("PennStateCovidTables_new.xlsx")
 
-penn_covid <- penn_state %>%
-  mutate()
+penn_cases <- penn_state %>%
+  mutate(Week = week(Week)) %>%
+  select(Week, Total_Positive) %>%
+  rename(Positive = Total_Positive)
 
 #join datasets
 #all_colleges %>%
@@ -75,7 +88,7 @@ penn_covid <- penn_state %>%
   #add in data from each college's covid tracking to track # of cases by week
 
 #clemson start date: Aug 19
-#UF: Aug 31
+#OSU: Aug 25
 #penn state: Aug 24
 
 #density map for South Carolina
