@@ -1,0 +1,57 @@
+---
+title: "Covid Dashboard"
+author: "Kellin, Valerie, Sophia, Beth"
+date: "11/30/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Time Series Plot
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+## South Carolina County Plot
+
+```{r}
+
+```
+
+
+
+
+
+
+## Interactive Map Plot
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+## Blurb Color Spot
+
+```{r}
+
+```
+
+
+
