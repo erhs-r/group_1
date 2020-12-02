@@ -69,9 +69,16 @@ college_location <- college_location %>%
   left_join(y = admission2,
             by = c("college" = "school"))
 
+admission3 <- read_excel("top_10_enrollment.xlsx", skip = 1)
+colnames(admission3)
+
+college_location <- college_location %>%
+  left_join(y = admission3,
+            by = c("college" = "University"))
+
 college_location <- college_location %>%
   select(state, county.x, city, college, cases, state_id, county_fips,
-         lat, lng, `Total Enrollment `) %>%
+         lat, lng, `Total Enrollment `, Enrollment.x) %>%
   mutate(rate = cases/`Total Enrollment `)
   
 
