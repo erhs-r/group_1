@@ -1,4 +1,4 @@
-state,county.x,city,college,cases,state_id,county_fips,lat,lng,Total Enrollment ,Enrollment,rate
+﻿state,county.x,city,college,cases,state_id,county_fips,lat,lng,Total Enrollment ,Enrollment,rate
 Alabama,Tuscaloosa,Tuscaloosa,University of Alabama,3219,AL,01125,33.2348,-87.5267,NA,NA,NA
 Alabama,Jefferson,Birmingham,University of Alabama at Birmingham,2119,AL,01073,33.5277,-86.7987,21923,NA,0.09665647949641928
 Alabama,Lee,Auburn,Auburn University,2079,AL,01081,32.6087,-85.4899,30440,NA,0.06829829172141919
