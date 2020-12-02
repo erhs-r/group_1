@@ -6,11 +6,18 @@ library(ggplot2)
 library(readxl)
 library(lubridate)
 library(stringr)
+library(tigris)
 
 college_raw <- 
   read_csv(
     "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv")
 
+state_names <- read_csv("csvData_state_names.csv")
+colnames(state_names)
+
+college_raw <- college_raw %>%
+  semi_join(y = state_names, 
+            by = c("state" = "State"))
 ### Beth
 #top 5 schools with highest cases for time series data, include reference point
 #of when school started
@@ -27,7 +34,7 @@ top5_by_state <- college_raw %>%
   arrange(state, -cases) %>%
   slice_head(n = 5)
 
-ggplot(data = top_state, mapping = aes(x = cases, y = state)) +
+ggplot(data = top5_by_state, mapping = aes(x = cases, y = state)) +
   geom_point(mapping = aes(x = cases))
 
 # Adding lat/long to each college to map into flexdashboard
