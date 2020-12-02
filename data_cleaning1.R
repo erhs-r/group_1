@@ -9,21 +9,14 @@ library(stringr)
 
 college_raw <- 
   read_csv(
-    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv") 
+    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv",
+    na = FALSE)
 
 ### Beth
-#top 3 & 5 colleges by state with highest COVID cases
-
-#top 3 schools with highest cases for time series data, include reference point
+#top 5 schools with highest cases for time series data, include reference point
 #of when school started
 
-top_3 <- college_raw %>%
-  select(state, county, city, college, cases) %>%
-  group_by(state) %>%
-  arrange(desc(cases)) %>%
-  head(3)
-
-top_5 <- college_raw %>%
+top_5_overall <- college_raw %>%
   select(state, county, city, college, cases) %>%
   group_by(state) %>%
   arrange(desc(cases)) %>%
@@ -51,7 +44,7 @@ college_location <- top5_by_state %>%
 college_location <- college_location %>%
   select(state:cases, state_id:county_fips, lat:lng)
 
-# add college population size for rate. 
+# add college enrollment size for rate. 
 
 admission <- read_excel("college_admission.xlsx")
 
@@ -64,7 +57,6 @@ colnames(admission2)
 admission2 <- admission2 %>%
   rename(school = `School Name `)
  
-
 college_location <- college_location %>%
   left_join(y = admission2,
             by = c("college" = "school"))
