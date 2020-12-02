@@ -32,10 +32,7 @@ top5_by_state <- college_raw %>%
   select(state, county, city, college, cases) %>%
   group_by(state) %>%
   arrange(state, -cases) %>%
-  slice_head(n = 5) %>%
-  write_csv("top5_by_state.csv")
-
-
+  slice_head(n = 5)
 
 ggplot(data = top5_by_state, mapping = aes(x = cases, y = state)) +
   geom_point(mapping = aes(x = cases))
@@ -79,7 +76,8 @@ college_location <- college_location %>%
 college_location <- college_location %>%
   select(state, county.x, city, college, cases, state_id, county_fips,
          lat, lng, `Total Enrollment `, Enrollment) %>%
-  mutate(rate = cases/`Total Enrollment `)
+  mutate(rate = cases/`Total Enrollment `) %>%
+  write_csv(file = "college_location_enrollment")
   
 
 ### Val
