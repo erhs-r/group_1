@@ -71,7 +71,9 @@ college_location <- college_location %>%
 
 college_location <- college_location %>%
   select(state, county.x, city, college, cases, state_id, county_fips,
-         lat, lng, `Admission number 2020`,`Total Enrollment `)
+         lat, lng, `Total Enrollment `) %>%
+  mutate(rate = cases/`Total Enrollment `)
+  
 
 ### Val
 
