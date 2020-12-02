@@ -9,8 +9,7 @@ library(stringr)
 
 college_raw <- 
   read_csv(
-    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv",
-    na = FALSE)
+    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv")
 
 ### Beth
 #top 5 schools with highest cases for time series data, include reference point
@@ -53,7 +52,7 @@ college_location <- college_location %>%
             by = c("college" = "School Name"))
 
 admission2 <- read_excel("college_enrollement.xlsx")
-colnames(admission2)
+
 admission2 <- admission2 %>%
   rename(school = `School Name `)
  
@@ -62,7 +61,6 @@ college_location <- college_location %>%
             by = c("college" = "school"))
 
 admission3 <- read_excel("top_10_enrollment.xlsx", skip = 1)
-colnames(admission3)
 
 college_location <- college_location %>%
   left_join(y = admission3,
@@ -70,7 +68,7 @@ college_location <- college_location %>%
 
 college_location <- college_location %>%
   select(state, county.x, city, college, cases, state_id, county_fips,
-         lat, lng, `Total Enrollment `, Enrollment.x) %>%
+         lat, lng, `Total Enrollment `, Enrollment) %>%
   mutate(rate = cases/`Total Enrollment `)
   
 
