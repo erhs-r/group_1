@@ -32,7 +32,10 @@ top5_by_state <- college_raw %>%
   select(state, county, city, college, cases) %>%
   group_by(state) %>%
   arrange(state, -cases) %>%
-  slice_head(n = 5)
+  slice_head(n = 5) %>%
+  write_csv("top5_by_state.csv")
+
+
 
 ggplot(data = top5_by_state, mapping = aes(x = cases, y = state)) +
   geom_point(mapping = aes(x = cases))

@@ -1,0 +1,249 @@
+state,county,city,college,cases
+Alabama,Tuscaloosa,Tuscaloosa,University of Alabama,3219
+Alabama,Jefferson,Birmingham,University of Alabama at Birmingham,2119
+Alabama,Lee,Auburn,Auburn University,2079
+Alabama,Pike,Troy,Troy University,715
+Alabama,Jefferson,Birmingham,Samford University,461
+Alaska,Fairbanks North Star Borough,Fairbanks,University of Alaska Fairbanks,104
+Alaska,Anchorage Municipality,Anchorage,University of Alaska Anchorage,11
+Alaska,Juneau City and Borough,Juneau,University of Alaska Southeast,1
+Alaska,North Slope Borough,Utqiagvik,Ilisagvik College,NA
+Arizona,Maricopa,Tempe,Arizona State University,2862
+Arizona,Pima,Tucson,University of Arizona,2643
+Arizona,Maricopa,Phoenix,Grand Canyon University,474
+Arizona,Coconino,Flagstaff,Northern Arizona University,278
+Arizona,Maricopa,Glendale,Midwestern University at Glendale,96
+Arkansas,Washington,Fayetteville,University of Arkansas,2452
+Arkansas,Craighead,Jonesboro,Arkansas State University,1026
+Arkansas,Conway,Conway,University of Central Arkansas,481
+Arkansas,Pope,Russellville,Arkansas Tech University,402
+Arkansas,White,Searcy,Harding University,340
+California,San Diego,San Diego,San Diego State University System,1450
+California,San Luis Obispo,San Luis Obispo,"California Polytechnic State University, San Luis Obispo",626
+California,Los Angeles,Los Angeles,University of Southern California,608
+California,San Diego,San Diego,"University of California, San Diego",497
+California,Los Angeles,Los Angeles,"University of California, Los Angeles",386
+Colorado,Boulder,Boulder,University of Colorado Boulder,2236
+Colorado,Larimer,Fort Collins,Colorado State University,1149
+Colorado,Mesa,Grand Junction,Colorado Mesa University,578
+Colorado,Denver,Denver,University of Denver,289
+Colorado,Jefferson,Golden,Colorado School of Mines,266
+Connecticut,Fairfield,Fairfield,Sacred Heart University,725
+Connecticut,Tolland,Storrs,University of Connecticut,673
+Connecticut,Fairfield,Fairfield,Fairfield University,586
+Connecticut,New Haven,Hamden,Quinnipiac University,422
+Connecticut,New Haven,New Haven,Yale University,366
+Delaware,New Castle,Newark,University of Delaware,683
+Delaware,Kent,Dover,Delaware State University,77
+Delaware,Sussex,Georgetown,Delaware Technical Community College Georgetown,45
+Delaware,New Castle,Stanton,Delaware Technical Community College Stanton,20
+Delaware,Kent,Dover,Wesley College,20
+Florida,Alachua,Gainesville,University of Florida,5008
+Florida,Orange,Orlando,University of Central Florida,2100
+Florida,Leon,Tallahassee,Florida State University,1738
+Florida,Miami-Dade,Miami,University of Miami,1164
+Florida,Hillsborough,Tampa,University of South Florida,864
+Georgia,Clarke,Athens,University of Georgia,4387
+Georgia,Fulton,Atlanta,Georgia Institute of Technology,1323
+Georgia,Bulloch,Statesboro,Georgia Southern University,1287
+Georgia,Baldwin,Milledgeville,Georgia College & State University,757
+Georgia,Cobb,Kennesaw,Kennesaw State University,656
+Hawaii,Honolulu,Honolulu,University of Hawaii at Manoa,36
+Hawaii,Honolulu,Laie,Brigham Young University-Hawaii,6
+Hawaii,Honolulu,Honolulu,Kapiolani Community College,4
+Hawaii,Hawaii,Hilo,University of Hawaii at Hilo,4
+Hawaii,Honolulu,Pearl City,Leeward Community College,3
+Idaho,Madison,Rexburg,Brigham Young University-Idaho,1292
+Idaho,Ada,Boise,Boise State University,796
+Idaho,Latah,Moscow,University of Idaho,543
+Idaho,Bannock,Pocatello,Idaho State University,498
+Idaho,Twin Falls,Twin Falls,College of Southern Idaho,199
+Illinois,Champaign,Champaign,University of Illinois Urbana-Champaign,3892
+Illinois,McLean,Normal,Illinois State University,1771
+Illinois,Cook,Chicago,University of Illinois at Chicago,699
+Illinois,Dekalb,Dekalb,Northern Illinois University,500
+Illinois,Coles,Charleston,Eastern Illinois University,445
+Indiana,Monroe,Bloomington,Indiana University Bloomington,3754
+Indiana,Tippecanoe,West Lafayette,Purdue University,2700
+Indiana,St. Joseph,Notre Dame,University of Notre Dame,1665
+Indiana,Delaware,Muncie,Ball State University,1283
+Indiana,Vanderburgh,Evansville,University of Southern Indiana,489
+Iowa,Johnson,Iowa City,University of Iowa,2749
+Iowa,Story,Ames,Iowa State University,2169
+Iowa,Black Hawk,Cedar Falls,University of Northern Iowa,438
+Iowa,Black Hawk,Waterloo,Hawkeye Community College,259
+Iowa,Scott,Davenport,Saint Ambrose University,225
+Kansas,Douglas,Lawrence,University of Kansas,1249
+Kansas,Riley,Manhattan,Kansas State University,1183
+Kansas,Ellis,Hays,Fort Hays State University,307
+Kansas,Crawford,Pittsburg,Pittsburg State University,286
+Kansas,Shawnee,Topeka,Washburn University,215
+Kentucky,Fayette,Lexington,University of Kentucky,2845
+Kentucky,Jefferson,Louisville,University of Louisville,1259
+Kentucky,Warren,Bowling Green,Western Kentucky University,904
+Kentucky,Calloway,Murray,Murray State University,437
+Kentucky,Madison,Richmond,Eastern Kentucky University,372
+Louisiana,East Baton Rouge,Baton Rouge,Louisiana State University,1354
+Louisiana,Orleans,New Orleans,Tulane University of Louisiana,1189
+Louisiana,Lincoln,Ruston,Louisiana Tech University,480
+Louisiana,Lafayette,Lafeyette,University of Louisiana at Lafayette,464
+Louisiana,Natchitoches,Natchitoches,Northwestern State University of Louisiana,349
+Maine,Penobscot,Orono,University of Maine,47
+Maine,York,Biddeford,University of New England,26
+Maine,Cumberland,Portland,University of Southern Maine,21
+Maine,Kennebec,Waterville,Colby College,15
+Maine,Cumberland,Standish,Saint Joseph's College of Maine,15
+Maryland,Prince George's,College Park,"University of Maryland, College Park",952
+Maryland,Baltimore City,Baltimore,Johns Hopkins University,596
+Maryland,Wicomico,Salisbury,Salisbury University,507
+Maryland,Baltimore,Towson,Towson University,502
+Maryland,Allegany,Frostburg,Frostburg State University,158
+Massachusetts,Suffolk,Boston,Boston University,362
+Massachusetts,Hampshire,Amherst,University of Massachusetts Amherst,322
+Massachusetts,Middlesex,Chestnut Hill,Boston College,293
+Massachusetts,Suffolk,Boston,Northeastern University,275
+Massachusetts,Middlesex,Cambridge,Harvard University,205
+Michigan,Washtenaw,Ann Arbor,University of Michigan,2545
+Michigan,Ingham,East Lansing,Michigan State University,2057
+Michigan,Ottawa,Allendale,Grand Valley State University,1563
+Michigan,Kalamazoo,Kalamazoo,Western Michigan University,1068
+Michigan,Isabella,Mount Pleasant,Central Michigan University,596
+Minnesota,Hennepin,Minneapolis,University of Minnesota Twin Cities,809
+Minnesota,Winona,Winona,Winona State University,546
+Minnesota,Ramsey,St. Paul,University of St. Thomas,495
+Minnesota,Blue Earth,Mankato,"Minnesota State University, Mankato",393
+Minnesota,St. Louis,Duluth,University of Minnesota Duluth,344
+Mississippi,Lafayette,Oxford,University of Mississippi,836
+Mississippi,Hinds,Jackson,University of Mississippi Medical Center,711
+Mississippi,Oktibbeha,Mississippi State,Mississippi State University,657
+Mississippi,Forrest,Hattiesburg,University of Southern Mississippi,411
+Mississippi,Hinds,Clinton,Mississippi College,169
+Missouri,Boone,Columbia,University of Missouri,2469
+Missouri,Greene,Springfield,Missouri State University,1427
+Missouri,Johnson,Warrensburg,University of Central Missouri,707
+Missouri,Nodaway,Maryville,Northwest Missouri State University,692
+Missouri,Cape Girardeau,Cape Girardeau,Southeast Missouri State University,532
+Montana,Gallatin,Bozeman,Montana State University,990
+Montana,Missoula,Missoula,University of Montana,418
+Montana,Lewis and Clark,Helena,Carroll College,110
+Montana,Silver Bow,Butte,Montana Technological University,105
+Montana,Beaverhead,Dillon,University of Montana Western,84
+Nebraska,Lancaster,Lincoln,University of Nebraska-Lincoln,1525
+Nebraska,Douglas,Omaha,Creighton University,613
+Nebraska,Douglas,Omaha,University of Nebraska at Omaha,387
+Nebraska,Buffalo,Kearney,University of Nebraska at Kearney,328
+Nebraska,Lancaster,Lincoln,Nebraska Wesleyan University,306
+Nevada,Washoe,Reno,"University of Nevada, Reno",952
+Nevada,Clark,Las Vegas,"University of Nevada, Las Vegas",406
+Nevada,Clark,Las Vegas,College of Southern Nevada,130
+Nevada,Carson City,Carson City,Western Nevada College,32
+Nevada,Washoe,Reno,Truckee Meadows Community College,28
+New Hampshire,Strafford,Durham,University of New Hampshire,462
+New Hampshire,Hillsborough,Manchester,Saint Anselm College,41
+New Hampshire,Grafton,Plymouth,Plymouth State University,36
+New Hampshire,Grafton,Hanover,Dartmouth College,31
+New Hampshire,Merrimack,Henniker,New England College,27
+New Jersey,Gloucester,Glassboro,Rowan University,786
+New Jersey,Monmouth,West Long Branch,Monmouth University,459
+New Jersey,Middlesex,New Brunswick,Rutgers University,402
+New Jersey,Atlantic,Galloway,Stockton University,206
+New Jersey,Essex,Montclair,Montclair State University,134
+New Mexico,Doña Ana,Las Cruces,New Mexico State University,319
+New Mexico,Bernalillo,Albuquerque,University of New Mexico,224
+New Mexico,Chaves,Roswell,New Mexico Military Institute,106
+New Mexico,Grant,Silver City,Western New Mexico University,39
+New Mexico,Roosevelt,Portales,Eastern New Mexico University,24
+New York,Otsego,Oneonta,SUNY Oneonta,735
+New York,Cortland,Cortland,SUNY Cortland,714
+New York,Onondaga,Syracuse,Syracuse University,648
+New York,Suffolk,Stony Brook,Stony Brook University,563
+New York,New York City,New York City,New York University,536
+North Carolina,Pitt,Greenville,East Carolina University,1494
+North Carolina,Orange,Chapel Hill,University of North Carolina at Chapel Hill,1374
+North Carolina,Wake,Raleigh,North Carolina State University,1333
+North Carolina,Watauga,Boone,Appalachian State University,1192
+North Carolina,Alamance,Elon,Elon University,785
+North Dakota,Grand Forks,Grand Forks,University of North Dakota,1724
+North Dakota,Cass,Fargo,North Dakota State University,708
+North Dakota,Ward,Minot,Minot State University,490
+North Dakota,Burleigh,Bismarck,Bismarck State College,205
+North Dakota,Richland,Wahpeton,North Dakota State College of Science,169
+Ohio,Franklin,Columbus,Ohio State University,4665
+Ohio,Butler,Oxford,Miami University (Ohio),2368
+Ohio,Montgomery,Dayton,University of Dayton,1503
+Ohio,Hamilton,Cincinnati,University of Cincinnati,1252
+Ohio,Athens,Athens,Ohio University,693
+Oklahoma,Payne,Stillwater,Oklahoma State University,2167
+Oklahoma,Cleveland,Norman,University of Oklahoma,630
+Oklahoma,Oklahoma,Edmond,University of Central Oklahoma,573
+Oklahoma,Custer,Weatherford,Southwestern Oklahoma State University,311
+Oklahoma,Tulsa,Tulsa,University of Tulsa,191
+Oregon,Lane,Eugene,University of Oregon,595
+Oregon,Multnomah,Portland,Oregon Health & Science University,158
+Oregon,Benton,Corvallis,Oregon State University,157
+Oregon,Klamath,Klamath Falls,Oregon Institute of Technology,35
+Oregon,Lane,Eugene,Lane Community College,29
+Pennsylvania,Centre,State College,Penn State University,4353
+Pennsylvania,Philadelphia,Philadelphia,University of Pennsylvania,827
+Pennsylvania,Philadelphia,Philadelphia,Temple University,797
+Pennsylvania,Lackawanna,Scranton,University of Scranton,645
+Pennsylvania,Allegheny,Pittsburgh,University of Pittsburgh,627
+Rhode Island,Washington,Kingston,University of Rhode Island,634
+Rhode Island,Providence,Providence,Providence College,302
+Rhode Island,Bristol,Bristol,Roger Williams University,130
+Rhode Island,Providence,Providence,Brown University,83
+Rhode Island,Providence,Providence,Johnson & Wales University,73
+South Carolina,Pickens,Clemson,Clemson University,5086
+South Carolina,Richland,Columbia,University of South Carolina,3037
+South Carolina,Charleston,Charleston,College of Charleston,523
+South Carolina,Greenville,Greenville,Greenville Technical College,472
+South Carolina,Horry,Conway,Coastal Carolina University,335
+South Dakota,Minnehaha,Sioux Falls,Augustana University,275
+South Dakota,Clay,Vermillion,University of South Dakota,264
+South Dakota,Brookings,Brookings,South Dakota State University,112
+South Dakota,Lawrence,Spearfish,Black Hills State University,72
+South Dakota,Minnehaha,Sioux Falls,University of Sioux Falls,57
+Tennessee,Knox,Knoxville,"University of Tennessee, Knoxville",2022
+Tennessee,Davidson,Nashville,Vanderbilt University,816
+Tennessee,Hamilton,Chattanooga,University of Tennessee at Chattanooga,806
+Tennessee,Putnam,Cookeville,Tennessee Technological University,726
+Tennessee,Rutherford,Murfreesboro,Middle Tennessee State University,484
+Texas,Lubbock,Lubbock,Texas Tech University,2697
+Texas,Brazos,College Station,Texas A&M University,2521
+Texas,Travis,Austin,University of Texas at Austin,1849
+Texas,Tarrant,Fort Worth,Texas Christian University,1497
+Texas,McLennan,Waco,Baylor University,1492
+Utah,Utah,Provo,Brigham Young University,2993
+Utah,Salt Lake,Salt Lake City,University of Utah,1864
+Utah,Cache,Logan,Utah State University,1594
+Utah,Utah,Orem,Utah Valley University,898
+Utah,Salt Lake,Salt Lake City,Salt Lake Community College,455
+Vermont,Chittenden,Colchester,Saint Michael's College,77
+Vermont,Chittenden,Burlington,University of Vermont,23
+Vermont,Washington,Northfield,Norwich University,9
+Vermont,Chittenden,Burlington,Champlain College,6
+Vermont,Addison,Middlebury,Middlebury College,4
+Virginia,Rockingham,Harrisonburg,James Madison University,1650
+Virginia,Montgomery,Blacksburg,Virginia Tech,1535
+Virginia,Charlottesville,Charlottesville,University of Virginia,1229
+Virginia,Campbell,Lynchburg,Liberty University,906
+Virginia,Radford,Radford,Radford University,548
+Washington,Whitman,Pullman,Washington State University,1407
+Washington,King,Seattle,University of Washington,875
+Washington,Spokane,Cheney,Eastern Washington University,229
+Washington,Kittitas,Ellensburg,Central Washington University,188
+Washington,Spokane,Spokane,Gonzaga University,160
+West Virginia,Monongalia,Morgantown,West Virginia University,871
+West Virginia,Cabell,Huntington,Marshall University,282
+West Virginia,Kanawha,Charleston,University of Charleston,76
+West Virginia,Jefferson,Shepherdstown,Shepherd University,73
+West Virginia,Kanawha,Institute,West Virginia State University,71
+Wisconsin,Dane,Madison,University of Wisconsin-Madison,4193
+Wisconsin,Winnebago,Oshkosh,University of Wisconsin-Oshkosh,1183
+Wisconsin,Milwaukee,Milwaukee,University of Wisconsin-Milwaukee,1128
+Wisconsin,Milwaukee,Milwaukee,Marquette University,963
+Wisconsin,Eau Claire,Eau Claire,University of Wisconsin-Eau Claire,776
+Wyoming,Albany,Laramie,University of Wyoming,1597
+Wyoming,Natrona,Casper,Casper College,249
+Wyoming,Sweetwater,Rock Springs,Western Wyoming Community College,41
+Wyoming,Goshen,Torrington,Eastern Wyoming College,10
