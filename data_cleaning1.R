@@ -44,7 +44,7 @@ city_location <- read_csv("uscities.csv") %>%
          county = "county_name")
 
 college_location <- top5_by_state %>%
-  left_join(y = city_location,
+  fuzzy_left_join(y = city_location,
             by = c("city", "state"))
 
 college_location <- college_location %>%
