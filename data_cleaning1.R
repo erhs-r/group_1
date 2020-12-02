@@ -77,7 +77,7 @@ college_location <- college_location %>%
   select(state, county.x, city, college, cases, state_id, county_fips,
          lat, lng, `Total Enrollment `, Enrollment) %>%
   mutate(rate = cases/`Total Enrollment `) %>%
-  write_excel_csv2(file = "college_location")
+  write_delim(file = "college_location", delim = ",", col_names = TRUE)
 
 
 ### Val
