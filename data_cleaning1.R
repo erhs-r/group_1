@@ -53,9 +53,25 @@ college_location <- college_location %>%
 
 # add college population size for rate. 
 
+admission <- read_excel("college_admission.xlsx")
 
+college_location <- college_location %>%
+  left_join(y = admission,
+            by = c("college" = "School Name"))
 
+admission2 <- read_excel("college_enrollement.xlsx")
+colnames(admission2)
+admission2 <- admission2 %>%
+  rename(school = `School Name `)
+ 
 
+college_location <- college_location %>%
+  left_join(y = admission2,
+            by = c("college" = "school"))
+
+college_location <- college_location %>%
+  select(state, county.x, city, college, cases, state_id, county_fips,
+         lat, lng, `Admission number 2020`,`Total Enrollment `)
 
 ### Val
 
