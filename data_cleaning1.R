@@ -6,24 +6,23 @@ library(ggplot2)
 library(readxl)
 library(lubridate)
 library(stringr)
+library(tigris)
 
 college_raw <- 
   read_csv(
-    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv") 
+    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv")
 
+state_names <- read_csv("csvData_state_names.csv")
+colnames(state_names)
+
+college_raw <- college_raw %>%
+  semi_join(y = state_names, 
+            by = c("state" = "State"))
 ### Beth
-#top 3 & 5 colleges by state with highest COVID cases
-
-#top 3 schools with highest cases for time series data, include reference point
+#top 5 schools with highest cases for time series data, include reference point
 #of when school started
 
-top_3 <- college_raw %>%
-  select(state, county, city, college, cases) %>%
-  group_by(state) %>%
-  arrange(desc(cases)) %>%
-  head(3)
-
-top_5 <- college_raw %>%
+top_5_overall <- college_raw %>%
   select(state, county, city, college, cases) %>%
   group_by(state) %>%
   arrange(desc(cases)) %>%
@@ -35,7 +34,7 @@ top5_by_state <- college_raw %>%
   arrange(state, -cases) %>%
   slice_head(n = 5)
 
-ggplot(data = top_state, mapping = aes(x = cases, y = state)) +
+ggplot(data = top5_by_state, mapping = aes(x = cases, y = state)) +
   geom_point(mapping = aes(x = cases))
 
 # Adding lat/long to each college to map into flexdashboard
@@ -51,7 +50,7 @@ college_location <- top5_by_state %>%
 college_location <- college_location %>%
   select(state:cases, state_id:county_fips, lat:lng)
 
-# add college population size for rate. 
+# add college enrollment size for rate. 
 
 admission <- read_excel("college_admission.xlsx")
 
@@ -60,17 +59,15 @@ college_location <- college_location %>%
             by = c("college" = "School Name"))
 
 admission2 <- read_excel("college_enrollement.xlsx")
-colnames(admission2)
+
 admission2 <- admission2 %>%
   rename(school = `School Name `)
  
-
 college_location <- college_location %>%
   left_join(y = admission2,
             by = c("college" = "school"))
 
 admission3 <- read_excel("top_10_enrollment.xlsx", skip = 1)
-colnames(admission3)
 
 college_location <- college_location %>%
   left_join(y = admission3,
@@ -78,9 +75,10 @@ college_location <- college_location %>%
 
 college_location <- college_location %>%
   select(state, county.x, city, college, cases, state_id, county_fips,
-         lat, lng, `Total Enrollment `, Enrollment.x) %>%
-  mutate(rate = cases/`Total Enrollment `)
-  
+         lat, lng, `Total Enrollment `, Enrollment) %>%
+  mutate(rate = cases/`Total Enrollment `) %>%
+  write_excel_csv2(file = "college_location")
+
 
 ### Val
 
