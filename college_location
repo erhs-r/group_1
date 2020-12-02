@@ -1,250 +1,250 @@
-state,county.x,city,college,cases,state_id,county_fips,lat,lng,Total Enrollment ,Enrollment,rate
-Alabama,Tuscaloosa,Tuscaloosa,University of Alabama,3219,AL,01125,33.2348,-87.5267,NA,NA,NA
-Alabama,Jefferson,Birmingham,University of Alabama at Birmingham,2119,AL,01073,33.5277,-86.7987,21923,NA,0.09665647949641928
-Alabama,Lee,Auburn,Auburn University,2079,AL,01081,32.6087,-85.4899,30440,NA,0.06829829172141919
-Alabama,Pike,Troy,Troy University,715,AL,01109,31.8021,-85.9665,16981,NA,0.04210588304575702
-Alabama,Jefferson,Birmingham,Samford University,461,AL,01073,33.5277,-86.7987,NA,NA,NA
-Alaska,Fairbanks North Star Borough,Fairbanks,University of Alaska Fairbanks,104,AK,02090,64.8353,-147.6534,NA,NA,NA
-Alaska,Anchorage Municipality,Anchorage,University of Alaska Anchorage,11,AK,02020,61.1508,-149.1091,14644,NA,7.511608850040972e-4
-Alaska,Juneau City and Borough,Juneau,University of Alaska Southeast,1,AK,02110,58.4546,-134.1739,NA,NA,NA
-Alaska,North Slope Borough,Utqiagvik,Ilisagvik College,NA,AK,02185,71.2728,-156.7575,NA,NA,NA
-Arizona,Maricopa,Tempe,Arizona State University,2862,AZ,04013,33.3881,-111.9318,NA,53286,NA
-Arizona,Pima,Tucson,University of Arizona,2643,AZ,04019,32.1545,-110.8782,44097,NA,0.05993605007143343
-Arizona,Maricopa,Phoenix,Grand Canyon University,474,AZ,04013,33.5722,-112.0891,90253,NA,0.005251902983834333
-Arizona,Coconino,Flagstaff,Northern Arizona University,278,AZ,04005,35.1872,-111.6195,31066,NA,0.008948689886049056
-Arizona,Maricopa,Glendale,Midwestern University at Glendale,96,AZ,04013,33.5791,-112.2311,NA,NA,NA
-Arkansas,Washington,Fayetteville,University of Arkansas,2452,AR,05143,36.0713,-94.166,27778,NA,0.08827129382964936
-Arkansas,Craighead,Jonesboro,Arkansas State University,1026,AR,05031,35.8212,-90.6791,NA,NA,NA
-Arkansas,Conway,Conway,University of Central Arkansas,481,AR,05045,35.0754,-92.4694,11177,NA,0.043034803614565624
-Arkansas,Pope,Russellville,Arkansas Tech University,402,AR,05115,35.2763,-93.1383,12101,NA,0.03322039500867697
-Arkansas,White,Searcy,Harding University,340,AR,05145,35.2418,-91.7351,NA,NA,NA
-California,San Diego,San Diego,San Diego State University System,1450,CA,06073,32.8312,-117.1225,NA,NA,NA
-California,San Luis Obispo,San Luis Obispo,"California Polytechnic State University, San Luis Obispo",626,CA,06079,35.2669,-120.6691,NA,NA,NA
-California,Los Angeles,Los Angeles,University of Southern California,608,CA,06037,34.1139,-118.4068,47310,NA,0.01285140562248996
-California,San Diego,San Diego,"University of California, San Diego",497,CA,06073,32.8312,-117.1225,NA,NA,NA
-California,Los Angeles,Los Angeles,"University of California, Los Angeles",386,CA,06037,34.1139,-118.4068,NA,NA,NA
-Colorado,Boulder,Boulder,University of Colorado Boulder,2236,CO,08013,40.0249,-105.2523,36681,NA,0.06095798914969603
-Colorado,Larimer,Fort Collins,Colorado State University,1149,CO,08069,40.5478,-105.0656,NA,NA,NA
-Colorado,Mesa,Grand Junction,Colorado Mesa University,578,CO,08077,39.0876,-108.5673,9492,NA,0.06089338390223346
-Colorado,Denver,Denver,University of Denver,289,CO,08031,39.7621,-104.8759,11952,NA,0.024180053547523426
-Colorado,Jefferson,Golden,Colorado School of Mines,266,CO,08059,39.7406,-105.2118,NA,NA,NA
-Connecticut,Fairfield,Fairfield,Sacred Heart University,725,NA,NA,NA,NA,8958,NA,0.08093324402768474
-Connecticut,Tolland,Storrs,University of Connecticut,673,CT,09013,41.8045,-72.2552,27412,NA,0.02455129140522399
-Connecticut,Fairfield,Fairfield,Fairfield University,586,NA,NA,NA,NA,NA,NA,NA
-Connecticut,New Haven,Hamden,Quinnipiac University,422,NA,NA,NA,NA,10207,NA,0.041344175565788184
-Connecticut,New Haven,New Haven,Yale University,366,CT,09009,41.3112,-72.9246,13433,NA,0.027246333655921984
-Delaware,New Castle,Newark,University of Delaware,683,DE,10003,39.6776,-75.7573,24120,NA,0.028316749585406302
-Delaware,Kent,Dover,Delaware State University,77,DE,10001,39.161,-75.5203,NA,NA,NA
-Delaware,Sussex,Georgetown,Delaware Technical Community College Georgetown,45,DE,10005,38.6894,-75.387200000000007,NA,NA,NA
-Delaware,New Castle,Stanton,Delaware Technical Community College Stanton,20,NA,NA,NA,NA,NA,NA,NA
-Delaware,Kent,Dover,Wesley College,20,DE,10001,39.161,-75.5203,NA,NA,NA
-Florida,Alachua,Gainesville,University of Florida,5008,FL,12001,29.6804,-82.3458,52218,56567,0.09590562641234823
-Florida,Orange,Orlando,University of Central Florida,2100,FL,12095,28.4772,-81.3369,68475,69525,0.030668127053669222
-Florida,Leon,Tallahassee,Florida State University,1738,FL,12073,30.4551,-84.2526,41005,NA,0.042385074990854775
-Florida,Miami-Dade,Miami,University of Miami,1164,FL,12086,25.7839,-80.2102,17331,NA,0.0671628873117535
-Florida,Hillsborough,Tampa,University of South Florida,864,FL,12057,27.9942,-82.4451,NA,51646,NA
-Georgia,Clarke,Athens,University of Georgia,4387,GA,13059,33.9508,-83.3689,38652,NA,0.11349994825623512
-Georgia,Fulton,Atlanta,Georgia Institute of Technology,1323,GA,13121,33.7627,-84.4224,NA,NA,NA
-Georgia,Bulloch,Statesboro,Georgia Southern University,1287,GA,13031,32.4376,-81.775,26408,NA,0.04873523174795517
-Georgia,Baldwin,Milledgeville,Georgia College & State University,757,GA,13009,33.0874,-83.2414,NA,NA,NA
-Georgia,Cobb,Kennesaw,Kennesaw State University,656,GA,13067,34.026,-84.6177,35420,NA,0.01852060982495765
-Georgia,Cobb,Kennesaw,Kennesaw State University,656,GA,13067,34.026,-84.6177,35420,NA,0.01852060982495765
-Hawaii,Honolulu,Honolulu,University of Hawaii at Manoa,36,HI,15003,21.3294,-157.846,17710,NA,0.0020327498588368154
-Hawaii,Honolulu,Laie,Brigham Young University-Hawaii,6,HI,15003,21.6443,-157.928,NA,NA,NA
-Hawaii,Honolulu,Honolulu,Kapiolani Community College,4,HI,15003,21.3294,-157.846,NA,NA,NA
-Hawaii,Hawaii,Hilo,University of Hawaii at Hilo,4,HI,15001,19.6886,-155.0864,NA,NA,NA
-Hawaii,Honolulu,Pearl City,Leeward Community College,3,HI,15003,21.4031,-157.9566,NA,NA,NA
-Idaho,Madison,Rexburg,Brigham Young University-Idaho,1292,ID,16065,43.8224,-111.792,42341,NA,0.030514158853121087
-Idaho,Ada,Boise,Boise State University,796,ID,16001,43.6007,-116.2312,25504,NA,0.031210790464240905
-Idaho,Latah,Moscow,University of Idaho,543,ID,16057,46.7307,-116.9986,11841,NA,0.04585761337724854
-Idaho,Bannock,Pocatello,Idaho State University,498,ID,16005,42.8724,-112.4646,12363,NA,0.04028148507643776
-Idaho,Twin Falls,Twin Falls,College of Southern Idaho,199,ID,16083,42.5645,-114.4615,NA,NA,NA
-Illinois,Champaign,Champaign,University of Illinois Urbana-Champaign,3892,IL,17019,40.1144,-88.2735,NA,NA,NA
-Illinois,McLean,Normal,Illinois State University,1771,IL,17113,40.5218,-88.9881,20635,NA,0.08582505451902107
-Illinois,Cook,Chicago,University of Illinois at Chicago,699,IL,17031,41.8373,-87.6862,31683,NA,0.02206230470599375
-Illinois,Dekalb,Dekalb,Northern Illinois University,500,NA,NA,NA,NA,17169,NA,0.029122255227444813
-Illinois,Coles,Charleston,Eastern Illinois University,445,IL,17029,39.4842,-88.1781,NA,NA,NA
-Indiana,Monroe,Bloomington,Indiana University Bloomington,3754,IN,18105,39.1637,-86.5257,NA,NA,NA
-Indiana,Tippecanoe,West Lafayette,Purdue University,2700,IN,18157,40.4432,-86.9239,NA,NA,NA
-Indiana,St. Joseph,Notre Dame,University of Notre Dame,1665,IN,18141,41.7014,-86.2378,12607,NA,0.13206948520663123
-Indiana,Delaware,Muncie,Ball State University,1283,IN,18035,40.1989,-85.395,21884,NA,0.05862730762200694
-Indiana,Vanderburgh,Evansville,University of Southern Indiana,489,IN,18163,37.9881,-87.5341,10986,NA,0.04451119606772255
-Iowa,Johnson,Iowa City,University of Iowa,2749,IA,19103,41.6559,-91.5303,31656,NA,0.08683977760929998
-Iowa,Story,Ames,Iowa State University,2169,IA,19169,42.0259,-93.6215,34992,NA,0.06198559670781893
-Iowa,Black Hawk,Cedar Falls,University of Northern Iowa,438,IA,19013,42.5195,-92.4534,11187,NA,0.0391525878251542
-Iowa,Black Hawk,Waterloo,Hawkeye Community College,259,IA,19013,42.492,-92.3522,NA,NA,NA
-Iowa,Scott,Davenport,Saint Ambrose University,225,IA,19163,41.5563,-90.6052,NA,NA,NA
-Kansas,Douglas,Lawrence,University of Kansas,1249,KS,20045,38.9597,-95.2641,27690,NA,0.04510653665583243
-Kansas,Riley,Manhattan,Kansas State University,1183,KS,20161,39.1886,-96.6046,22221,NA,0.05323792808604473
-Kansas,Ellis,Hays,Fort Hays State University,307,KS,20051,38.8815,-99.3218,15523,NA,0.01977710494105521
-Kansas,Crawford,Pittsburg,Pittsburg State University,286,KS,20037,37.4129,-94.6984,NA,NA,NA
-Kansas,Shawnee,Topeka,Washburn University,215,KS,20177,39.0346,-95.6955,NA,NA,NA
-Kentucky,Fayette,Lexington,University of Kentucky,2845,KY,21067,38.0423,-84.4587,29182,NA,0.09749160441367967
-Kentucky,Jefferson,Louisville,University of Louisville,1259,KY,21111,38.1663,-85.6485,21430,NA,0.05874941670555296
-Kentucky,Warren,Bowling Green,Western Kentucky University,904,KY,21227,36.9719,-86.4373,19456,NA,0.046463815789473686
-Kentucky,Calloway,Murray,Murray State University,437,KY,21035,36.6146,-88.3206,9454,NA,0.0462238206050349
-Kentucky,Madison,Richmond,Eastern Kentucky University,372,KY,21151,37.7306,-84.2926,15815,NA,0.023521972810622828
-Louisiana,East Baton Rouge,Baton Rouge,Louisiana State University,1354,LA,22033,30.4418,-91.131,NA,NA,NA
-Louisiana,Orleans,New Orleans,Tulane University of Louisiana,1189,LA,22071,30.0687,-89.9288,12646,NA,0.09402182508303021
-Louisiana,Lincoln,Ruston,Louisiana Tech University,480,LA,22061,32.5329,-92.6363,11909,NA,0.04030565118817701
-Louisiana,Lafayette,Lafeyette,University of Louisiana at Lafayette,464,NA,NA,NA,NA,17123,NA,0.027098055247328154
-Louisiana,Natchitoches,Natchitoches,Northwestern State University of Louisiana,349,LA,22069,31.7317,-93.0979,11081,NA,0.0314953524050176
-Maine,Penobscot,Orono,University of Maine,47,NA,NA,NA,NA,11404,NA,0.0041213609259908805
-Maine,York,Biddeford,University of New England,26,ME,23031,43.4674,-70.4512,8010,NA,0.0032459425717852684
-Maine,Cumberland,Portland,University of Southern Maine,21,ME,23005,43.6773,-70.2715,8140,NA,0.0025798525798525797
-Maine,Kennebec,Waterville,Colby College,15,ME,23011,44.5441,-69.6624,NA,NA,NA
-Maine,Cumberland,Standish,Saint Joseph's College of Maine,15,NA,NA,NA,NA,NA,NA,NA
-Maryland,Prince George's,College Park,"University of Maryland, College Park",952,MD,24033,38.996,-76.9337,NA,NA,NA
-Maryland,Baltimore City,Baltimore,Johns Hopkins University,596,MD,24510,39.3051,-76.6144,26152,NA,0.02278984398898746
-Maryland,Wicomico,Salisbury,Salisbury University,507,MD,24045,38.3756,-75.5867,8567,NA,0.05918057663125948
-Maryland,Baltimore,Towson,Towson University,502,MD,24005,39.3944,-76.619,22923,NA,0.021899402346987742
-Maryland,Allegany,Frostburg,Frostburg State University,158,MD,24001,39.6506,-78.9269,NA,NA,NA
-Massachusetts,Suffolk,Boston,Boston University,362,MA,25025,42.3188,-71.0846,34657,NA,0.010445220301814929
-Massachusetts,Hampshire,Amherst,University of Massachusetts Amherst,322,MA,25015,42.3645,-72.5069,NA,NA,NA
-Massachusetts,Middlesex,Chestnut Hill,Boston College,293,NA,NA,NA,NA,14720,NA,0.019904891304347826
-Massachusetts,Suffolk,Boston,Northeastern University,275,MA,25025,42.3188,-71.0846,21627,NA,0.012715586997734313
-Massachusetts,Middlesex,Cambridge,Harvard University,205,MA,25017,42.3759,-71.1185,31566,NA,0.006494329341696762
-Michigan,Washtenaw,Ann Arbor,University of Michigan,2545,MI,26161,42.2755,-83.7312,NA,NA,NA
-Michigan,Ingham,East Lansing,Michigan State University,2057,MI,26065,42.748,-84.4835,50351,NA,0.04085321046255288
-Michigan,Ottawa,Allendale,Grand Valley State University,1563,MI,26139,42.9851,-85.9509,24677,NA,0.06333833123961584
-Michigan,Kalamazoo,Kalamazoo,Western Michigan University,1068,MI,26077,42.2749,-85.5882,22562,NA,0.04733622905770765
-Michigan,Isabella,Mount Pleasant,Central Michigan University,596,MI,26073,43.5966,-84.7759,21622,NA,0.027564517620941635
-Minnesota,Hennepin,Minneapolis,University of Minnesota Twin Cities,809,MN,27053,44.9635,-93.2678,50734,NA,0.015945913982733474
-Minnesota,Winona,Winona,Winona State University,546,MN,27169,44.0505,-91.6684,NA,NA,NA
-Minnesota,Ramsey,St. Paul,University of St. Thomas,495,MN,27123,44.9477,-93.104,NA,NA,NA
-Minnesota,Blue Earth,Mankato,"Minnesota State University, Mankato",393,MN,27013,44.1712,-93.9773,NA,NA,NA
-Minnesota,St. Louis,Duluth,University of Minnesota Duluth,344,MN,27137,46.7756,-92.1392,NA,NA,NA
-Mississippi,Lafayette,Oxford,University of Mississippi,836,MS,28071,34.3627,-89.5336,22456,NA,0.03722835767723548
-Mississippi,Hinds,Jackson,University of Mississippi Medical Center,711,MS,28049,32.3163,-90.2124,NA,NA,NA
-Mississippi,Oktibbeha,Mississippi State,Mississippi State University,657,MS,28105,33.4515,-88.7913,21974,NA,0.029898971511786658
-Mississippi,Forrest,Hattiesburg,University of Southern Mississippi,411,MS,28035,31.3074,-89.317,14509,NA,0.028327245158177684
-Mississippi,Hinds,Clinton,Mississippi College,169,MS,28049,32.354,-90.3403,NA,NA,NA
-Missouri,Boone,Columbia,University of Missouri,2469,MO,29019,38.9478,-92.3256,NA,NA,NA
-Missouri,Greene,Springfield,Missouri State University,1427,MO,29077,37.1943,-93.2916,NA,NA,NA
-Missouri,Johnson,Warrensburg,University of Central Missouri,707,MO,29101,38.7627,-93.726,11487,NA,0.061547836684948204
-Missouri,Nodaway,Maryville,Northwest Missouri State University,692,MO,29147,40.3428,-94.8701,NA,NA,NA
-Missouri,Cape Girardeau,Cape Girardeau,Southeast Missouri State University,532,MO,29031,37.3108,-89.5597,11071,NA,0.048053473037665974
-Montana,Gallatin,Bozeman,Montana State University,990,MT,30031,45.6832,-111.0552,16814,NA,0.05887950517425954
-Montana,Missoula,Missoula,University of Montana,418,MT,30063,46.875,-114.0214,NA,NA,NA
-Montana,Lewis and Clark,Helena,Carroll College,110,MT,30049,46.5965,-112.0202,NA,NA,NA
-Montana,Silver Bow,Butte,Montana Technological University,105,MT,30093,45.902,-112.6571,NA,NA,NA
-Montana,Beaverhead,Dillon,University of Montana Western,84,MT,30001,45.2177,-112.6348,NA,NA,NA
-Nebraska,Lancaster,Lincoln,University of Nebraska-Lincoln,1525,NE,31109,40.809,-96.6788,25820,NA,0.05906274206041828
-Nebraska,Douglas,Omaha,Creighton University,613,NE,31055,41.2627,-96.0522,8910,NA,0.06879910213243547
-Nebraska,Douglas,Omaha,University of Nebraska at Omaha,387,NE,31055,41.2627,-96.0522,15431,NA,0.02507938565225844
-Nebraska,Buffalo,Kearney,University of Nebraska at Kearney,328,NE,31019,40.701,-99.0834,NA,NA,NA
-Nebraska,Lancaster,Lincoln,Nebraska Wesleyan University,306,NE,31109,40.809,-96.6788,NA,NA,NA
-Nevada,Washoe,Reno,"University of Nevada, Reno",952,NV,32031,39.5497,-119.8483,NA,NA,NA
-Nevada,Clark,Las Vegas,"University of Nevada, Las Vegas",406,NV,32003,36.2333,-115.2654,NA,NA,NA
-Nevada,Clark,Las Vegas,College of Southern Nevada,130,NV,32003,36.2333,-115.2654,34169,NA,0.0038046182211946503
-Nevada,Carson City,Carson City,Western Nevada College,32,NV,32510,39.1512,-119.7474,NA,NA,NA
-Nevada,Washoe,Reno,Truckee Meadows Community College,28,NV,32031,39.5497,-119.8483,10861,NA,0.002578031488813185
-New Hampshire,Strafford,Durham,University of New Hampshire,462,NA,NA,NA,NA,NA,NA,NA
-New Hampshire,Hillsborough,Manchester,Saint Anselm College,41,NH,33011,42.9848,-71.4447,NA,NA,NA
-New Hampshire,Grafton,Plymouth,Plymouth State University,36,NA,NA,NA,NA,NA,NA,NA
-New Hampshire,Grafton,Hanover,Dartmouth College,31,NA,NA,NA,NA,NA,NA,NA
-New Hampshire,Merrimack,Henniker,New England College,27,NA,NA,NA,NA,NA,NA,NA
-New Jersey,Gloucester,Glassboro,Rowan University,786,NJ,34015,39.7014,-75.1113,19465,NA,0.04038016953506293
-New Jersey,Monmouth,West Long Branch,Monmouth University,459,NJ,34025,40.2883,-74.0185,NA,NA,NA
-New Jersey,Middlesex,New Brunswick,Rutgers University,402,NJ,34023,40.487,-74.445,NA,NA,NA
-New Jersey,Atlantic,Galloway,Stockton University,206,NA,NA,NA,NA,9621,NA,0.021411495686519073
-New Jersey,Essex,Montclair,Montclair State University,134,NA,NA,NA,NA,21115,NA,0.00634619938432394
-New Mexico,Doña Ana,Las Cruces,New Mexico State University,319,NM,35013,32.3265,-106.7892,NA,NA,NA
-New Mexico,Bernalillo,Albuquerque,University of New Mexico,224,NM,35001,35.1053,-106.6464,NA,NA,NA
-New Mexico,Chaves,Roswell,New Mexico Military Institute,106,NM,35005,33.373,-104.5294,NA,NA,NA
-New Mexico,Grant,Silver City,Western New Mexico University,39,NM,35017,32.7784,-108.2698,NA,NA,NA
-New Mexico,Roosevelt,Portales,Eastern New Mexico University,24,NM,35041,34.1753,-103.3565,NA,NA,NA
-New York,Otsego,Oneonta,SUNY Oneonta,735,NY,36077,42.4551,-75.0666,NA,NA,NA
-New York,Cortland,Cortland,SUNY Cortland,714,NY,36023,42.6004,-76.1784,NA,NA,NA
-New York,Onondaga,Syracuse,Syracuse University,648,NY,36067,43.0409,-76.1438,22803,NA,0.02841731351138008
-New York,Suffolk,Stony Brook,Stony Brook University,563,NY,36103,40.906,-73.1278,26256,NA,0.021442717854966483
-New York,New York City,New York City,New York University,536,NA,NA,NA,NA,51847,NA,0.010338110208883831
-North Carolina,Pitt,Greenville,East Carolina University,1494,NC,37147,35.5956,-77.3768,28718,NA,0.05202312138728324
-North Carolina,Orange,Chapel Hill,University of North Carolina at Chapel Hill,1374,NC,37135,35.927,-79.0391,30011,NA,0.04578321282196528
-North Carolina,Wake,Raleigh,North Carolina State University,1333,NC,37183,35.8325,-78.6435,NA,NA,NA
-North Carolina,Watauga,Boone,Appalachian State University,1192,NC,37189,36.2111,-81.6668,19108,NA,0.06238224827297467
-North Carolina,Alamance,Elon,Elon University,785,NC,37001,36.1014,-79.5085,NA,NA,NA
-North Dakota,Grand Forks,Grand Forks,University of North Dakota,1724,ND,38035,47.9218,-97.0886,13847,NA,0.12450350256373222
-North Dakota,Cass,Fargo,North Dakota State University,708,ND,38017,46.8652,-96.8292,13796,NA,0.05131922296317773
-North Dakota,Ward,Minot,Minot State University,490,ND,38101,48.2375,-101.2781,NA,NA,NA
-North Dakota,Burleigh,Bismarck,Bismarck State College,205,ND,38015,46.8144,-100.7694,NA,NA,NA
-North Dakota,Richland,Wahpeton,North Dakota State College of Science,169,ND,38077,46.2722,-96.6118,NA,NA,NA
-Ohio,Franklin,Columbus,Ohio State University,4665,OH,39049,39.9862,-82.985,NA,NA,NA
-Ohio,Butler,Oxford,Miami University (Ohio),2368,OH,39017,39.506100000000004,-84.7434,NA,NA,NA
-Ohio,Montgomery,Dayton,University of Dayton,1503,OH,39113,39.7797,-84.1998,11241,NA,0.13370696557245795
-Ohio,Hamilton,Cincinnati,University of Cincinnati,1252,OH,39061,39.1413,-84.5061,NA,NA,NA
-Ohio,Athens,Athens,Ohio University,693,OH,39009,39.3269,-82.0988,NA,NA,NA
-Oklahoma,Payne,Stillwater,Oklahoma State University,2167,OK,40119,36.1316,-97.074,NA,NA,NA
-Oklahoma,Cleveland,Norman,University of Oklahoma,630,OK,40027,35.2335,-97.3471,NA,NA,NA
-Oklahoma,Oklahoma,Edmond,University of Central Oklahoma,573,OK,40109,35.6689,-97.4159,15393,NA,0.03722471253167024
-Oklahoma,Custer,Weatherford,Southwestern Oklahoma State University,311,OK,40039,35.5384,-98.6872,NA,NA,NA
-Oklahoma,Tulsa,Tulsa,University of Tulsa,191,OK,40143,36.1284,-95.9042,NA,NA,NA
-Oregon,Lane,Eugene,University of Oregon,595,OR,41039,44.0563,-123.1173,22644,NA,0.026276276276276277
-Oregon,Multnomah,Portland,Oregon Health & Science University,158,OR,41051,45.5372,-122.65,NA,NA,NA
-Oregon,Benton,Corvallis,Oregon State University,157,OR,41003,44.5697,-123.278,30986,NA,0.005066804363260827
-Oregon,Klamath,Klamath Falls,Oregon Institute of Technology,35,OR,41035,42.2191,-121.7754,NA,NA,NA
-Oregon,Lane,Eugene,Lane Community College,29,OR,41039,44.0563,-123.1173,NA,NA,NA
-Pennsylvania,Centre,State College,Penn State University,4353,PA,42027,40.7909,-77.8568,NA,NA,NA
-Pennsylvania,Philadelphia,Philadelphia,University of Pennsylvania,827,PA,42101,40.0077,-75.1339,25860,NA,0.031979891724671305
-Pennsylvania,Philadelphia,Philadelphia,Temple University,797,PA,42101,40.0077,-75.1339,39740,NA,0.020055359838953197
-Pennsylvania,Lackawanna,Scranton,University of Scranton,645,PA,42069,41.4044,-75.6649,NA,NA,NA
-Pennsylvania,Allegheny,Pittsburgh,University of Pittsburgh,627,PA,42003,40.4396,-79.9762,NA,NA,NA
-Rhode Island,Washington,Kingston,University of Rhode Island,634,RI,44009,41.4738,-71.5236,17777,NA,0.03566406030263824
-Rhode Island,Providence,Providence,Providence College,302,RI,44007,41.823,-71.4187,NA,NA,NA
-Rhode Island,Bristol,Bristol,Roger Williams University,130,NA,NA,NA,NA,NA,NA,NA
-Rhode Island,Providence,Providence,Brown University,83,RI,44007,41.823,-71.4187,10257,NA,0.00809203470800429
-Rhode Island,Providence,Providence,Johnson & Wales University,73,RI,44007,41.823,-71.4187,NA,NA,NA
-South Carolina,Pickens,Clemson,Clemson University,5086,SC,45077,34.6837,-82.8124,24951,NA,0.20383952546992104
-South Carolina,Richland,Columbia,University of South Carolina,3037,SC,45079,34.0376,-80.9037,NA,NA,NA
-South Carolina,Charleston,Charleston,College of Charleston,523,SC,45019,32.8153,-79.9628,10783,NA,0.04850227209496429
-South Carolina,Greenville,Greenville,Greenville Technical College,472,SC,45045,34.8353,-82.3647,10864,NA,0.04344624447717231
-South Carolina,Horry,Conway,Coastal Carolina University,335,SC,45051,33.8399,-79.0424,10641,NA,0.031482003571092945
-South Dakota,Minnehaha,Sioux Falls,Augustana University,275,SD,46099,43.5397,-96.732,NA,NA,NA
-South Dakota,Clay,Vermillion,University of South Dakota,264,SD,46027,42.7811,-96.9255,10066,NA,0.026226902443870454
-South Dakota,Brookings,Brookings,South Dakota State University,112,SD,46011,44.3022,-96.7859,12104,NA,0.009253139458030404
-South Dakota,Lawrence,Spearfish,Black Hills State University,72,SD,46081,44.4912,-103.8167,NA,NA,NA
-South Dakota,Minnehaha,Sioux Falls,University of Sioux Falls,57,SD,46099,43.5397,-96.732,NA,NA,NA
-Tennessee,Knox,Knoxville,"University of Tennessee, Knoxville",2022,TN,47093,35.9692,-83.9496,NA,NA,NA
-Tennessee,Davidson,Nashville,Vanderbilt University,816,TN,47037,36.1715,-86.7843,12824,NA,0.06363069245165315
-Tennessee,Hamilton,Chattanooga,University of Tennessee at Chattanooga,806,TN,47065,35.0657,-85.2488,NA,NA,NA
-Tennessee,Putnam,Cookeville,Tennessee Technological University,726,TN,47141,36.1484,-85.5114,10186,NA,0.07127429805615551
-Tennessee,Rutherford,Murfreesboro,Middle Tennessee State University,484,TN,47149,35.8492,-86.4119,21631,NA,0.022375294715916972
-Texas,Lubbock,Lubbock,Texas Tech University,2697,TX,48303,33.5659,-101.8878,38209,NA,0.07058546415765919
-Texas,Brazos,College Station,Texas A&M University,2521,TX,48041,30.5852,-96.296,NA,69465,NA
-Texas,Travis,Austin,University of Texas at Austin,1849,TX,48453,30.3004,-97.7522,NA,51090,NA
-Texas,Tarrant,Fort Worth,Texas Christian University,1497,TX,48439,32.7811,-97.3473,10918,NA,0.13711302436343653
-Texas,McLennan,Waco,Baylor University,1492,TX,48309,31.5598,-97.1881,17217,NA,0.08665853516872858
-Utah,Utah,Provo,Brigham Young University,2993,UT,49049,40.2457,-111.6457,NA,NA,NA
-Utah,Salt Lake,Salt Lake City,University of Utah,1864,UT,49035,40.7777,-111.9306,33023,NA,0.056445507676467915
-Utah,Cache,Logan,Utah State University,1594,UT,49005,41.74,-111.8419,27932,NA,0.057067163110411
-Utah,Utah,Orem,Utah Valley University,898,UT,49049,40.2983,-111.6992,39931,NA,0.02248879316821517
-Utah,Salt Lake,Salt Lake City,Salt Lake Community College,455,UT,49035,40.7777,-111.9306,NA,NA,NA
-Vermont,Chittenden,Colchester,Saint Michael's College,77,NA,NA,NA,NA,NA,NA,NA
-Vermont,Chittenden,Burlington,University of Vermont,23,VT,50007,44.4877,-73.2314,13395,NA,0.0017170586039567002
-Vermont,Washington,Northfield,Norwich University,9,NA,NA,NA,NA,NA,NA,NA
-Vermont,Chittenden,Burlington,Champlain College,6,VT,50007,44.4877,-73.2314,NA,NA,NA
-Vermont,Addison,Middlebury,Middlebury College,4,NA,NA,NA,NA,NA,NA,NA
-Virginia,Rockingham,Harrisonburg,James Madison University,1650,VA,51660,38.4361,-78.8735,21751,NA,0.0758585812146568
-Virginia,Montgomery,Blacksburg,Virginia Tech,1535,VA,51121,37.23,-80.4279,NA,NA,NA
-Virginia,Charlottesville,Charlottesville,University of Virginia,1229,VA,51540,38.0375,-78.4855,NA,NA,NA
-Virginia,Campbell,Lynchburg,Liberty University,906,VA,51680,37.4003,-79.1909,79152,NA,0.011446331109763492
-Virginia,Radford,Radford,Radford University,548,VA,51750,37.1229,-80.5587,9335,NA,0.05870380289234065
-Washington,Whitman,Pullman,Washington State University,1407,WA,53075,46.734,-117.1669,31478,NA,0.0446978842366097
-Washington,King,Seattle,University of Washington,875,WA,53033,47.6211,-122.3244,NA,NA,NA
-Washington,Spokane,Cheney,Eastern Washington University,229,WA,53063,47.4901,-117.579,12633,NA,0.01812712736483812
-Washington,Kittitas,Ellensburg,Central Washington University,188,WA,53037,46.9994,-120.5477,12342,NA,0.01523253929671042
-Washington,Spokane,Spokane,Gonzaga University,160,WA,53063,47.6671,-117.433,NA,NA,NA
-West Virginia,Monongalia,Morgantown,West Virginia University,871,WV,54061,39.638,-79.9468,26864,NA,0.03242257296009529
-West Virginia,Cabell,Huntington,Marshall University,282,WV,54011,38.4109,-82.4344,13204,NA,0.021357164495607393
-West Virginia,Kanawha,Charleston,University of Charleston,76,WV,54039,38.3484,-81.6323,NA,NA,NA
-West Virginia,Jefferson,Shepherdstown,Shepherd University,73,WV,54037,39.4318,-77.8048,NA,NA,NA
-West Virginia,Kanawha,Institute,West Virginia State University,71,NA,NA,NA,NA,NA,NA,NA
-Wisconsin,Dane,Madison,University of Wisconsin-Madison,4193,WI,55025,43.0826,-89.3931,43463,NA,0.09647286197455307
-Wisconsin,Winnebago,Oshkosh,University of Wisconsin-Oshkosh,1183,WI,55139,44.0228,-88.5619,16410,NA,0.0720901889092017
-Wisconsin,Milwaukee,Milwaukee,University of Wisconsin-Milwaukee,1128,WI,55079,43.0642,-87.9673,27012,NA,0.04175921812527766
-Wisconsin,Milwaukee,Milwaukee,Marquette University,963,WI,55079,43.0642,-87.9673,11605,NA,0.08298147350280052
-Wisconsin,Eau Claire,Eau Claire,University of Wisconsin-Eau Claire,776,WI,55035,44.8199,-91.4949,11604,NA,0.06687349189934505
-Wyoming,Albany,Laramie,University of Wyoming,1597,WY,56001,41.3099,-105.6085,12450,NA,0.1282730923694779
-Wyoming,Natrona,Casper,Casper College,249,WY,56025,42.842,-106.3207,NA,NA,NA
-Wyoming,Sweetwater,Rock Springs,Western Wyoming Community College,41,WY,56037,41.5951,-109.2238,NA,NA,NA
-Wyoming,Goshen,Torrington,Eastern Wyoming College,10,WY,56015,42.0658,-104.1623,NA,NA,NA
+﻿state;county.x;city;college;cases;state_id;county_fips;lat;lng;Total Enrollment ;Enrollment;rate
+Alabama;Tuscaloosa;Tuscaloosa;University of Alabama;3219;AL;01125;33,2348;-87,5267;NA;NA;NA
+Alabama;Jefferson;Birmingham;University of Alabama at Birmingham;2119;AL;01073;33,5277;-86,7987;21923;NA;0,096656479496419284
+Alabama;Lee;Auburn;Auburn University;2079;AL;01081;32,6087;-85,4899;30440;NA;0,068298291721419185
+Alabama;Pike;Troy;Troy University;715;AL;01109;31,8021;-85,9665;16981;NA;0,042105883045757020
+Alabama;Jefferson;Birmingham;Samford University;461;AL;01073;33,5277;-86,7987;NA;NA;NA
+Alaska;Fairbanks North Star Borough;Fairbanks;University of Alaska Fairbanks;104;AK;02090;64,8353;-147,6534;NA;NA;NA
+Alaska;Anchorage Municipality;Anchorage;University of Alaska Anchorage;11;AK;02020;61,1508;-149,1091;14644;NA;0,000751160885004097
+Alaska;Juneau City and Borough;Juneau;University of Alaska Southeast;1;AK;02110;58,4546;-134,1739;NA;NA;NA
+Alaska;North Slope Borough;Utqiagvik;Ilisagvik College;NA;AK;02185;71,2728;-156,7575;NA;NA;NA
+Arizona;Maricopa;Tempe;Arizona State University;2862;AZ;04013;33,3881;-111,9318;NA;53286;NA
+Arizona;Pima;Tucson;University of Arizona;2643;AZ;04019;32,1545;-110,8782;44097;NA;0,059936050071433433
+Arizona;Maricopa;Phoenix;Grand Canyon University;474;AZ;04013;33,5722;-112,0891;90253;NA;0,005251902983834333
+Arizona;Coconino;Flagstaff;Northern Arizona University;278;AZ;04005;35,1872;-111,6195;31066;NA;0,008948689886049056
+Arizona;Maricopa;Glendale;Midwestern University at Glendale;96;AZ;04013;33,5791;-112,2311;NA;NA;NA
+Arkansas;Washington;Fayetteville;University of Arkansas;2452;AR;05143;36,0713;-94,1660;27778;NA;0,088271293829649364
+Arkansas;Craighead;Jonesboro;Arkansas State University;1026;AR;05031;35,8212;-90,6791;NA;NA;NA
+Arkansas;Conway;Conway;University of Central Arkansas;481;AR;05045;35,0754;-92,4694;11177;NA;0,043034803614565624
+Arkansas;Pope;Russellville;Arkansas Tech University;402;AR;05115;35,2763;-93,1383;12101;NA;0,033220395008676969
+Arkansas;White;Searcy;Harding University;340;AR;05145;35,2418;-91,7351;NA;NA;NA
+California;San Diego;San Diego;San Diego State University System;1450;CA;06073;32,8312;-117,1225;NA;NA;NA
+California;San Luis Obispo;San Luis Obispo;California Polytechnic State University, San Luis Obispo;626;CA;06079;35,2669;-120,6691;NA;NA;NA
+California;Los Angeles;Los Angeles;University of Southern California;608;CA;06037;34,1139;-118,4068;47310;NA;0,012851405622489960
+California;San Diego;San Diego;University of California, San Diego;497;CA;06073;32,8312;-117,1225;NA;NA;NA
+California;Los Angeles;Los Angeles;University of California, Los Angeles;386;CA;06037;34,1139;-118,4068;NA;NA;NA
+Colorado;Boulder;Boulder;University of Colorado Boulder;2236;CO;08013;40,0249;-105,2523;36681;NA;0,060957989149696030
+Colorado;Larimer;Fort Collins;Colorado State University;1149;CO;08069;40,5478;-105,0656;NA;NA;NA
+Colorado;Mesa;Grand Junction;Colorado Mesa University;578;CO;08077;39,0876;-108,5673;9492;NA;0,060893383902233457
+Colorado;Denver;Denver;University of Denver;289;CO;08031;39,7621;-104,8759;11952;NA;0,024180053547523426
+Colorado;Jefferson;Golden;Colorado School of Mines;266;CO;08059;39,7406;-105,2118;NA;NA;NA
+Connecticut;Fairfield;Fairfield;Sacred Heart University;725;NA;NA;NA;NA;8958;NA;0,080933244027684745
+Connecticut;Tolland;Storrs;University of Connecticut;673;CT;09013;41,8045;-72,2552;27412;NA;0,024551291405223989
+Connecticut;Fairfield;Fairfield;Fairfield University;586;NA;NA;NA;NA;NA;NA;NA
+Connecticut;New Haven;Hamden;Quinnipiac University;422;NA;NA;NA;NA;10207;NA;0,041344175565788184
+Connecticut;New Haven;New Haven;Yale University;366;CT;09009;41,3112;-72,9246;13433;NA;0,027246333655921984
+Delaware;New Castle;Newark;University of Delaware;683;DE;10003;39,6776;-75,7573;24120;NA;0,028316749585406302
+Delaware;Kent;Dover;Delaware State University;77;DE;10001;39,1610;-75,5203;NA;NA;NA
+Delaware;Sussex;Georgetown;Delaware Technical Community College Georgetown;45;DE;10005;38,6894;-75,3872;NA;NA;NA
+Delaware;New Castle;Stanton;Delaware Technical Community College Stanton;20;NA;NA;NA;NA;NA;NA;NA
+Delaware;Kent;Dover;Wesley College;20;DE;10001;39,1610;-75,5203;NA;NA;NA
+Florida;Alachua;Gainesville;University of Florida;5008;FL;12001;29,6804;-82,3458;52218;56567;0,095905626412348233
+Florida;Orange;Orlando;University of Central Florida;2100;FL;12095;28,4772;-81,3369;68475;69525;0,030668127053669222
+Florida;Leon;Tallahassee;Florida State University;1738;FL;12073;30,4551;-84,2526;41005;NA;0,042385074990854775
+Florida;Miami-Dade;Miami;University of Miami;1164;FL;12086;25,7839;-80,2102;17331;NA;0,067162887311753502
+Florida;Hillsborough;Tampa;University of South Florida;864;FL;12057;27,9942;-82,4451;NA;51646;NA
+Georgia;Clarke;Athens;University of Georgia;4387;GA;13059;33,9508;-83,3689;38652;NA;0,113499948256235120
+Georgia;Fulton;Atlanta;Georgia Institute of Technology;1323;GA;13121;33,7627;-84,4224;NA;NA;NA
+Georgia;Bulloch;Statesboro;Georgia Southern University;1287;GA;13031;32,4376;-81,7750;26408;NA;0,048735231747955167
+Georgia;Baldwin;Milledgeville;Georgia College & State University;757;GA;13009;33,0874;-83,2414;NA;NA;NA
+Georgia;Cobb;Kennesaw;Kennesaw State University;656;GA;13067;34,0260;-84,6177;35420;NA;0,018520609824957651
+Georgia;Cobb;Kennesaw;Kennesaw State University;656;GA;13067;34,0260;-84,6177;35420;NA;0,018520609824957651
+Hawaii;Honolulu;Honolulu;University of Hawaii at Manoa;36;HI;15003;21,3294;-157,8460;17710;NA;0,002032749858836815
+Hawaii;Honolulu;Laie;Brigham Young University-Hawaii;6;HI;15003;21,6443;-157,9280;NA;NA;NA
+Hawaii;Honolulu;Honolulu;Kapiolani Community College;4;HI;15003;21,3294;-157,8460;NA;NA;NA
+Hawaii;Hawaii;Hilo;University of Hawaii at Hilo;4;HI;15001;19,6886;-155,0864;NA;NA;NA
+Hawaii;Honolulu;Pearl City;Leeward Community College;3;HI;15003;21,4031;-157,9566;NA;NA;NA
+Idaho;Madison;Rexburg;Brigham Young University-Idaho;1292;ID;16065;43,8224;-111,7920;42341;NA;0,030514158853121087
+Idaho;Ada;Boise;Boise State University;796;ID;16001;43,6007;-116,2312;25504;NA;0,031210790464240905
+Idaho;Latah;Moscow;University of Idaho;543;ID;16057;46,7307;-116,9986;11841;NA;0,045857613377248543
+Idaho;Bannock;Pocatello;Idaho State University;498;ID;16005;42,8724;-112,4646;12363;NA;0,040281485076437758
+Idaho;Twin Falls;Twin Falls;College of Southern Idaho;199;ID;16083;42,5645;-114,4615;NA;NA;NA
+Illinois;Champaign;Champaign;University of Illinois Urbana-Champaign;3892;IL;17019;40,1144;-88,2735;NA;NA;NA
+Illinois;McLean;Normal;Illinois State University;1771;IL;17113;40,5218;-88,9881;20635;NA;0,085825054519021074
+Illinois;Cook;Chicago;University of Illinois at Chicago;699;IL;17031;41,8373;-87,6862;31683;NA;0,022062304705993751
+Illinois;Dekalb;Dekalb;Northern Illinois University;500;NA;NA;NA;NA;17169;NA;0,029122255227444813
+Illinois;Coles;Charleston;Eastern Illinois University;445;IL;17029;39,4842;-88,1781;NA;NA;NA
+Indiana;Monroe;Bloomington;Indiana University Bloomington;3754;IN;18105;39,1637;-86,5257;NA;NA;NA
+Indiana;Tippecanoe;West Lafayette;Purdue University;2700;IN;18157;40,4432;-86,9239;NA;NA;NA
+Indiana;St. Joseph;Notre Dame;University of Notre Dame;1665;IN;18141;41,7014;-86,2378;12607;NA;0,132069485206631226
+Indiana;Delaware;Muncie;Ball State University;1283;IN;18035;40,1989;-85,3950;21884;NA;0,058627307622006943
+Indiana;Vanderburgh;Evansville;University of Southern Indiana;489;IN;18163;37,9881;-87,5341;10986;NA;0,044511196067722553
+Iowa;Johnson;Iowa City;University of Iowa;2749;IA;19103;41,6559;-91,5303;31656;NA;0,086839777609299978
+Iowa;Story;Ames;Iowa State University;2169;IA;19169;42,0259;-93,6215;34992;NA;0,061985596707818932
+Iowa;Black Hawk;Cedar Falls;University of Northern Iowa;438;IA;19013;42,5195;-92,4534;11187;NA;0,039152587825154198
+Iowa;Black Hawk;Waterloo;Hawkeye Community College;259;IA;19013;42,4920;-92,3522;NA;NA;NA
+Iowa;Scott;Davenport;Saint Ambrose University;225;IA;19163;41,5563;-90,6052;NA;NA;NA
+Kansas;Douglas;Lawrence;University of Kansas;1249;KS;20045;38,9597;-95,2641;27690;NA;0,045106536655832433
+Kansas;Riley;Manhattan;Kansas State University;1183;KS;20161;39,1886;-96,6046;22221;NA;0,053237928086044731
+Kansas;Ellis;Hays;Fort Hays State University;307;KS;20051;38,8815;-99,3218;15523;NA;0,019777104941055210
+Kansas;Crawford;Pittsburg;Pittsburg State University;286;KS;20037;37,4129;-94,6984;NA;NA;NA
+Kansas;Shawnee;Topeka;Washburn University;215;KS;20177;39,0346;-95,6955;NA;NA;NA
+Kentucky;Fayette;Lexington;University of Kentucky;2845;KY;21067;38,0423;-84,4587;29182;NA;0,097491604413679669
+Kentucky;Jefferson;Louisville;University of Louisville;1259;KY;21111;38,1663;-85,6485;21430;NA;0,058749416705552962
+Kentucky;Warren;Bowling Green;Western Kentucky University;904;KY;21227;36,9719;-86,4373;19456;NA;0,046463815789473686
+Kentucky;Calloway;Murray;Murray State University;437;KY;21035;36,6146;-88,3206;9454;NA;0,046223820605034903
+Kentucky;Madison;Richmond;Eastern Kentucky University;372;KY;21151;37,7306;-84,2926;15815;NA;0,023521972810622828
+Louisiana;East Baton Rouge;Baton Rouge;Louisiana State University;1354;LA;22033;30,4418;-91,1310;NA;NA;NA
+Louisiana;Orleans;New Orleans;Tulane University of Louisiana;1189;LA;22071;30,0687;-89,9288;12646;NA;0,094021825083030211
+Louisiana;Lincoln;Ruston;Louisiana Tech University;480;LA;22061;32,5329;-92,6363;11909;NA;0,040305651188177007
+Louisiana;Lafayette;Lafeyette;University of Louisiana at Lafayette;464;NA;NA;NA;NA;17123;NA;0,027098055247328154
+Louisiana;Natchitoches;Natchitoches;Northwestern State University of Louisiana;349;LA;22069;31,7317;-93,0979;11081;NA;0,031495352405017600
+Maine;Penobscot;Orono;University of Maine;47;NA;NA;NA;NA;11404;NA;0,004121360925990880
+Maine;York;Biddeford;University of New England;26;ME;23031;43,4674;-70,4512;8010;NA;0,003245942571785268
+Maine;Cumberland;Portland;University of Southern Maine;21;ME;23005;43,6773;-70,2715;8140;NA;0,002579852579852580
+Maine;Kennebec;Waterville;Colby College;15;ME;23011;44,5441;-69,6624;NA;NA;NA
+Maine;Cumberland;Standish;Saint Joseph's College of Maine;15;NA;NA;NA;NA;NA;NA;NA
+Maryland;Prince George's;College Park;University of Maryland, College Park;952;MD;24033;38,9960;-76,9337;NA;NA;NA
+Maryland;Baltimore City;Baltimore;Johns Hopkins University;596;MD;24510;39,3051;-76,6144;26152;NA;0,022789843988987459
+Maryland;Wicomico;Salisbury;Salisbury University;507;MD;24045;38,3756;-75,5867;8567;NA;0,059180576631259481
+Maryland;Baltimore;Towson;Towson University;502;MD;24005;39,3944;-76,6190;22923;NA;0,021899402346987742
+Maryland;Allegany;Frostburg;Frostburg State University;158;MD;24001;39,6506;-78,9269;NA;NA;NA
+Massachusetts;Suffolk;Boston;Boston University;362;MA;25025;42,3188;-71,0846;34657;NA;0,010445220301814929
+Massachusetts;Hampshire;Amherst;University of Massachusetts Amherst;322;MA;25015;42,3645;-72,5069;NA;NA;NA
+Massachusetts;Middlesex;Chestnut Hill;Boston College;293;NA;NA;NA;NA;14720;NA;0,019904891304347826
+Massachusetts;Suffolk;Boston;Northeastern University;275;MA;25025;42,3188;-71,0846;21627;NA;0,012715586997734313
+Massachusetts;Middlesex;Cambridge;Harvard University;205;MA;25017;42,3759;-71,1185;31566;NA;0,006494329341696762
+Michigan;Washtenaw;Ann Arbor;University of Michigan;2545;MI;26161;42,2755;-83,7312;NA;NA;NA
+Michigan;Ingham;East Lansing;Michigan State University;2057;MI;26065;42,7480;-84,4835;50351;NA;0,040853210462552879
+Michigan;Ottawa;Allendale;Grand Valley State University;1563;MI;26139;42,9851;-85,9509;24677;NA;0,063338331239615839
+Michigan;Kalamazoo;Kalamazoo;Western Michigan University;1068;MI;26077;42,2749;-85,5882;22562;NA;0,047336229057707652
+Michigan;Isabella;Mount Pleasant;Central Michigan University;596;MI;26073;43,5966;-84,7759;21622;NA;0,027564517620941635
+Minnesota;Hennepin;Minneapolis;University of Minnesota Twin Cities;809;MN;27053;44,9635;-93,2678;50734;NA;0,015945913982733474
+Minnesota;Winona;Winona;Winona State University;546;MN;27169;44,0505;-91,6684;NA;NA;NA
+Minnesota;Ramsey;St. Paul;University of St. Thomas;495;MN;27123;44,9477;-93,1040;NA;NA;NA
+Minnesota;Blue Earth;Mankato;Minnesota State University, Mankato;393;MN;27013;44,1712;-93,9773;NA;NA;NA
+Minnesota;St. Louis;Duluth;University of Minnesota Duluth;344;MN;27137;46,7756;-92,1392;NA;NA;NA
+Mississippi;Lafayette;Oxford;University of Mississippi;836;MS;28071;34,3627;-89,5336;22456;NA;0,037228357677235480
+Mississippi;Hinds;Jackson;University of Mississippi Medical Center;711;MS;28049;32,3163;-90,2124;NA;NA;NA
+Mississippi;Oktibbeha;Mississippi State;Mississippi State University;657;MS;28105;33,4515;-88,7913;21974;NA;0,029898971511786658
+Mississippi;Forrest;Hattiesburg;University of Southern Mississippi;411;MS;28035;31,3074;-89,3170;14509;NA;0,028327245158177684
+Mississippi;Hinds;Clinton;Mississippi College;169;MS;28049;32,3540;-90,3403;NA;NA;NA
+Missouri;Boone;Columbia;University of Missouri;2469;MO;29019;38,9478;-92,3256;NA;NA;NA
+Missouri;Greene;Springfield;Missouri State University;1427;MO;29077;37,1943;-93,2916;NA;NA;NA
+Missouri;Johnson;Warrensburg;University of Central Missouri;707;MO;29101;38,7627;-93,7260;11487;NA;0,061547836684948204
+Missouri;Nodaway;Maryville;Northwest Missouri State University;692;MO;29147;40,3428;-94,8701;NA;NA;NA
+Missouri;Cape Girardeau;Cape Girardeau;Southeast Missouri State University;532;MO;29031;37,3108;-89,5597;11071;NA;0,048053473037665974
+Montana;Gallatin;Bozeman;Montana State University;990;MT;30031;45,6832;-111,0552;16814;NA;0,058879505174259543
+Montana;Missoula;Missoula;University of Montana;418;MT;30063;46,8750;-114,0214;NA;NA;NA
+Montana;Lewis and Clark;Helena;Carroll College;110;MT;30049;46,5965;-112,0202;NA;NA;NA
+Montana;Silver Bow;Butte;Montana Technological University;105;MT;30093;45,9020;-112,6571;NA;NA;NA
+Montana;Beaverhead;Dillon;University of Montana Western;84;MT;30001;45,2177;-112,6348;NA;NA;NA
+Nebraska;Lancaster;Lincoln;University of Nebraska-Lincoln;1525;NE;31109;40,8090;-96,6788;25820;NA;0,059062742060418283
+Nebraska;Douglas;Omaha;Creighton University;613;NE;31055;41,2627;-96,0522;8910;NA;0,068799102132435466
+Nebraska;Douglas;Omaha;University of Nebraska at Omaha;387;NE;31055;41,2627;-96,0522;15431;NA;0,025079385652258441
+Nebraska;Buffalo;Kearney;University of Nebraska at Kearney;328;NE;31019;40,7010;-99,0834;NA;NA;NA
+Nebraska;Lancaster;Lincoln;Nebraska Wesleyan University;306;NE;31109;40,8090;-96,6788;NA;NA;NA
+Nevada;Washoe;Reno;University of Nevada, Reno;952;NV;32031;39,5497;-119,8483;NA;NA;NA
+Nevada;Clark;Las Vegas;University of Nevada, Las Vegas;406;NV;32003;36,2333;-115,2654;NA;NA;NA
+Nevada;Clark;Las Vegas;College of Southern Nevada;130;NV;32003;36,2333;-115,2654;34169;NA;0,003804618221194650
+Nevada;Carson City;Carson City;Western Nevada College;32;NV;32510;39,1512;-119,7474;NA;NA;NA
+Nevada;Washoe;Reno;Truckee Meadows Community College;28;NV;32031;39,5497;-119,8483;10861;NA;0,002578031488813185
+New Hampshire;Strafford;Durham;University of New Hampshire;462;NA;NA;NA;NA;NA;NA;NA
+New Hampshire;Hillsborough;Manchester;Saint Anselm College;41;NH;33011;42,9848;-71,4447;NA;NA;NA
+New Hampshire;Grafton;Plymouth;Plymouth State University;36;NA;NA;NA;NA;NA;NA;NA
+New Hampshire;Grafton;Hanover;Dartmouth College;31;NA;NA;NA;NA;NA;NA;NA
+New Hampshire;Merrimack;Henniker;New England College;27;NA;NA;NA;NA;NA;NA;NA
+New Jersey;Gloucester;Glassboro;Rowan University;786;NJ;34015;39,7014;-75,1113;19465;NA;0,040380169535062932
+New Jersey;Monmouth;West Long Branch;Monmouth University;459;NJ;34025;40,2883;-74,0185;NA;NA;NA
+New Jersey;Middlesex;New Brunswick;Rutgers University;402;NJ;34023;40,4870;-74,4450;NA;NA;NA
+New Jersey;Atlantic;Galloway;Stockton University;206;NA;NA;NA;NA;9621;NA;0,021411495686519073
+New Jersey;Essex;Montclair;Montclair State University;134;NA;NA;NA;NA;21115;NA;0,006346199384323940
+New Mexico;Doña Ana;Las Cruces;New Mexico State University;319;NM;35013;32,3265;-106,7892;NA;NA;NA
+New Mexico;Bernalillo;Albuquerque;University of New Mexico;224;NM;35001;35,1053;-106,6464;NA;NA;NA
+New Mexico;Chaves;Roswell;New Mexico Military Institute;106;NM;35005;33,3730;-104,5294;NA;NA;NA
+New Mexico;Grant;Silver City;Western New Mexico University;39;NM;35017;32,7784;-108,2698;NA;NA;NA
+New Mexico;Roosevelt;Portales;Eastern New Mexico University;24;NM;35041;34,1753;-103,3565;NA;NA;NA
+New York;Otsego;Oneonta;SUNY Oneonta;735;NY;36077;42,4551;-75,0666;NA;NA;NA
+New York;Cortland;Cortland;SUNY Cortland;714;NY;36023;42,6004;-76,1784;NA;NA;NA
+New York;Onondaga;Syracuse;Syracuse University;648;NY;36067;43,0409;-76,1438;22803;NA;0,028417313511380080
+New York;Suffolk;Stony Brook;Stony Brook University;563;NY;36103;40,9060;-73,1278;26256;NA;0,021442717854966483
+New York;New York City;New York City;New York University;536;NA;NA;NA;NA;51847;NA;0,010338110208883831
+North Carolina;Pitt;Greenville;East Carolina University;1494;NC;37147;35,5956;-77,3768;28718;NA;0,052023121387283239
+North Carolina;Orange;Chapel Hill;University of North Carolina at Chapel Hill;1374;NC;37135;35,9270;-79,0391;30011;NA;0,045783212821965277
+North Carolina;Wake;Raleigh;North Carolina State University;1333;NC;37183;35,8325;-78,6435;NA;NA;NA
+North Carolina;Watauga;Boone;Appalachian State University;1192;NC;37189;36,2111;-81,6668;19108;NA;0,062382248272974672
+North Carolina;Alamance;Elon;Elon University;785;NC;37001;36,1014;-79,5085;NA;NA;NA
+North Dakota;Grand Forks;Grand Forks;University of North Dakota;1724;ND;38035;47,9218;-97,0886;13847;NA;0,124503502563732216
+North Dakota;Cass;Fargo;North Dakota State University;708;ND;38017;46,8652;-96,8292;13796;NA;0,051319222963177730
+North Dakota;Ward;Minot;Minot State University;490;ND;38101;48,2375;-101,2781;NA;NA;NA
+North Dakota;Burleigh;Bismarck;Bismarck State College;205;ND;38015;46,8144;-100,7694;NA;NA;NA
+North Dakota;Richland;Wahpeton;North Dakota State College of Science;169;ND;38077;46,2722;-96,6118;NA;NA;NA
+Ohio;Franklin;Columbus;Ohio State University;4665;OH;39049;39,9862;-82,9850;NA;NA;NA
+Ohio;Butler;Oxford;Miami University (Ohio);2368;OH;39017;39,5061;-84,7434;NA;NA;NA
+Ohio;Montgomery;Dayton;University of Dayton;1503;OH;39113;39,7797;-84,1998;11241;NA;0,133706965572457953
+Ohio;Hamilton;Cincinnati;University of Cincinnati;1252;OH;39061;39,1413;-84,5061;NA;NA;NA
+Ohio;Athens;Athens;Ohio University;693;OH;39009;39,3269;-82,0988;NA;NA;NA
+Oklahoma;Payne;Stillwater;Oklahoma State University;2167;OK;40119;36,1316;-97,0740;NA;NA;NA
+Oklahoma;Cleveland;Norman;University of Oklahoma;630;OK;40027;35,2335;-97,3471;NA;NA;NA
+Oklahoma;Oklahoma;Edmond;University of Central Oklahoma;573;OK;40109;35,6689;-97,4159;15393;NA;0,037224712531670243
+Oklahoma;Custer;Weatherford;Southwestern Oklahoma State University;311;OK;40039;35,5384;-98,6872;NA;NA;NA
+Oklahoma;Tulsa;Tulsa;University of Tulsa;191;OK;40143;36,1284;-95,9042;NA;NA;NA
+Oregon;Lane;Eugene;University of Oregon;595;OR;41039;44,0563;-123,1173;22644;NA;0,026276276276276277
+Oregon;Multnomah;Portland;Oregon Health & Science University;158;OR;41051;45,5372;-122,6500;NA;NA;NA
+Oregon;Benton;Corvallis;Oregon State University;157;OR;41003;44,5697;-123,2780;30986;NA;0,005066804363260827
+Oregon;Klamath;Klamath Falls;Oregon Institute of Technology;35;OR;41035;42,2191;-121,7754;NA;NA;NA
+Oregon;Lane;Eugene;Lane Community College;29;OR;41039;44,0563;-123,1173;NA;NA;NA
+Pennsylvania;Centre;State College;Penn State University;4353;PA;42027;40,7909;-77,8568;NA;NA;NA
+Pennsylvania;Philadelphia;Philadelphia;University of Pennsylvania;827;PA;42101;40,0077;-75,1339;25860;NA;0,031979891724671305
+Pennsylvania;Philadelphia;Philadelphia;Temple University;797;PA;42101;40,0077;-75,1339;39740;NA;0,020055359838953197
+Pennsylvania;Lackawanna;Scranton;University of Scranton;645;PA;42069;41,4044;-75,6649;NA;NA;NA
+Pennsylvania;Allegheny;Pittsburgh;University of Pittsburgh;627;PA;42003;40,4396;-79,9762;NA;NA;NA
+Rhode Island;Washington;Kingston;University of Rhode Island;634;RI;44009;41,4738;-71,5236;17777;NA;0,035664060302638238
+Rhode Island;Providence;Providence;Providence College;302;RI;44007;41,8230;-71,4187;NA;NA;NA
+Rhode Island;Bristol;Bristol;Roger Williams University;130;NA;NA;NA;NA;NA;NA;NA
+Rhode Island;Providence;Providence;Brown University;83;RI;44007;41,8230;-71,4187;10257;NA;0,008092034708004290
+Rhode Island;Providence;Providence;Johnson & Wales University;73;RI;44007;41,8230;-71,4187;NA;NA;NA
+South Carolina;Pickens;Clemson;Clemson University;5086;SC;45077;34,6837;-82,8124;24951;NA;0,203839525469921040
+South Carolina;Richland;Columbia;University of South Carolina;3037;SC;45079;34,0376;-80,9037;NA;NA;NA
+South Carolina;Charleston;Charleston;College of Charleston;523;SC;45019;32,8153;-79,9628;10783;NA;0,048502272094964292
+South Carolina;Greenville;Greenville;Greenville Technical College;472;SC;45045;34,8353;-82,3647;10864;NA;0,043446244477172311
+South Carolina;Horry;Conway;Coastal Carolina University;335;SC;45051;33,8399;-79,0424;10641;NA;0,031482003571092945
+South Dakota;Minnehaha;Sioux Falls;Augustana University;275;SD;46099;43,5397;-96,7320;NA;NA;NA
+South Dakota;Clay;Vermillion;University of South Dakota;264;SD;46027;42,7811;-96,9255;10066;NA;0,026226902443870454
+South Dakota;Brookings;Brookings;South Dakota State University;112;SD;46011;44,3022;-96,7859;12104;NA;0,009253139458030404
+South Dakota;Lawrence;Spearfish;Black Hills State University;72;SD;46081;44,4912;-103,8167;NA;NA;NA
+South Dakota;Minnehaha;Sioux Falls;University of Sioux Falls;57;SD;46099;43,5397;-96,7320;NA;NA;NA
+Tennessee;Knox;Knoxville;University of Tennessee, Knoxville;2022;TN;47093;35,9692;-83,9496;NA;NA;NA
+Tennessee;Davidson;Nashville;Vanderbilt University;816;TN;47037;36,1715;-86,7843;12824;NA;0,063630692451653148
+Tennessee;Hamilton;Chattanooga;University of Tennessee at Chattanooga;806;TN;47065;35,0657;-85,2488;NA;NA;NA
+Tennessee;Putnam;Cookeville;Tennessee Technological University;726;TN;47141;36,1484;-85,5114;10186;NA;0,071274298056155511
+Tennessee;Rutherford;Murfreesboro;Middle Tennessee State University;484;TN;47149;35,8492;-86,4119;21631;NA;0,022375294715916972
+Texas;Lubbock;Lubbock;Texas Tech University;2697;TX;48303;33,5659;-101,8878;38209;NA;0,070585464157659192
+Texas;Brazos;College Station;Texas A&M University;2521;TX;48041;30,5852;-96,2960;NA;69465;NA
+Texas;Travis;Austin;University of Texas at Austin;1849;TX;48453;30,3004;-97,7522;NA;51090;NA
+Texas;Tarrant;Fort Worth;Texas Christian University;1497;TX;48439;32,7811;-97,3473;10918;NA;0,137113024363436531
+Texas;McLennan;Waco;Baylor University;1492;TX;48309;31,5598;-97,1881;17217;NA;0,086658535168728582
+Utah;Utah;Provo;Brigham Young University;2993;UT;49049;40,2457;-111,6457;NA;NA;NA
+Utah;Salt Lake;Salt Lake City;University of Utah;1864;UT;49035;40,7777;-111,9306;33023;NA;0,056445507676467915
+Utah;Cache;Logan;Utah State University;1594;UT;49005;41,7400;-111,8419;27932;NA;0,057067163110410997
+Utah;Utah;Orem;Utah Valley University;898;UT;49049;40,2983;-111,6992;39931;NA;0,022488793168215171
+Utah;Salt Lake;Salt Lake City;Salt Lake Community College;455;UT;49035;40,7777;-111,9306;NA;NA;NA
+Vermont;Chittenden;Colchester;Saint Michael's College;77;NA;NA;NA;NA;NA;NA;NA
+Vermont;Chittenden;Burlington;University of Vermont;23;VT;50007;44,4877;-73,2314;13395;NA;0,001717058603956700
+Vermont;Washington;Northfield;Norwich University;9;NA;NA;NA;NA;NA;NA;NA
+Vermont;Chittenden;Burlington;Champlain College;6;VT;50007;44,4877;-73,2314;NA;NA;NA
+Vermont;Addison;Middlebury;Middlebury College;4;NA;NA;NA;NA;NA;NA;NA
+Virginia;Rockingham;Harrisonburg;James Madison University;1650;VA;51660;38,4361;-78,8735;21751;NA;0,075858581214656801
+Virginia;Montgomery;Blacksburg;Virginia Tech;1535;VA;51121;37,2300;-80,4279;NA;NA;NA
+Virginia;Charlottesville;Charlottesville;University of Virginia;1229;VA;51540;38,0375;-78,4855;NA;NA;NA
+Virginia;Campbell;Lynchburg;Liberty University;906;VA;51680;37,4003;-79,1909;79152;NA;0,011446331109763492
+Virginia;Radford;Radford;Radford University;548;VA;51750;37,1229;-80,5587;9335;NA;0,058703802892340652
+Washington;Whitman;Pullman;Washington State University;1407;WA;53075;46,7340;-117,1669;31478;NA;0,044697884236609697
+Washington;King;Seattle;University of Washington;875;WA;53033;47,6211;-122,3244;NA;NA;NA
+Washington;Spokane;Cheney;Eastern Washington University;229;WA;53063;47,4901;-117,5790;12633;NA;0,018127127364838121
+Washington;Kittitas;Ellensburg;Central Washington University;188;WA;53037;46,9994;-120,5477;12342;NA;0,015232539296710420
+Washington;Spokane;Spokane;Gonzaga University;160;WA;53063;47,6671;-117,4330;NA;NA;NA
+West Virginia;Monongalia;Morgantown;West Virginia University;871;WV;54061;39,6380;-79,9468;26864;NA;0,032422572960095292
+West Virginia;Cabell;Huntington;Marshall University;282;WV;54011;38,4109;-82,4344;13204;NA;0,021357164495607393
+West Virginia;Kanawha;Charleston;University of Charleston;76;WV;54039;38,3484;-81,6323;NA;NA;NA
+West Virginia;Jefferson;Shepherdstown;Shepherd University;73;WV;54037;39,4318;-77,8048;NA;NA;NA
+West Virginia;Kanawha;Institute;West Virginia State University;71;NA;NA;NA;NA;NA;NA;NA
+Wisconsin;Dane;Madison;University of Wisconsin-Madison;4193;WI;55025;43,0826;-89,3931;43463;NA;0,096472861974553070
+Wisconsin;Winnebago;Oshkosh;University of Wisconsin-Oshkosh;1183;WI;55139;44,0228;-88,5619;16410;NA;0,072090188909201700
+Wisconsin;Milwaukee;Milwaukee;University of Wisconsin-Milwaukee;1128;WI;55079;43,0642;-87,9673;27012;NA;0,041759218125277657
+Wisconsin;Milwaukee;Milwaukee;Marquette University;963;WI;55079;43,0642;-87,9673;11605;NA;0,082981473502800523
+Wisconsin;Eau Claire;Eau Claire;University of Wisconsin-Eau Claire;776;WI;55035;44,8199;-91,4949;11604;NA;0,066873491899345050
+Wyoming;Albany;Laramie;University of Wyoming;1597;WY;56001;41,3099;-105,6085;12450;NA;0,128273092369477898
+Wyoming;Natrona;Casper;Casper College;249;WY;56025;42,8420;-106,3207;NA;NA;NA
+Wyoming;Sweetwater;Rock Springs;Western Wyoming Community College;41;WY;56037;41,5951;-109,2238;NA;NA;NA
+Wyoming;Goshen;Torrington;Eastern Wyoming College;10;WY;56015;42,0658;-104,1623;NA;NA;NA
