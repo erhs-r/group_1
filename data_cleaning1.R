@@ -48,7 +48,35 @@ college_location <- top5_by_state %>%
             by = c("city", "state"))
 
 college_location <- college_location %>%
-  select(state:cases, state_id:county_fips, lat:lng)
+  select(state:city_ascii, state_id:county_fips, lat:lng)
+
+geo_code <- read_excel("EDGE_GEOCODE_POSTSEC_1920.xlsx")
+
+geo_code <- geo_code %>%
+  select(NAME, CITY, STATE, LAT, LON)
+
+college_location <- college_location %>%
+  left_join(y = geo_code,
+            by = c("college" = "NAME"))
+
+college_location <- college_location %>%
+  unite(col = latitude,
+        c(lat, LAT),
+        na.rm = TRUE) %>%
+  separate(col = latitude,
+           into = c("lat_1", "lat_del"),
+           sep = "_")
+
+college_location <- college_location %>%
+  unite(col = longitude,
+        c(lng, LON),
+        na.rm = TRUE) %>%
+  separate(col = longitude,
+           into = c("long_1", "long_del"),
+           sep = "_")
+
+college_location_final <- college_location %>%
+  select(state:cases, state_id:lat_1, long_1)
 
 # add college enrollment size for rate. 
 
@@ -77,7 +105,7 @@ college_location <- college_location %>%
   select(state, county.x, city, college, cases, state_id, county_fips,
          lat, lng, `Total Enrollment `, Enrollment) %>%
   mutate(rate = cases/`Total Enrollment `) %>%
-  write_excel_csv2(file = "college_location")
+  write_delim(file = "college_location", delim = ",", col_names = TRUE)
 
 
 ### Val
