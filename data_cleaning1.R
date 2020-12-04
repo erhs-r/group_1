@@ -15,15 +15,13 @@ college_raw <-
 state_names <- read_csv("csvData_state_names.csv")
 colnames(state_names)
 
-<<<<<<< HEAD
-=======
+
 college_raw <- college_raw %>%
   semi_join(y = state_names, 
             by = c("state" = "State"))
 ### Beth
 #top 5 schools with highest cases for time series data, include reference point
 #of when school started
->>>>>>> 2bf7e9f1e14329583dd4c39ae1e0570885449d63
 
 top_5_overall <- college_raw %>%
   select(state, county, city, college, cases) %>%
@@ -81,9 +79,6 @@ college_location <- college_location %>%
 college_location_final <- college_location %>%
   select(state:cases, state_id:lat_1, long_1)
 
-<<<<<<< HEAD
-
-=======
 # add college enrollment size for rate. 
 
 admission <- read_excel("college_admission.xlsx")
@@ -112,7 +107,7 @@ college_location <- college_location %>%
          lat, lng, `Total Enrollment `, Enrollment) %>%
   mutate(rate = cases/`Total Enrollment `) %>%
   write_delim(file = "college_location", delim = ",", col_names = TRUE)
->>>>>>> 2bf7e9f1e14329583dd4c39ae1e0570885449d63
+
 
 
 
