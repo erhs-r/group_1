@@ -1,7 +1,7 @@
 ---
-title: "Covid Dashboard"
-author: "Kellin, Valerie, Sophia, Beth"
-date: "11/30/2020"
+title: "College Covid Flexdashboard"
+author: "Kellin D Slater"
+date: "12/5/2020"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -9,33 +9,16 @@ output:
     source_code: embed
 ---
 
----
-
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(ggplot2)
-library(tidyverse)
-library(viridis)
-library(tigris)
-library(ggthemes)
-```
-
-
-## Time Series Plot
-
-```{r}
 knitr::opts_chunk$set(echo = TRUE)
 library(dygraphs)
 library(quantmod)
 library(flexdashboard)
-library(readr)
-library(readxl)
-library(tidyverse)
 ```
 
 ```{r}
-
 penn_state <- read_excel("PennStateCovidTables_new.xlsx")
+
 penn_cases <- penn_state %>%
   mutate(Week = week(Week)) %>%
   select(Week, Total_Positive) %>%
@@ -43,7 +26,9 @@ penn_cases <- penn_state %>%
 
 dygraph(penn_cases[,1:2], group = "cases") %>% 
   dySeries(c("Positive"), label = "Penn State")
+```
 
+```{r}
 osu <- read_excel("Ohio State COVID-19 Dashboard Data Tables.xlsx", skip = 5)
 osu_cases <- osu %>%
   select(`Test Date`, `Positive Tests...9`) %>%
@@ -55,7 +40,9 @@ osu_cases <- osu %>%
 
 dygraph(osu_cases[,1:2], group = "cases") %>% 
   dySeries(c("sum(Positive)"), label = "Ohio State")
+```
 
+```{r}
 clemson <- read_excel("clemsonDashboard.xlsx", sheet = "Daily Data") 
 
 clemson_cases <- clemson %>%
@@ -69,64 +56,4 @@ clemson_cases <- clemson %>%
 dygraph(clemson_cases[,1:2], group = "cases") %>% 
   dySeries(c("sum(Positive)"), label = "Clemson")
 ```
-
-
-
-
-
-
-
-
-
-## South Carolina County Plot
-
-```{r}
-sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
-
-county_data <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/live/us-counties.csv")
-
-sc_counties <- county_data %>%
-  filter(state == "South Carolina") %>%
-  select(date:deaths) %>% 
-  group_by(fips) %>% 
-  ungroup()
-
-sc_fips <- sc_county %>% 
-  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
-  full_join(sc_counties, by = "fips") 
-
-
-ggplot() + 
-  geom_sf(data = sc_fips, aes(fill = cases)) +
-  scale_fill_viridis() +
-  labs(fill = "Number of casess\n per SC county") +
-  theme(axis.ticks = element_blank(),
-        axis.text = element_blank()) 
-```
-
-
-
-
-
-
-## Interactive Map Plot
-
-```{r}
-
-```
-
-
-
-
-
-
-
-
-## Blurb Color Spot
-
-```{r}
-
-```
-
-
 
