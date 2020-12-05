@@ -18,20 +18,16 @@ library(tidyverse)
 library(viridis)
 library(tigris)
 library(ggthemes)
+library(quantmod)
+library(flexdashboard)
+library(dygraphs)
+library(readr)
+library(readxl)
 ```
 
 
 ## Time Series Plot
 
-```{r}
-knitr::opts_chunk$set(echo = TRUE)
-library(dygraphs)
-library(quantmod)
-library(flexdashboard)
-library(readr)
-library(readxl)
-library(tidyverse)
-```
 
 ```{r}
 
