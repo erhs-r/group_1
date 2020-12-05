@@ -1,0 +1,59 @@
+---
+title: "College Covid Flexdashboard"
+author: "Kellin D Slater"
+date: "12/5/2020"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    social: menu
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dygraphs)
+library(quantmod)
+library(flexdashboard)
+```
+
+```{r}
+penn_state <- read_excel("PennStateCovidTables_new.xlsx")
+
+penn_cases <- penn_state %>%
+  mutate(Week = week(Week)) %>%
+  select(Week, Total_Positive) %>%
+  rename(Positive = Total_Positive)
+
+dygraph(penn_cases[,1:2], group = "cases") %>% 
+  dySeries(c("Positive"), label = "Penn State")
+```
+
+```{r}
+osu <- read_excel("Ohio State COVID-19 Dashboard Data Tables.xlsx", skip = 5)
+osu_cases <- osu %>%
+  select(`Test Date`, `Positive Tests...9`) %>%
+  rename(Week = `Test Date`, 
+         Positive = `Positive Tests...9`) %>%
+  mutate(Week = week(Week)) %>%
+  group_by(Week) %>%
+  summarise(sum(Positive))
+
+dygraph(osu_cases[,1:2], group = "cases") %>% 
+  dySeries(c("sum(Positive)"), label = "Ohio State")
+```
+
+```{r}
+clemson <- read_excel("clemsonDashboard.xlsx", sheet = "Daily Data") 
+
+clemson_cases <- clemson %>%
+  select(Date, Positive) %>%
+  mutate(Date = week(Date)) %>%
+  group_by(Date) %>%
+  summarise(sum(Positive)) %>%
+  slice(1:10) %>%
+  rename(Week = Date)
+
+dygraph(clemson_cases[,1:2], group = "cases") %>% 
+  dySeries(c("sum(Positive)"), label = "Clemson")
+```
+
