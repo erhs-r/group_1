@@ -24,7 +24,15 @@ library(dygraphs)
 library(readr)
 library(readxl)
 library(lubridate)
-
+library(leaflet)
+library(leaflet.extras)
+library(shiny)
+library(jsonlite)
+library(maptools)
+library(dplyr)
+library(purrr)
+library(plotly)
+library(leaflet.extras)
 
 ```
 
@@ -232,8 +240,8 @@ college_location <- college_location %>%
 
 college_location <- college_location %>%
   select(state, county.x, city, college, cases, state_id, county_fips,
-         lat_1, long_1, `Total Enrollment `, Enrollment) %>%
-  mutate(rate = cases/`Total Enrollment `) %>%
+         lat_1, long_1, `Total Enrollment`, Enrollment) %>%
+  mutate(rate = cases/`Total Enrollment`) %>%
   write_delim(file = "college_location", delim = ",", col_names = TRUE)
 
 ```
