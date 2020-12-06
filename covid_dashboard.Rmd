@@ -13,20 +13,21 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(tidyverse)
+library(viridis)
+library(tigris)
+library(ggthemes)
+library(quantmod)
+library(flexdashboard)
+library(dygraphs)
+library(readr)
+library(readxl)
 ```
 
 
 ## Time Series Plot
 
-```{r}
-knitr::opts_chunk$set(echo = TRUE)
-library(dygraphs)
-library(quantmod)
-library(flexdashboard)
-library(readr)
-library(readxl)
-library(tidyverse)
-```
 
 ```{r}
 
@@ -97,7 +98,27 @@ dygraph(uf_cases[,1:2], group = "cases") %>%
 ## South Carolina County Plot
 
 ```{r}
+sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
 
+county_data <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/live/us-counties.csv")
+
+sc_counties <- county_data %>%
+  filter(state == "South Carolina") %>%
+  select(date:deaths) %>% 
+  group_by(fips) %>% 
+  ungroup()
+
+sc_fips <- sc_county %>% 
+  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
+  full_join(sc_counties, by = "fips") 
+
+
+ggplot() + 
+  geom_sf(data = sc_fips, aes(fill = cases)) +
+  scale_fill_viridis() +
+  labs(fill = "Number of casess\n per SC county") +
+  theme(axis.ticks = element_blank(),
+        axis.text = element_blank()) 
 ```
 
 
