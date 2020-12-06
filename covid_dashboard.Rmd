@@ -63,6 +63,27 @@ clemson_cases <- clemson %>%
 
 dygraph(clemson_cases[,1:2], group = "cases") %>% 
   dySeries(c("sum(Positive)"), label = "Clemson")
+
+
+u_of_g <- read_excel("UG_covid_data.xlsx")
+
+ug_cases <- u_of_g %>%
+  mutate(Week = week(`Reporting Week`)) %>%
+  rename(Positive = `Total Number of Positive Student Tests*`) %>%
+  mutate(College = "UG") %>%
+  select(Positive:College)
+
+dygraph(ug_cases[,1:2], group = "cases") %>% 
+  dySeries(c("Positive"), label = "University of Georgia")
+
+uf <- read_excel("UF_covid_data.xlsx")
+
+uf_cases <- uf %>%
+  mutate(Week = week(Week)) %>%
+  mutate(College = "UF")
+
+dygraph(uf_cases[,1:2], group = "cases") %>% 
+  dySeries(c("Positive"), label = "University of Florida")
 ```
 
 
