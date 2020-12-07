@@ -226,7 +226,7 @@ college_location <- college_location %>%
 admission2 <- read_excel("college_enrollement.xlsx")
 
 admission2 <- admission2 %>%
-  rename(school = `School Name `)
+  rename(school = `School Name`)
  
 college_location <- college_location %>%
   left_join(y = admission2,
