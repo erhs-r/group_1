@@ -89,46 +89,6 @@ college_location_final <- college_location_final %>%
 college_location_final %>%
   write_csv(file = "college_location_final.csv")
 
-
-# add college enrollment size for rate. 
-
-admission <- read_excel("college_admission.xlsx")
-
-college_location <- college_location %>%
-  left_join(y = admission,
-            by = c("college" = "School Name"))
-
-admission2 <- read_excel("college_enrollement.xlsx")
-
-admission2 <- admission2 %>%
-  rename(school = `School Name `)
- 
-college_location <- college_location %>%
-  left_join(y = admission2,
-            by = c("college" = "school"))
-
-admission3 <- read_excel("top_10_enrollment.xlsx", skip = 1)
-
-college_location <- college_location %>%
-  left_join(y = admission3,
-            by = c("college" = "University"))
-
-college_location <- college_location %>%
-  select(state, county.x, city, college, cases, state_id, county_fips,
-         lat, lng, `Total Enrollment `, Enrollment) %>%
-  mutate(rate = cases/`Total Enrollment `) %>%
-  write_delim(file = "college_location", delim = ",", col_names = TRUE)
-
-
-
-
-
-
-
-
-
-
-
 ### TIMESERIES DATA
 
 #Clemson
@@ -179,6 +139,8 @@ sc_counties <- county_data %>%
   filter(state == "South Carolina") %>%
   select(date:deaths)
 
+sc_counties %>%
+  write_csv(file = "sc_covid_counties.csv")
 
 
 
