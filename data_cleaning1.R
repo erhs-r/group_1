@@ -92,7 +92,7 @@ college_location_final %>%
 ### TIMESERIES DATA
 
 #Clemson
-clemson <- read_excel("clemsonDashboard.xlsx", sheet = "Daily Data") 
+clemson <- read_excel("raw data/clemsonDashboard.xlsx", sheet = "Daily Data") 
 
 clemson_cases <- clemson %>%
   select(Date, Positive) %>%
@@ -105,14 +105,14 @@ clemson_cases <- clemson %>%
   mutate(College = "Clemson")
 
 #university of florida
-uf <- read_excel("UF_covid_data.xlsx")
+uf <- read_excel("raw data/UF_covid_data.xlsx")
 
 uf_cases <- uf %>%
   mutate(Week = week(Week)) %>%
   mutate(College = "UF")
 
 #university of georgia 
-u_of_g <- read_excel("UG_covid_data.xlsx")
+u_of_g <- read_excel("raw data/UG_covid_data.xlsx")
 
 ug_cases <- u_of_g %>%
   mutate(Week = week(`Reporting Week`)) %>%
