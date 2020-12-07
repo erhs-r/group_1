@@ -104,12 +104,18 @@ clemson_cases <- clemson %>%
         Positive = `sum(Positive)`) %>%
   mutate(College = "Clemson")
 
+clemson_cases %>%
+  write_csv(file = "clemson_cases.csv")
+
 #university of florida
 uf <- read_excel("raw data/UF_covid_data.xlsx")
 
 uf_cases <- uf %>%
   mutate(Week = week(Week)) %>%
   mutate(College = "UF")
+
+uf_cases %>%
+  write_csv(file = "uf_cases.csv")
 
 #university of georgia 
 u_of_g <- read_excel("raw data/UG_covid_data.xlsx")
@@ -119,6 +125,9 @@ ug_cases <- u_of_g %>%
   rename(Positive = `Total Number of Positive Student Tests*`) %>%
   mutate(College = "UG") %>%
   select(Positive:College)
+
+ug_cases %>%
+  write_csv(file = "ug_cases.csv")
 
 #join datasets
 #all_colleges %>%
