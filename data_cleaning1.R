@@ -12,7 +12,7 @@ college_raw <-
   read_csv(
     "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv")
 
-state_names <- read_csv("csvData_state_names.csv")
+state_names <- read_csv("raw data/csvData_state_names.csv")
 colnames(state_names)
 
 
@@ -40,7 +40,7 @@ ggplot(data = top5_by_state, mapping = aes(x = cases, y = state)) +
 
 # Adding lat/long to each college to map into flexdashboard
 
-city_location <- read_csv("uscities.csv") %>%
+city_location <- read_csv("raw data/uscities.csv") %>%
   rename(state = "state_name",
          county = "county_name")
 
@@ -51,7 +51,7 @@ college_location <- top5_by_state %>%
 college_location <- college_location %>%
   select(state:city_ascii, state_id:county_fips, lat:lng)
 
-geo_code <- read_excel("EDGE_GEOCODE_POSTSEC_1920.xlsx")
+geo_code <- read_excel("raw data/EDGE_GEOCODE_POSTSEC_1920.xlsx")
 
 geo_code <- geo_code %>%
   select(NAME, CITY, STATE, LAT, LON)
@@ -76,52 +76,23 @@ college_location <- college_location %>%
            into = c("long_1", "long_del"),
            sep = "_")
 
+
 college_location_final <- college_location %>%
   select(state:cases, state_id:lat_1, long_1)
 
-# add college enrollment size for rate. 
+college_location_final$lat <- as.numeric(college_location_final$lat_1)
+college_location_final$long <- as.numeric(college_location_final$long_1)
 
-admission <- read_excel("college_admission.xlsx")
+college_location_final <- college_location_final %>%
+  select(-lat_1, -long_1)
 
-college_location <- college_location %>%
-  left_join(y = admission,
-            by = c("college" = "School Name"))
-
-admission2 <- read_excel("college_enrollement.xlsx")
-
-admission2 <- admission2 %>%
-  rename(school = `School Name `)
- 
-college_location <- college_location %>%
-  left_join(y = admission2,
-            by = c("college" = "school"))
-
-admission3 <- read_excel("top_10_enrollment.xlsx", skip = 1)
-
-college_location <- college_location %>%
-  left_join(y = admission3,
-            by = c("college" = "University"))
-
-college_location <- college_location %>%
-  select(state, county.x, city, college, cases, state_id, county_fips,
-         lat, lng, `Total Enrollment `, Enrollment) %>%
-  mutate(rate = cases/`Total Enrollment `) %>%
-  write_delim(file = "college_location", delim = ",", col_names = TRUE)
-
-
-
-
-
-
-
-
-
-
+college_location_final %>%
+  write_csv(file = "college_location_final.csv")
 
 ### TIMESERIES DATA
 
 #Clemson
-clemson <- read_excel("clemsonDashboard.xlsx", sheet = "Daily Data") 
+clemson <- read_excel("raw data/clemsonDashboard.xlsx", sheet = "Daily Data") 
 
 clemson_cases <- clemson %>%
   select(Date, Positive) %>%
@@ -133,21 +104,30 @@ clemson_cases <- clemson %>%
         Positive = `sum(Positive)`) %>%
   mutate(College = "Clemson")
 
+clemson_cases %>%
+  write_csv(file = "clemson_cases.csv")
+
 #university of florida
-uf <- read_excel("UF_covid_data.xlsx")
+uf <- read_excel("raw data/UF_covid_data.xlsx")
 
 uf_cases <- uf %>%
   mutate(Week = week(Week)) %>%
   mutate(College = "UF")
 
+uf_cases %>%
+  write_csv(file = "uf_cases.csv")
+
 #university of georgia 
-u_of_g <- read_excel("UG_covid_data.xlsx")
+u_of_g <- read_excel("raw data/UG_covid_data.xlsx")
 
 ug_cases <- u_of_g %>%
   mutate(Week = week(`Reporting Week`)) %>%
   rename(Positive = `Total Number of Positive Student Tests*`) %>%
   mutate(College = "UG") %>%
   select(Positive:College)
+
+ug_cases %>%
+  write_csv(file = "ug_cases.csv")
 
 #join datasets
 #all_colleges %>%
@@ -168,6 +148,8 @@ sc_counties <- county_data %>%
   filter(state == "South Carolina") %>%
   select(date:deaths)
 
+sc_counties %>%
+  write_csv(file = "sc_covid_counties.csv")
 
 
 
