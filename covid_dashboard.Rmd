@@ -110,13 +110,8 @@ dygraph(uf_cases[,1:2], group = "cases") %>%
 ```{r}
 sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
 
-county_data <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/live/us-counties.csv")
-
-sc_counties <- county_data %>%
-  filter(state == "South Carolina") %>%
-  select(date:deaths) %>% 
-  group_by(fips) %>% 
-  ungroup()
+sc_counties <- read_csv("sc_covid_counties.csv")
+sc_counties$fips <- as.character(sc_counties$fips)
 
 sc_fips <- sc_county %>% 
   mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
@@ -142,110 +137,8 @@ ggplot() +
 ## Interactive Map Plot
 
 # data cleaned for the map
-<<<<<<< HEAD
 ```{r datamap}
-college_raw <- 
-  read_csv(
-    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv")
 
-state_names <- read_csv("csvData_state_names.csv")
-colnames(state_names)
-
-
-college_raw <- college_raw %>%
-  semi_join(y = state_names, 
-            by = c("state" = "State"))
-### Beth
-#top 5 schools with highest cases for time series data, include reference point
-#of when school started
-
-top_5_overall <- college_raw %>%
-  select(state, county, city, college, cases) %>%
-  group_by(state) %>%
-  arrange(desc(cases)) %>%
-  head(10)
-
-top5_by_state <- college_raw %>%
-  select(state, county, city, college, cases) %>%
-  group_by(state) %>%
-  arrange(state, -cases) %>%
-  slice_head(n = 10)
-
-# Adding lat/long to each college to map into flexdashboard
-
-city_location <- read_csv("uscities.csv") %>%
-  rename(state = "state_name",
-         county = "county_name")
-
-college_location <- top5_by_state %>%
-  left_join(y = city_location,
-            by = c("city", "state"))
-
-college_location <- college_location %>%
-  select(state:city_ascii, state_id:county_fips, lat:lng)
-
-geo_code <- read_excel("EDGE_GEOCODE_POSTSEC_1920.xlsx")
-
-geo_code <- geo_code %>%
-  select(NAME, CITY, STATE, LAT, LON)
-
-college_location <- college_location %>%
-  left_join(y = geo_code,
-            by = c("college" = "NAME"))
-
-college_location <- college_location %>%
-  unite(col = latitude,
-        c(lat, LAT),
-        na.rm = TRUE) %>%
-  separate(col = latitude,
-           into = c("lat_1", "lat_del"),
-           sep = "_")
-
-college_location <- college_location %>%
-  unite(col = longitude,
-        c(lng, LON),
-        na.rm = TRUE) %>%
-  separate(col = longitude,
-           into = c("long_1", "long_del"),
-           sep = "_")
-
-college_location_final <- college_location %>%
-  select(state:cases, state_id:lat_1, long_1)
-
-college_location_final$lat <- as.numeric(college_location_final$lat_1)
-college_location_final$long <- as.numeric(college_location_final$long_1)
-
-
-# add college enrollment size for rate. 
-
-admission <- read_excel("college_admission.xlsx")
-
-college_location <- college_location %>%
-  left_join(y = admission,
-            by = c("college" = "School Name"))
-
-admission2 <- read_excel("college_enrollement.xlsx")
-
-admission2 <- admission2 %>%
-  rename(school = `School Name `)
- 
-college_location <- college_location %>%
-  left_join(y = admission2,
-            by = c("college" = "school"))
-
-admission3 <- read_excel("top_10_enrollment.xlsx", skip = 1)
-
-college_location <- college_location %>%
-  left_join(y = admission3,
-            by = c("college" = "University"))
-
-#college_location <- college_location %>%
-#  select(state, county.x, city, college, cases, state_id, county_fips,
-##         lat_1, long_1, `Total Enrollment`, Enrollment) %>%
-#  mutate(rate = cases/`Total Enrollment`) %>%
-#  write_delim(file = "college_location", delim = ",", col_names = TRUE)
-
-```{r}
 college_location_final <- read_csv("college_location_final.csv")
 
 ```
@@ -253,7 +146,12 @@ college_location_final <- read_csv("college_location_final.csv")
 
 ```{r}
 
-college_location_final$cases_type <- ifelse(college_location_final$cases <= 100, "low", ifelse(college_location_final$cases <= 500, "moderate", ifelse(college_location_final$cases > 500, "severe", "NA")))
+college_location_final$cases_type <- ifelse(college_location_final$cases <= 100,
+                                            "low (<100)", 
+                                     ifelse(college_location_final$cases <= 500, 
+                                            "moderate (100-500)",
+                                     ifelse(college_location_final$cases > 500,
+                                            "severe (>500)", "NA")))
 
 ui <- fluidPage(
   mainPanel( 
@@ -261,7 +159,7 @@ ui <- fluidPage(
 leafletOutput(outputId = "mymap"), 
 #this allows me to put the checkmarks ontop of the map to allow people to view earthquake depth or overlay a heatmap
 absolutePanel(top = 60, left = 20, 
-      checkboxInput("markers", "College", FALSE),
+      checkboxInput("markers", "Case Type", FALSE),
       checkboxInput("heat", "Rank", FALSE)
     )
 ))
@@ -269,7 +167,8 @@ absolutePanel(top = 60, left = 20,
 server <- function(input, output, session) {
 #define the color pallate for the magnitidue of the earthquake
  pal <- colorNumeric(
-    palette = c('gold', 'orange', 'dark orange', 'orange red', 'red', 'dark red'),
+    palette = c('gold', 'orange', 'dark orange', 
+                'orange red', 'red', 'dark red'),
     domain = college_location_final$cases)
   
 #define the color of for the depth of the earquakes
@@ -281,9 +180,16 @@ server <- function(input, output, session) {
  #create the map
   output$mymap <- renderLeaflet({
     leaflet(college_location_final) %>% 
-      setView(lng = -99, lat = 45, zoom = 4)  %>% #setting the view over ~ center of North America
+      setView(lng = -99, lat = 40, zoom = 3.5)  %>% #setting the view over ~ center of North America
       addTiles() %>% 
-      addCircles(data = college_location_final, lat = ~ college_location_final$lat, lng = ~ college_location_final$long, weight = 1, radius = ~sqrt(cases)*1000, popup = ~as.character(cases), label = ~as.character(paste0("Cases: ", sep = " ", cases, sep = " ", "College: ", sep = " ", college, sep =" ", "County: ", sep = " ", county.x)), color = ~pal(cases), fillOpacity = 0.5)
+      addCircles(data = college_location_final, 
+                 lat = ~ college_location_final$lat,
+                 lng = ~ college_location_final$long, 
+                 weight = 1, radius = ~sqrt(cases)*1000,
+                 popup = ~as.character(cases), 
+                 label = ~as.character(paste0(college, sep =", ", "Cases: ", 
+                                              sep = " ", cases)), 
+                 color = ~pal(cases), fillOpacity = 0.5)
   })
   
   #next we use the observe function to make the checkboxes dynamic. If you leave this part out you will see that the checkboxes, when clicked on the first time, display our filters...But if you then uncheck them they stay on. So we need to tell the server to update the map when the checkboxes are unchecked.
@@ -293,9 +199,13 @@ server <- function(input, output, session) {
     if (input$markers) {
       proxy %>% addCircleMarkers(stroke = FALSE, color = ~pal2(cases_type),
                                  fillOpacity = 0.2, 
-                                 label = ~as.character(paste0("College: ", 
-                                                              sep = " ", college))) %>%
-        addLegend("bottomright", pal = pal2, values = college_location_final$cases_type,
+                                 label = ~as.character(paste0(college, 
+                                                              sep =", ",
+                                                              "Cases: ", 
+                                                              sep = " ", 
+                                                              cases))) %>%
+        addLegend("bottomright", pal = pal2, 
+                  values = college_location_final$cases_type,
                   title = "Case Type",
                   opacity = 1)}
     else {
@@ -307,7 +217,8 @@ server <- function(input, output, session) {
     proxy <- leafletProxy("mymap", data = college_location_final)
     proxy %>% clearMarkers()
     if (input$heat) {
-      proxy %>%  addHeatmap(lng=~long, lat=~lat, intensity = ~cases, blur =  10, max = 0.05, radius = 15) 
+      proxy %>%  addHeatmap(lng=~long, lat=~lat, intensity = ~cases,
+                            blur =  10, max = 0.05, radius = 15) 
       }
     else{
       proxy %>% clearHeatmap()
