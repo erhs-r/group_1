@@ -238,18 +238,18 @@ college_location <- college_location %>%
   left_join(y = admission3,
             by = c("college" = "University"))
 
-college_location <- college_location %>%
-  select(state, county.x, city, college, cases, state_id, county_fips,
-         lat_1, long_1, `Total Enrollment`, Enrollment) %>%
-  mutate(rate = cases/`Total Enrollment`) %>%
-  write_delim(file = "college_location", delim = ",", col_names = TRUE)
+#college_location <- college_location %>%
+#  select(state, county.x, city, college, cases, state_id, county_fips,
+##         lat_1, long_1, `Total Enrollment`, Enrollment) %>%
+#  mutate(rate = cases/`Total Enrollment`) %>%
+#  write_delim(file = "college_location", delim = ",", col_names = TRUE)
 
 ```
 # map code
 
 ```{r}
 
-college_location_final$cases_type <- ifelse(college_location_final$cases <= 100, "low", ifelse(college_location_final$cases <= 500, "moderate", ifelse(college_location_final$cases > 500, "severe", "NA")))
+college_location_final$cases_type <- ifelse(college_location_final$cases <= 100, "low (< 100)", ifelse(college_location_final$cases <= 500, "moderate (100-500)", ifelse(college_location_final$cases > 500, "severe (> 500)", "NA")))
 
 ui <- fluidPage(
   mainPanel( 
