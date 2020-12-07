@@ -142,6 +142,7 @@ ggplot() +
 ## Interactive Map Plot
 
 # data cleaned for the map
+<<<<<<< HEAD
 ```{r datamap}
 college_raw <- 
   read_csv(
@@ -244,12 +245,15 @@ college_location <- college_location %>%
 #  mutate(rate = cases/`Total Enrollment`) %>%
 #  write_delim(file = "college_location", delim = ",", col_names = TRUE)
 
+```{r}
+college_location_final <- read_csv("college_location_final.csv")
+
 ```
 # map code
 
 ```{r}
 
-college_location_final$cases_type <- ifelse(college_location_final$cases <= 100, "low (< 100)", ifelse(college_location_final$cases <= 500, "moderate (100-500)", ifelse(college_location_final$cases > 500, "severe (> 500)", "NA")))
+college_location_final$cases_type <- ifelse(college_location_final$cases <= 100, "low", ifelse(college_location_final$cases <= 500, "moderate", ifelse(college_location_final$cases > 500, "severe", "NA")))
 
 ui <- fluidPage(
   mainPanel( 
