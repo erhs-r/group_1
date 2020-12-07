@@ -12,7 +12,7 @@ college_raw <-
   read_csv(
     "https://raw.githubusercontent.com/nytimes/covid-19-data/master/colleges/colleges.csv")
 
-state_names <- read_csv("csvData_state_names.csv")
+state_names <- read_csv("raw data/csvData_state_names.csv")
 colnames(state_names)
 
 
@@ -40,7 +40,7 @@ ggplot(data = top5_by_state, mapping = aes(x = cases, y = state)) +
 
 # Adding lat/long to each college to map into flexdashboard
 
-city_location <- read_csv("uscities.csv") %>%
+city_location <- read_csv("raw data/uscities.csv") %>%
   rename(state = "state_name",
          county = "county_name")
 
@@ -51,7 +51,7 @@ college_location <- top5_by_state %>%
 college_location <- college_location %>%
   select(state:city_ascii, state_id:county_fips, lat:lng)
 
-geo_code <- read_excel("EDGE_GEOCODE_POSTSEC_1920.xlsx")
+geo_code <- read_excel("raw data/EDGE_GEOCODE_POSTSEC_1920.xlsx")
 
 geo_code <- geo_code %>%
   select(NAME, CITY, STATE, LAT, LON)
@@ -76,8 +76,19 @@ college_location <- college_location %>%
            into = c("long_1", "long_del"),
            sep = "_")
 
+
 college_location_final <- college_location %>%
   select(state:cases, state_id:lat_1, long_1)
+
+college_location_final$lat <- as.numeric(college_location_final$lat_1)
+college_location_final$long <- as.numeric(college_location_final$long_1)
+
+college_location_final <- college_location_final %>%
+  select(-lat_1, -long_1)
+
+college_location_final %>%
+  write_csv(file = "college_location_final.csv")
+
 
 # add college enrollment size for rate. 
 

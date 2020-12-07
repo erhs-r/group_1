@@ -1,0 +1,484 @@
+state,county.x,city,college,cases,state_id,county_fips,lat,long
+Alabama,Tuscaloosa,Tuscaloosa,University of Alabama,3219,AL,01125,33.2348,-87.5267
+Alabama,Jefferson,Birmingham,University of Alabama at Birmingham,2119,AL,01073,33.5277,-86.7987
+Alabama,Lee,Auburn,Auburn University,2079,AL,01081,32.6087,-85.4899
+Alabama,Pike,Troy,Troy University,715,AL,01109,31.8021,-85.9665
+Alabama,Jefferson,Birmingham,Samford University,461,AL,01073,33.5277,-86.7987
+Alabama,Mobile,Mobile,University of South Alabama,457,AL,01097,30.6783,-88.1162
+Alabama,Lauderdale,Florence,University of North Alabama,426,AL,01077,34.8303,-87.6654
+Alabama,Calhoun,Jacksonville,Jacksonville State University,219,AL,01015,33.8088,-85.7545
+Alabama,Jefferson,Birmingham,Birmingham-Southern College,214,AL,01073,33.5277,-86.7987
+Alabama,Madison,Huntsville,University of Alabama in Huntsville,173,AL,01089,34.6988,-86.6412
+Alaska,Fairbanks North Star Borough,Fairbanks,University of Alaska Fairbanks,104,AK,02090,64.8353,-147.6534
+Alaska,Anchorage Municipality,Anchorage,University of Alaska Anchorage,11,AK,02020,61.1508,-149.1091
+Alaska,Juneau City and Borough,Juneau,University of Alaska Southeast,1,AK,02110,58.4546,-134.1739
+Alaska,North Slope Borough,Utqiagvik,Ilisagvik College,NA,AK,02185,71.2728,-156.7575
+Arizona,Maricopa,Tempe,Arizona State University,2862,AZ,04013,33.3881,-111.9318
+Arizona,Pima,Tucson,University of Arizona,2643,AZ,04019,32.1545,-110.8782
+Arizona,Maricopa,Phoenix,Grand Canyon University,474,AZ,04013,33.5722,-112.0891
+Arizona,Coconino,Flagstaff,Northern Arizona University,278,AZ,04005,35.1872,-111.6195
+Arizona,Maricopa,Glendale,Midwestern University at Glendale,96,AZ,04013,33.5791,-112.2311
+Arizona,Yavapai,Prescott,Embry-Riddle Aeronautical University at Prescott,45,AZ,04025,34.585,-112.4475
+Arizona,Yuma,Yuma,Arizona Western College,41,AZ,04027,32.5992,-114.5488
+Arizona,Apache,Tsaile,Dine College,5,AZ,04001,36.3033,-109.2157
+Arizona,Mohave,Kingman,Mohave Community College,0,AZ,04015,35.217,-114.0105
+Arkansas,Washington,Fayetteville,University of Arkansas,2452,AR,05143,36.0713,-94.166
+Arkansas,Craighead,Jonesboro,Arkansas State University,1026,AR,05031,35.8212,-90.6791
+Arkansas,Conway,Conway,University of Central Arkansas,481,AR,05045,35.0754,-92.4694
+Arkansas,Pope,Russellville,Arkansas Tech University,402,AR,05115,35.2763,-93.1383
+Arkansas,White,Searcy,Harding University,340,AR,05145,35.2418,-91.7351
+Arkansas,Columbia,Magnolia,Southern Arkansas University,184,AR,05027,33.2774,-93.2261
+Arkansas,Jefferson,Pine Bluff,University of Arkansas at Pine Bluff,184,AR,05069,34.2116,-92.0178
+Arkansas,Clark,Arkadelphia,Ouachita Baptist University,183,AR,05019,34.1255,-93.0725
+Arkansas,Pulaski,Little Rock,University of Arkansas at Little Rock,183,AR,05119,34.7256,-92.3576
+Arkansas,Sebastian,Fort Smith,University of Arkansas at Fort Smith,133,AR,05131,35.3493,-94.3695
+California,San Diego,San Diego,San Diego State University System,1450,CA,06073,32.8312,-117.1225
+California,San Luis Obispo,San Luis Obispo,"California Polytechnic State University, San Luis Obispo",626,CA,06079,35.2669,-120.6691
+California,Los Angeles,Los Angeles,University of Southern California,608,CA,06037,34.1139,-118.4068
+California,San Diego,San Diego,"University of California, San Diego",497,CA,06073,32.8312,-117.1225
+California,Los Angeles,Los Angeles,"University of California, Los Angeles",386,CA,06037,34.1139,-118.4068
+California,San Francisco,San Francisco,"University of California, San Francisco",307,CA,06075,37.7562,-122.443
+California,Alameda,Berkeley,"University of California, Berkeley",249,CA,06001,37.8723,-122.276
+California,Butte,Chico,"California State University, Chico",208,CA,06007,39.7575,-121.8152
+California,San Diego,San Diego,University of San Diego,196,CA,06073,32.8312,-117.1225
+California,Orange,Irvine,"University of California, Irvine",181,CA,06059,33.6772,-117.7738
+Colorado,Boulder,Boulder,University of Colorado Boulder,2236,CO,08013,40.0249,-105.2523
+Colorado,Larimer,Fort Collins,Colorado State University,1149,CO,08069,40.5478,-105.0656
+Colorado,Mesa,Grand Junction,Colorado Mesa University,578,CO,08077,39.0876,-108.5673
+Colorado,Denver,Denver,University of Denver,289,CO,08031,39.7621,-104.8759
+Colorado,Jefferson,Golden,Colorado School of Mines,266,CO,08059,39.7406,-105.2118
+Colorado,Weld,Greeley,University of Northern Colorado,262,CO,08123,40.4151,-104.7706
+Colorado,Pueblo,Pueblo,Colorado State University-Pueblo,164,CO,08101,38.2705,-104.6112
+Colorado,El Paso,Colorado Springs,University of Colorado Colorado Springs,140,CO,08041,38.8674,-104.7606
+Colorado,La Plata,Durango,Fort Lewis College,134,CO,08067,37.2659,-107.8782
+Colorado,Denver,Denver,Regis University,134,CO,08031,39.7621,-104.8759
+Connecticut,Fairfield,Fairfield,Sacred Heart University,725,NA,NA,41.220893,-73.243332
+Connecticut,Tolland,Storrs,University of Connecticut,673,CT,09013,41.8045,-72.2552
+Connecticut,Fairfield,Fairfield,Fairfield University,586,NA,NA,41.157673,-73.255903
+Connecticut,New Haven,Hamden,Quinnipiac University,422,NA,NA,41.418915,-72.894117
+Connecticut,New Haven,New Haven,Yale University,366,CT,09009,41.3112,-72.9246
+Connecticut,New Haven,West Haven,University of New Haven,190,CT,09009,41.2739,-72.9672
+Connecticut,Hartford,New Britain,Central Connecticut State University,136,CT,09003,41.6758,-72.7862
+Connecticut,Hartford,Hartford,Trinity College,113,CT,09003,41.7661,-72.6834
+Connecticut,New Haven,New Haven,Southern Connecticut State University,111,CT,09009,41.3112,-72.9246
+Connecticut,Hartford,West Hartford,University of Hartford,85,NA,NA,41.798591,-72.715213
+Delaware,New Castle,Newark,University of Delaware,683,DE,10003,39.6776,-75.7573
+Delaware,Kent,Dover,Delaware State University,77,DE,10001,39.161,-75.5203
+Delaware,Sussex,Georgetown,Delaware Technical Community College Georgetown,45,DE,10005,38.6894,-75.387200000000007
+Delaware,New Castle,Stanton,Delaware Technical Community College Stanton,20,NA,NA,NA,NA
+Delaware,Kent,Dover,Wesley College,20,DE,10001,39.161,-75.5203
+Delaware,Kent,Dover,Delaware Technical Community College Dover,7,DE,10001,39.161,-75.5203
+Delaware,New Castle,Wilmington,Goldey-Beacom College,0,DE,10003,39.7415,-75.5413
+Delaware,New Castle,New Castle,Wilmington University,NA,DE,10003,39.6685,-75.5692
+Florida,Alachua,Gainesville,University of Florida,5008,FL,12001,29.6804,-82.3458
+Florida,Orange,Orlando,University of Central Florida,2100,FL,12095,28.4772,-81.3369
+Florida,Leon,Tallahassee,Florida State University,1738,FL,12073,30.4551,-84.2526
+Florida,Miami-Dade,Miami,University of Miami,1164,FL,12086,25.7839,-80.2102
+Florida,Hillsborough,Tampa,University of South Florida,864,FL,12057,27.9942,-82.4451
+Florida,Hillsborough,Tampa,University of Tampa,793,FL,12057,27.9942,-82.4451
+Florida,Lee,Fort Myers,Florida Gulf Coast University,429,FL,12071,26.6195,-81.8303
+Florida,Palm Beach,Boca Raton,Florida Atlantic University,346,FL,12099,26.3752,-80.108
+Florida,Duval,Jacksonville,University of North Florida,292,FL,12031,30.3322,-81.6749
+Florida,Miami-Dade,Miami,Florida International University,240,FL,12086,25.7839,-80.2102
+Georgia,Clarke,Athens,University of Georgia,4387,GA,13059,33.9508,-83.3689
+Georgia,Fulton,Atlanta,Georgia Institute of Technology,1323,GA,13121,33.7627,-84.4224
+Georgia,Bulloch,Statesboro,Georgia Southern University,1287,GA,13031,32.4376,-81.775
+Georgia,Baldwin,Milledgeville,Georgia College & State University,757,GA,13009,33.0874,-83.2414
+Georgia,Cobb,Kennesaw,Kennesaw State University,656,GA,13067,34.026,-84.6177
+Georgia,Lumpkin,Dahlonega,University of North Georgia,539,GA,13187,34.5309,-83.9804
+Georgia,Bibb,Macon,Mercer University,334,GA,13021,32.8065,-83.6974
+Georgia,Richmond,Augusta,Augusta University,327,GA,13245,33.3645,-82.0708
+Georgia,Fulton,Atlanta,Georgia State University,319,GA,13121,33.7627,-84.4224
+Georgia,Fulton,Atlanta,Emory University,291,GA,13121,33.7627,-84.4224
+Hawaii,Honolulu,Honolulu,University of Hawaii at Manoa,36,HI,15003,21.3294,-157.846
+Hawaii,Honolulu,Laie,Brigham Young University-Hawaii,6,HI,15003,21.6443,-157.928
+Hawaii,Honolulu,Honolulu,Kapiolani Community College,4,HI,15003,21.3294,-157.846
+Hawaii,Hawaii,Hilo,University of Hawaii at Hilo,4,HI,15001,19.6886,-155.0864
+Hawaii,Honolulu,Pearl City,Leeward Community College,3,HI,15003,21.4031,-157.9566
+Hawaii,Honolulu,Honolulu,Hawaii Pacific University,1,HI,15003,21.3294,-157.846
+Hawaii,Maui,Kahului,University of Hawaii Maui College,1,HI,15009,20.8715,-156.4603
+Hawaii,Honolulu,Kapolei,University of Hawaii-West Oahu,1,HI,15003,21.3403,-158.0665
+Hawaii,Honolulu,Honolulu,Chaminade University of Honolulu,NA,HI,15003,21.3294,-157.846
+Idaho,Madison,Rexburg,Brigham Young University-Idaho,1292,ID,16065,43.8224,-111.792
+Idaho,Ada,Boise,Boise State University,796,ID,16001,43.6007,-116.2312
+Idaho,Latah,Moscow,University of Idaho,543,ID,16057,46.7307,-116.9986
+Idaho,Bannock,Pocatello,Idaho State University,498,ID,16005,42.8724,-112.4646
+Idaho,Twin Falls,Twin Falls,College of Southern Idaho,199,ID,16083,42.5645,-114.4615
+Idaho,Canyon,Nampa,Northwest Nazarene University,138,ID,16027,43.5845,-116.5631
+Idaho,Kootenai,Coeur d'Alene,North Idaho College,119,ID,16055,47.7041,-116.7935
+Idaho,Nez Perce,Lewiston,Lewis-Clark State College,112,ID,16069,46.3934,-116.9934
+Idaho,Canyon,Caldwell,College of Idaho,61,ID,16027,43.6453,-116.6591
+Illinois,Champaign,Champaign,University of Illinois Urbana-Champaign,3892,IL,17019,40.1144,-88.2735
+Illinois,McLean,Normal,Illinois State University,1771,IL,17113,40.5218,-88.9881
+Illinois,Cook,Chicago,University of Illinois at Chicago,699,IL,17031,41.8373,-87.6862
+Illinois,Dekalb,Dekalb,Northern Illinois University,500,NA,NA,41.933869,-88.766428
+Illinois,Coles,Charleston,Eastern Illinois University,445,IL,17029,39.4842,-88.1781
+Illinois,Peoria,Peoria,Bradley University,405,IL,17143,40.752,-89.6153
+Illinois,Cook,Chicago,University of Chicago,324,IL,17031,41.8373,-87.6862
+Illinois,Cook,Evanston,Northwestern University,298,IL,17031,42.0463,-87.6942
+Illinois,McDonough,Macomb,Western Illinois University,257,IL,17109,40.4721,-90.6816
+Illinois,Adams,Quincy,Quincy University,244,IL,17001,39.9335,-91.3799
+Indiana,Monroe,Bloomington,Indiana University Bloomington,3754,IN,18105,39.1637,-86.5257
+Indiana,Tippecanoe,West Lafayette,Purdue University,2700,IN,18157,40.4432,-86.9239
+Indiana,St. Joseph,Notre Dame,University of Notre Dame,1665,IN,18141,41.7014,-86.2378
+Indiana,Delaware,Muncie,Ball State University,1283,IN,18035,40.1989,-85.395
+Indiana,Vanderburgh,Evansville,University of Southern Indiana,489,IN,18163,37.9881,-87.5341
+Indiana,Marion,Indianapolis,Butler University,323,IN,18097,39.7771,-86.1458
+Indiana,Marion,Indianapolis,University of Indianapolis,280,IN,18097,39.7771,-86.1458
+Indiana,Steuben,Angola,Trine University,210,IN,18151,41.6433,-85.0051
+Indiana,Marion,Indianapolis,Indiana University-Purdue University Indianapolis,198,IN,18097,39.7771,-86.1458
+Indiana,Allen,Fort Wayne,Purdue University Fort Wayne,180,IN,18003,41.0886,-85.1437
+Iowa,Johnson,Iowa City,University of Iowa,2749,IA,19103,41.6559,-91.5303
+Iowa,Story,Ames,Iowa State University,2169,IA,19169,42.0259,-93.6215
+Iowa,Black Hawk,Cedar Falls,University of Northern Iowa,438,IA,19013,42.5195,-92.4534
+Iowa,Black Hawk,Waterloo,Hawkeye Community College,259,IA,19013,42.492,-92.3522
+Iowa,Scott,Davenport,Saint Ambrose University,225,IA,19163,41.5563,-90.6052
+Iowa,Woodbury,Sioux City,Morningside College,171,IA,19193,42.4959,-96.3901
+Iowa,Henry,Mount Pleasant,Iowa Wesleyan University,161,IA,19087,40.9625,-91.5452
+Iowa,Decatur,Lamoni,Graceland University,160,IA,19053,40.6202,-93.9307
+Iowa,Polk,Des Moines,Grand View University,146,IA,19153,41.5725,-93.6105
+Iowa,Dubuque,Dubuque,Clarke University,123,IA,19061,42.5008,-90.7067
+Kansas,Douglas,Lawrence,University of Kansas,1249,KS,20045,38.9597,-95.2641
+Kansas,Riley,Manhattan,Kansas State University,1183,KS,20161,39.1886,-96.6046
+Kansas,Ellis,Hays,Fort Hays State University,307,KS,20051,38.8815,-99.3218
+Kansas,Crawford,Pittsburg,Pittsburg State University,286,KS,20037,37.4129,-94.6984
+Kansas,Shawnee,Topeka,Washburn University,215,KS,20177,39.0346,-95.6955
+Kansas,Butler,El Dorado,Butler Community College,212,KS,20015,37.8209,-96.8614
+Kansas,Lyon,Emporia,Emporia State University,188,KS,20111,38.4028,-96.1924
+Kansas,Sedgwick,Wichita,Wichita State University,149,KS,20173,37.6896,-97.3442
+Kansas,Harvey,North Newton,Bethel College,140,KS,20079,38.0767,-97.3475
+Kansas,Johnson,Overland Park,Johnson County Community College,136,KS,20091,38.887,-94.687
+Kentucky,Fayette,Lexington,University of Kentucky,2845,KY,21067,38.0423,-84.4587
+Kentucky,Jefferson,Louisville,University of Louisville,1259,KY,21111,38.1663,-85.6485
+Kentucky,Warren,Bowling Green,Western Kentucky University,904,KY,21227,36.9719,-86.4373
+Kentucky,Calloway,Murray,Murray State University,437,KY,21035,36.6146,-88.3206
+Kentucky,Madison,Richmond,Eastern Kentucky University,372,KY,21151,37.7306,-84.2926
+Kentucky,Jefferson,Louisville,Bellarmine University,209,KY,21111,38.1663,-85.6485
+Kentucky,Scott,Georgetown,Georgetown College,178,KY,21209,38.2249,-84.5482
+Kentucky,Fayette,Lexington,Bluegrass Community and Technical College,166,KY,21067,38.0423,-84.4587
+Kentucky,Rowan,Morehead,Morehead State University,163,KY,21205,38.1906,-83.4467
+Kentucky,Pike,Pikeville,University of Pikeville,133,KY,21195,37.4807,-82.5262
+Louisiana,East Baton Rouge,Baton Rouge,Louisiana State University,1354,LA,22033,30.4418,-91.131
+Louisiana,Orleans,New Orleans,Tulane University of Louisiana,1189,LA,22071,30.0687,-89.9288
+Louisiana,Lincoln,Ruston,Louisiana Tech University,480,LA,22061,32.5329,-92.6363
+Louisiana,Lafayette,Lafeyette,University of Louisiana at Lafayette,464,NA,NA,30.212191,-92.020165
+Louisiana,Natchitoches,Natchitoches,Northwestern State University of Louisiana,349,LA,22069,31.7317,-93.0979
+Louisiana,Orleans,New Orleans,"Louisiana State University Health Sciences Center, New Orleans",325,LA,22071,30.0687,-89.9288
+Louisiana,Ouachita,Monroe,University of Louisiana Monroe,239,LA,22073,32.5183,-92.0774
+Louisiana,Tangipahoa,Hammond,Southeastern Louisiana University,211,LA,22105,30.5061,-90.4563
+Louisiana,East Baton Rouge,Baton Rouge,Southern University and A&M College,202,LA,22033,30.4418,-91.131
+Louisiana,Lafourche,Thibodaux,Nicholls State University,172,LA,22057,29.7941,-90.8163
+Maine,Penobscot,Orono,University of Maine,47,NA,NA,44.899257,-68.669332
+Maine,York,Biddeford,University of New England,26,ME,23031,43.4674,-70.4512
+Maine,Cumberland,Portland,University of Southern Maine,21,ME,23005,43.6773,-70.2715
+Maine,Kennebec,Waterville,Colby College,15,ME,23011,44.5441,-69.6624
+Maine,Cumberland,Standish,Saint Joseph's College of Maine,15,NA,NA,43.826314000000004,-70.483373
+Maine,Androscoggin,Lewiston,Bates College,13,ME,23001,44.0915,-70.1681
+Maine,Hancock,Castine,Maine Maritime Academy,12,NA,NA,44.389654,-68.804347
+Maine,Kennebec,Augusta,University of Maine at Augusta,9,ME,23011,44.3341,-69.7319
+Maine,Franklin,Farmington,University of Maine Farmington,7,NA,NA,NA,NA
+Maine,Penobscot,Bangor,Husson University,6,ME,23019,44.8322,-68.7906
+Maryland,Prince George's,College Park,"University of Maryland, College Park",952,MD,24033,38.996,-76.9337
+Maryland,Baltimore City,Baltimore,Johns Hopkins University,596,MD,24510,39.3051,-76.6144
+Maryland,Wicomico,Salisbury,Salisbury University,507,MD,24045,38.3756,-75.5867
+Maryland,Baltimore,Towson,Towson University,502,MD,24005,39.3944,-76.619
+Maryland,Allegany,Frostburg,Frostburg State University,158,MD,24001,39.6506,-78.9269
+Maryland,Baltimore,Stevenson,Stevenson University,85,NA,NA,39.421988,-76.702092
+Maryland,Prince George's,Bowie,Bowie State University,75,MD,24033,38.9569,-76.7409
+Maryland,Baltimore,Catonsville,"University of Maryland, Baltimore County",54,MD,24005,39.2646,-76.7424
+Maryland,Somerset,Princess Anne,University of Maryland Eastern Shore,40,MD,24039,38.2054,-75.6969
+Maryland,Frederick,Frederick,Hood College,27,MD,24021,39.4336,-77.4141
+Massachusetts,Suffolk,Boston,Boston University,362,MA,25025,42.3188,-71.0846
+Massachusetts,Hampshire,Amherst,University of Massachusetts Amherst,322,MA,25015,42.3645,-72.5069
+Massachusetts,Middlesex,Chestnut Hill,Boston College,293,NA,NA,42.336213,-71.169242
+Massachusetts,Suffolk,Boston,Northeastern University,275,MA,25025,42.3188,-71.0846
+Massachusetts,Middlesex,Cambridge,Harvard University,205,MA,25017,42.3759,-71.1185
+Massachusetts,Essex,North Andover,Merrimack College,167,NA,NA,42.668344,-71.124216
+Massachusetts,Middlesex,Cambridge,Massachusetts Institute of Technology,150,MA,25017,42.3759,-71.1185
+Massachusetts,Middlesex,Waltham,Bentley University,99,MA,25017,42.3889,-71.2423
+Massachusetts,Hampden,Westfield,Westfield State University,90,MA,25013,42.1382,-72.7561
+Massachusetts,Norfolk,Milton,Curry College,75,NA,NA,42.238061,-71.116539
+Michigan,Washtenaw,Ann Arbor,University of Michigan,2545,MI,26161,42.2755,-83.7312
+Michigan,Ingham,East Lansing,Michigan State University,2057,MI,26065,42.748,-84.4835
+Michigan,Ottawa,Allendale,Grand Valley State University,1563,MI,26139,42.9851,-85.9509
+Michigan,Kalamazoo,Kalamazoo,Western Michigan University,1068,MI,26077,42.2749,-85.5882
+Michigan,Isabella,Mount Pleasant,Central Michigan University,596,MI,26073,43.5966,-84.7759
+Michigan,Mecosta,Big Rapids,Ferris State University,451,MI,26107,43.6992,-85.4806
+Michigan,Lenawee,Adrian,Adrian College,295,MI,26091,41.8994,-84.0446
+Michigan,Washtenaw,Ypsilanti,Eastern Michigan University,269,MI,26161,42.2437,-83.6205
+Michigan,Houghton,Houghton,Michigan Technological University,254,MI,26061,47.1119,-88.5672
+Michigan,Marquette,Marquette,Northern Michigan University,245,MI,26103,46.544,-87.4082
+Minnesota,Hennepin,Minneapolis,University of Minnesota Twin Cities,809,MN,27053,44.9635,-93.2678
+Minnesota,Winona,Winona,Winona State University,546,MN,27169,44.0505,-91.6684
+Minnesota,Ramsey,St. Paul,University of St. Thomas,495,MN,27123,44.9477,-93.104
+Minnesota,Blue Earth,Mankato,"Minnesota State University, Mankato",393,MN,27013,44.1712,-93.9773
+Minnesota,St. Louis,Duluth,University of Minnesota Duluth,344,MN,27137,46.7756,-92.1392
+Minnesota,Ramsey,Saint Paul,Bethel University,283,NA,NA,41.678399,-86.194686
+Minnesota,Ramsey,Saint Paul,Bethel University,283,NA,NA,45.057655,-93.161663
+Minnesota,Ramsey,Saint Paul,Bethel University,283,NA,NA,36.137848,-88.516762
+Minnesota,Beltrami,Bemidji,Bemidji State University,245,MN,27007,47.4828,-94.8796
+Minnesota,Stearns,St. Cloud,St. Cloud State University,241,MN,27145,45.5339,-94.1718
+Minnesota,Clay,Moorhead,Concordia College at Moorhead,227,MN,27027,46.8673,-96.7461
+Minnesota,Clay,Moorhead,Minnesota State University Moorhead,221,MN,27027,46.8673,-96.7461
+Mississippi,Lafayette,Oxford,University of Mississippi,836,MS,28071,34.3627,-89.5336
+Mississippi,Hinds,Jackson,University of Mississippi Medical Center,711,MS,28049,32.3163,-90.2124
+Mississippi,Oktibbeha,Mississippi State,Mississippi State University,657,MS,28105,33.4515,-88.7913
+Mississippi,Forrest,Hattiesburg,University of Southern Mississippi,411,MS,28035,31.3074,-89.317
+Mississippi,Hinds,Clinton,Mississippi College,169,MS,28049,32.354,-90.3403
+Mississippi,Bolivar,Cleveland,Delta State University,149,MS,28011,33.744,-90.7285
+Mississippi,Jefferson,Lorman,Alcorn State University,128,NA,NA,31.877216,-91.142854
+Mississippi,Leflore,Itta Bena,Mississippi Valley State University,112,MS,28083,33.5003,-90.3256
+Mississippi,Hinds,Jackson,Belhaven University,76,MS,28049,32.3163,-90.2124
+Mississippi,Prentiss,Booneville,Northeast Mississippi Community College,60,MS,28117,34.6643,-88.5684
+Missouri,Boone,Columbia,University of Missouri,2469,MO,29019,38.9478,-92.3256
+Missouri,Greene,Springfield,Missouri State University,1427,MO,29077,37.1943,-93.2916
+Missouri,Johnson,Warrensburg,University of Central Missouri,707,MO,29101,38.7627,-93.726
+Missouri,Nodaway,Maryville,Northwest Missouri State University,692,MO,29147,40.3428,-94.8701
+Missouri,Cape Girardeau,Cape Girardeau,Southeast Missouri State University,532,MO,29031,37.3108,-89.5597
+Missouri,Greene,Springfield,Ozarks Technical Community College,483,MO,29077,37.1943,-93.2916
+Missouri,City of St. Louis,St. Louis,Saint Louis University,439,MO,29510,38.6358,-90.2451
+Missouri,Kansas City,Kansas City,University of Missouri-Kansas City,287,MO,29095,39.1239,-94.5541
+Missouri,Howard,Fayette,Central Methodist University,284,MO,29089,39.147,-92.6857
+Missouri,Phelps,Rolla,Missouri University of Science and Technology,275,MO,29161,37.9458,-91.7608
+Montana,Gallatin,Bozeman,Montana State University,990,MT,30031,45.6832,-111.0552
+Montana,Missoula,Missoula,University of Montana,418,MT,30063,46.875,-114.0214
+Montana,Lewis and Clark,Helena,Carroll College,110,MT,30049,46.5965,-112.0202
+Montana,Silver Bow,Butte,Montana Technological University,105,MT,30093,45.902,-112.6571
+Montana,Beaverhead,Dillon,University of Montana Western,84,MT,30001,45.2177,-112.6348
+Montana,Yellowstone,Billings,Rocky Mountain College,69,MT,30111,45.7891,-108.5524
+Montana,Yellowstone,Billings,Montana State University Billings,50,MT,30111,45.7891,-108.5524
+Montana,Hill,Havre,Montana State University Northern,45,MT,30041,48.5427,-109.6803
+Montana,Flathead,Kalispell,Flathead Valley Community College,9,MT,30029,48.2156,-114.3262
+Montana,Cascade,Great Falls,Great Falls College Montana State University,5,MT,30013,47.5022,-111.2995
+Nebraska,Lancaster,Lincoln,University of Nebraska-Lincoln,1525,NE,31109,40.809,-96.6788
+Nebraska,Douglas,Omaha,Creighton University,613,NE,31055,41.2627,-96.0522
+Nebraska,Douglas,Omaha,University of Nebraska at Omaha,387,NE,31055,41.2627,-96.0522
+Nebraska,Buffalo,Kearney,University of Nebraska at Kearney,328,NE,31019,40.701,-99.0834
+Nebraska,Lancaster,Lincoln,Nebraska Wesleyan University,306,NE,31109,40.809,-96.6788
+Nebraska,Lancaster,Lincoln,Southeast Community College,276,NE,31109,40.809,-96.6788
+Nebraska,Wayne,Wayne,Wayne State College,263,NE,31179,42.2379,-97.01
+Nebraska,Douglas,Omaha,University of Nebraska Medical Center,158,NE,31055,41.2627,-96.0522
+Nebraska,Saline,Crete,Doane University,148,NE,31151,40.6254,-96.9575
+Nebraska,Dodge,Fremont,Midland University,139,NE,31053,41.4396,-96.4879
+Nevada,Washoe,Reno,"University of Nevada, Reno",952,NV,32031,39.5497,-119.8483
+Nevada,Clark,Las Vegas,"University of Nevada, Las Vegas",406,NV,32003,36.2333,-115.2654
+Nevada,Clark,Las Vegas,College of Southern Nevada,130,NV,32003,36.2333,-115.2654
+Nevada,Carson City,Carson City,Western Nevada College,32,NV,32510,39.1512,-119.7474
+Nevada,Washoe,Reno,Truckee Meadows Community College,28,NV,32031,39.5497,-119.8483
+Nevada,Clark,Henderson,Nevada State College,22,NV,32003,36.0133,-115.038
+Nevada,Elko,Elko,Great Basin College,12,NV,32007,40.8387,-115.7674
+New Hampshire,Strafford,Durham,University of New Hampshire,462,NA,NA,NA,NA
+New Hampshire,Hillsborough,Manchester,Saint Anselm College,41,NH,33011,42.9848,-71.4447
+New Hampshire,Grafton,Plymouth,Plymouth State University,36,NA,NA,43.759573,-71.690164
+New Hampshire,Grafton,Hanover,Dartmouth College,31,NA,NA,43.704115,-72.289949
+New Hampshire,Merrimack,Henniker,New England College,27,NA,NA,43.176403,-71.822282
+New Hampshire,Cheshire,Rindge,Franklin Pierce University,22,NA,NA,42.78014,-72.058011
+New Hampshire,Cheshire,Keene,Keene State College,16,NH,33005,42.9494,-72.2997
+New Hampshire,Hillsborough,Nashua,Rivier University,9,NH,33011,42.7491,-71.491
+New Hampshire,Merrimack,New London,Colby-Sawyer College,4,NA,NA,43.411663,-71.975805
+New Hampshire,Merrimack,Concord,NHTI-Concord's Community College,3,NH,33013,43.2305,-71.5595
+New Jersey,Gloucester,Glassboro,Rowan University,786,NJ,34015,39.7014,-75.1113
+New Jersey,Monmouth,West Long Branch,Monmouth University,459,NJ,34025,40.2883,-74.0185
+New Jersey,Middlesex,New Brunswick,Rutgers University,402,NJ,34023,40.487,-74.445
+New Jersey,Atlantic,Galloway,Stockton University,206,NA,NA,39.492036,-74.531087
+New Jersey,Essex,Montclair,Montclair State University,134,NA,NA,40.860414,-74.198141
+New Jersey,Essex,South Orange,Seton Hall University,123,NA,NA,40.742336,-74.246027
+New Jersey,Mercer,Princeton,Princeton University,114,NJ,34021,40.3563,-74.6693
+New Jersey,Union,Union,Kean University,53,NA,NA,40.677981,-74.233503
+New Jersey,Ocean,Lakewood,Georgian Court University,48,NA,NA,40.099617,-74.228186
+New Jersey,Hudson,Hoboken,Stevens Institute of Technology,46,NJ,34017,40.7453,-74.0279
+New Mexico,Doña Ana,Las Cruces,New Mexico State University,319,NM,35013,32.3265,-106.7892
+New Mexico,Bernalillo,Albuquerque,University of New Mexico,224,NM,35001,35.1053,-106.6464
+New Mexico,Chaves,Roswell,New Mexico Military Institute,106,NM,35005,33.373,-104.5294
+New Mexico,Grant,Silver City,Western New Mexico University,39,NM,35017,32.7784,-108.2698
+New Mexico,Roosevelt,Portales,Eastern New Mexico University,24,NM,35041,34.1753,-103.3565
+New Mexico,Santa Fe,Santa Fe,Santa Fe Community College,17,NM,35049,35.6619,-105.9819
+New Mexico,San Juan,Farmington,San Juan College,14,NM,35045,36.7555,-108.1823
+New Mexico,San Miguel,Las Vegas,New Mexico Highlands University,11,NM,35047,35.6011,-105.2206
+New Mexico,Socorro,Socorro,New Mexico Institute of Mining and Technology,11,NM,35053,34.0543,-106.9066
+New Mexico,McKinley,Crownpoint,Navajo Technical University,1,NM,35031,35.688,-108.1494
+New York,Otsego,Oneonta,SUNY Oneonta,735,NY,36077,42.4551,-75.0666
+New York,Cortland,Cortland,SUNY Cortland,714,NY,36023,42.6004,-76.1784
+New York,Onondaga,Syracuse,Syracuse University,648,NY,36067,43.0409,-76.1438
+New York,Suffolk,Stony Brook,Stony Brook University,563,NY,36103,40.906,-73.1278
+New York,New York City,New York City,New York University,536,NA,NA,40.729452,-73.997264
+New York,Albany,Albany,SUNY Albany,406,NY,36001,42.6664,-73.7987
+New York,Broome,Vestal,SUNY Binghamton,383,NA,NA,NA,NA
+New York,Erie,Buffalo,SUNY University at Buffalo,353,NY,36029,42.9016,-78.8487
+New York,Oswego,Oswego,SUNY Oswego,323,NY,36075,43.4516,-76.5005
+New York,Tompkins,Ithaca,Cornell University,207,NY,36109,42.4442,-76.5032
+North Carolina,Pitt,Greenville,East Carolina University,1494,NC,37147,35.5956,-77.3768
+North Carolina,Orange,Chapel Hill,University of North Carolina at Chapel Hill,1374,NC,37135,35.927,-79.0391
+North Carolina,Wake,Raleigh,North Carolina State University,1333,NC,37183,35.8325,-78.6435
+North Carolina,Watauga,Boone,Appalachian State University,1192,NC,37189,36.2111,-81.6668
+North Carolina,Alamance,Elon,Elon University,785,NC,37001,36.1014,-79.5085
+North Carolina,New Hanover,Wilmington,University of North Carolina Wilmington,755,NC,37129,34.21,-77.8866
+North Carolina,Mecklenburg,Charlotte,University of North Carolina at Charlotte,716,NC,37119,35.208,-80.8304
+North Carolina,Forsyth,Winston-Salem,Wake Forest University,539,NC,37067,36.1029,-80.2611
+North Carolina,Guilford,Greensboro,North Carolina A&T State University,475,NC,37081,36.0956,-79.8269
+North Carolina,Robeson,Pembroke,University of North Carolina at Pembroke,446,NC,37155,34.6766,-79.1934
+North Dakota,Grand Forks,Grand Forks,University of North Dakota,1724,ND,38035,47.9218,-97.0886
+North Dakota,Cass,Fargo,North Dakota State University,708,ND,38017,46.8652,-96.8292
+North Dakota,Ward,Minot,Minot State University,490,ND,38101,48.2375,-101.2781
+North Dakota,Burleigh,Bismarck,Bismarck State College,205,ND,38015,46.8144,-100.7694
+North Dakota,Richland,Wahpeton,North Dakota State College of Science,169,ND,38077,46.2722,-96.6118
+North Dakota,Stark,Dickinson,Dickinson State University,132,ND,38089,46.8917,-102.7924
+North Dakota,Williams,Williston,Williston State College,117,ND,38105,48.1814,-103.6364
+North Dakota,Traill,Mayville,Mayville State University,107,ND,38097,47.4982,-97.3264
+North Dakota,Bottineau,Bottineau,Dakota College at Bottineau,83,ND,38009,48.8248,-100.4425
+North Dakota,Barnes,Valley City,Valley City State University,68,ND,38003,46.9223,-98.0055
+Ohio,Franklin,Columbus,Ohio State University,4665,OH,39049,39.9862,-82.985
+Ohio,Butler,Oxford,Miami University (Ohio),2368,OH,39017,39.506100000000004,-84.7434
+Ohio,Montgomery,Dayton,University of Dayton,1503,OH,39113,39.7797,-84.1998
+Ohio,Hamilton,Cincinnati,University of Cincinnati,1252,OH,39061,39.1413,-84.5061
+Ohio,Athens,Athens,Ohio University,693,OH,39009,39.3269,-82.0988
+Ohio,Wood,Bowling Green,Bowling Green State University,665,OH,39173,41.3773,-83.65
+Ohio,Portage,Kent,Kent State University,580,OH,39133,41.149,-81.361
+Ohio,Lucas,Toledo,University of Toledo,566,OH,39095,41.6639,-83.5822
+Ohio,Hancock,Findlay,The University of Findlay,221,OH,39063,41.0467,-83.6379
+Ohio,Summit,Akron,University of Akron,216,OH,39153,41.0798,-81.5219
+Oklahoma,Payne,Stillwater,Oklahoma State University,2167,OK,40119,36.1316,-97.074
+Oklahoma,Cleveland,Norman,University of Oklahoma,630,OK,40027,35.2335,-97.3471
+Oklahoma,Oklahoma,Edmond,University of Central Oklahoma,573,OK,40109,35.6689,-97.4159
+Oklahoma,Custer,Weatherford,Southwestern Oklahoma State University,311,OK,40039,35.5384,-98.6872
+Oklahoma,Tulsa,Tulsa,University of Tulsa,191,OK,40143,36.1284,-95.9042
+Oklahoma,Oklahoma,Edmond,Oklahoma Christian University,186,OK,40109,35.6689,-97.4159
+Oklahoma,Bryan,Durant,Southeastern Oklahoma State University,170,OK,40013,33.9957,-96.3938
+Oklahoma,Kay,Tonkawa,Northern Oklahoma College,166,OK,40071,36.6787,-97.3281
+Oklahoma,Cherokee,Tahlequah,Northeastern State University,133,OK,40021,35.9116,-94.9773
+Oklahoma,Comanche,Lawton,Cameron University,114,OK,40031,34.6176,-98.4203
+Oregon,Lane,Eugene,University of Oregon,595,OR,41039,44.0563,-123.1173
+Oregon,Multnomah,Portland,Oregon Health & Science University,158,OR,41051,45.5372,-122.65
+Oregon,Benton,Corvallis,Oregon State University,157,OR,41003,44.5697,-123.278
+Oregon,Klamath,Klamath Falls,Oregon Institute of Technology,35,OR,41035,42.2191,-121.7754
+Oregon,Lane,Eugene,Lane Community College,29,OR,41039,44.0563,-123.1173
+Oregon,Union,La Grande,Eastern Oregon University,28,OR,41061,45.3243,-118.0865
+Oregon,Yamhill,Newberg,George Fox University,21,OR,41071,45.3075,-122.9601
+Oregon,Multnomah,Portland,Reed College,16,OR,41051,45.5372,-122.65
+Oregon,Jackson,Ashland,Southern Oregon University,15,OR,41029,42.1905,-122.6992
+Oregon,Washington,Forest Grove,Pacific University,14,OR,41067,45.5244,-123.1101
+Pennsylvania,Centre,State College,Penn State University,4353,PA,42027,40.7909,-77.8568
+Pennsylvania,Philadelphia,Philadelphia,University of Pennsylvania,827,PA,42101,40.0077,-75.1339
+Pennsylvania,Philadelphia,Philadelphia,Temple University,797,PA,42101,40.0077,-75.1339
+Pennsylvania,Lackawanna,Scranton,University of Scranton,645,PA,42069,41.4044,-75.6649
+Pennsylvania,Allegheny,Pittsburgh,University of Pittsburgh,627,PA,42003,40.4396,-79.9762
+Pennsylvania,Indiana,Indiana,Indiana University of Pennsylvania,419,PA,42063,40.622,-79.1552
+Pennsylvania,Philadelphia,Philadelphia,Saint Joseph's University,393,PA,42101,40.0077,-75.1339
+Pennsylvania,Columbia,Bloomsburg,Bloomsburg University of Pennsylvania,381,PA,42037,41.0027,-76.4561
+Pennsylvania,Berks,Kutztown,Kutztown University,381,PA,42011,40.5213,-75.7772
+Pennsylvania,Delaware,Villanova,Villanova University,363,NA,NA,40.039388,-75.345457
+Rhode Island,Washington,Kingston,University of Rhode Island,634,RI,44009,41.4738,-71.5236
+Rhode Island,Providence,Providence,Providence College,302,RI,44007,41.823,-71.4187
+Rhode Island,Bristol,Bristol,Roger Williams University,130,NA,NA,41.650214,-71.260374
+Rhode Island,Providence,Providence,Brown University,83,RI,44007,41.823,-71.4187
+Rhode Island,Providence,Providence,Johnson & Wales University,73,RI,44007,41.823,-71.4187
+Rhode Island,Providence,Smithfield,Bryant University,44,NA,NA,41.920092,-71.539547
+Rhode Island,Providence,Providence,Rhode Island College,42,RI,44007,41.823,-71.4187
+Rhode Island,Newport,Newport,Salve Regina University,19,RI,44005,41.4803,-71.3205
+Rhode Island,Providence,Providence,Rhode Island School of Design,14,RI,44007,41.823,-71.4187
+South Carolina,Pickens,Clemson,Clemson University,5086,SC,45077,34.6837,-82.8124
+South Carolina,Richland,Columbia,University of South Carolina,3037,SC,45079,34.0376,-80.9037
+South Carolina,Charleston,Charleston,College of Charleston,523,SC,45019,32.8153,-79.9628
+South Carolina,Greenville,Greenville,Greenville Technical College,472,SC,45045,34.8353,-82.3647
+South Carolina,Horry,Conway,Coastal Carolina University,335,SC,45051,33.8399,-79.0424
+South Carolina,Charleston,Charleston,Medical University of South Carolina,284,SC,45019,32.8153,-79.9628
+South Carolina,Anderson,Pendleton,Tri-County Technical College,237,SC,45007,34.6454,-82.7821
+South Carolina,Spartanburg,Spartanburg,Wofford College,174,SC,45083,34.9437,-81.9257
+South Carolina,Charleston,Charleston,The Citadel,163,SC,45019,32.8153,-79.9628
+South Carolina,Spartanburg,Spartanburg,University of South Carolina Upstate,162,SC,45083,34.9437,-81.9257
+South Dakota,Minnehaha,Sioux Falls,Augustana University,275,SD,46099,43.5397,-96.732
+South Dakota,Clay,Vermillion,University of South Dakota,264,SD,46027,42.7811,-96.9255
+South Dakota,Brookings,Brookings,South Dakota State University,112,SD,46011,44.3022,-96.7859
+South Dakota,Lawrence,Spearfish,Black Hills State University,72,SD,46081,44.4912,-103.8167
+South Dakota,Minnehaha,Sioux Falls,University of Sioux Falls,57,SD,46099,43.5397,-96.732
+South Dakota,Brown,Aberdeen,Northern State University,45,SD,46013,45.4646,-98.468
+South Dakota,Pennington,Rapid City,South Dakota School of Mines and Technology,41,SD,46103,44.0716,-103.2204
+South Dakota,Lake,Madison,Dakota State University,25,SD,46079,44.0062,-97.1084
+South Dakota,Yankton,Yankton,Mount Marty College,21,SD,46135,42.8901,-97.3926
+South Dakota,Oglala Lakota,Kyle,Oglala Lakota College,0,SD,46102,43.4245,-102.1802
+Tennessee,Knox,Knoxville,"University of Tennessee, Knoxville",2022,TN,47093,35.9692,-83.9496
+Tennessee,Davidson,Nashville,Vanderbilt University,816,TN,47037,36.1715,-86.7843
+Tennessee,Hamilton,Chattanooga,University of Tennessee at Chattanooga,806,TN,47065,35.0657,-85.2488
+Tennessee,Putnam,Cookeville,Tennessee Technological University,726,TN,47141,36.1484,-85.5114
+Tennessee,Rutherford,Murfreesboro,Middle Tennessee State University,484,TN,47149,35.8492,-86.4119
+Tennessee,Washington,Johnson City,East Tennessee State University,421,TN,47179,36.3406,-82.3803
+Tennessee,Shelby,Memphis,University of Memphis,381,TN,47157,35.1046,-89.9773
+Tennessee,Weakley,Martin,University of Tennessee at Martin,361,TN,47183,36.3386,-88.8513
+Tennessee,Shelby,Memphis,University of Tennessee Health Science Center,266,TN,47157,35.1046,-89.9773
+Tennessee,Montgomery,Clarksville,Austin Peay State University,258,TN,47125,36.5695,-87.342
+Texas,Lubbock,Lubbock,Texas Tech University,2697,TX,48303,33.5659,-101.8878
+Texas,Brazos,College Station,Texas A&M University,2521,TX,48041,30.5852,-96.296
+Texas,Travis,Austin,University of Texas at Austin,1849,TX,48453,30.3004,-97.7522
+Texas,Tarrant,Fort Worth,Texas Christian University,1497,TX,48439,32.7811,-97.3473
+Texas,McLennan,Waco,Baylor University,1492,TX,48309,31.5598,-97.1881
+Texas,El Paso,El Paso,University of Texas at El Paso,1118,TX,48141,31.8479,-106.4309
+Texas,Hays,San Marcos,Texas State University,978,TX,48209,29.8736,-97.9381
+Texas,Walker,Huntsville,Sam Houston State University,878,TX,48471,30.705,-95.5544
+Texas,Galveston,Galveston,University of Texas Medical Branch at Galveston,863,TX,48167,29.2487,-94.891
+Texas,Dallas,Dallas,Southern Methodist University,822,TX,48113,32.7936,-96.7662
+Utah,Utah,Provo,Brigham Young University,2993,UT,49049,40.2457,-111.6457
+Utah,Salt Lake,Salt Lake City,University of Utah,1864,UT,49035,40.7777,-111.9306
+Utah,Cache,Logan,Utah State University,1594,UT,49005,41.74,-111.8419
+Utah,Utah,Orem,Utah Valley University,898,UT,49049,40.2983,-111.6992
+Utah,Salt Lake,Salt Lake City,Salt Lake Community College,455,UT,49035,40.7777,-111.9306
+Utah,Washington,St. George,Dixie State University,398,UT,49053,37.077,-113.577
+Utah,Weber,Ogden,Weber State University,280,UT,49057,41.2278,-111.9682
+Utah,Iron,Cedar City,Southern Utah University,167,UT,49021,37.6834,-113.0956
+Utah,Salt Lake,Salt Lake City,Westminster College,99,UT,49035,40.7777,-111.9306
+Utah,Salt Lake,Salt Lake City,Westminster College,99,UT,49035,40.7777,-111.9306
+Utah,Salt Lake,Salt Lake City,Westminster College,99,UT,49035,40.7777,-111.9306
+Utah,Sanpete,Ephraim,Snow College,33,UT,49039,39.3564,-111.5847
+Vermont,Chittenden,Colchester,Saint Michael's College,77,NA,NA,44.494558,-73.167069
+Vermont,Chittenden,Burlington,University of Vermont,23,VT,50007,44.4877,-73.2314
+Vermont,Washington,Northfield,Norwich University,9,NA,NA,44.140237,-72.659783
+Vermont,Chittenden,Burlington,Champlain College,6,VT,50007,44.4877,-73.2314
+Vermont,Addison,Middlebury,Middlebury College,4,NA,NA,44.009117,-73.176068
+Vermont,Orange,Randolph,Vermont Technical College,4,NA,NA,43.939623,-72.604498
+Vermont,Bennington,Bennington,Bennington College,3,NA,NA,42.919547,-73.237799
+Vermont,Windham,Putney,Landmark College,3,NA,NA,42.977172,-72.512549
+Vermont,Rutland,Castleton,Castleton University,2,NA,NA,43.608397,-73.180842
+Vermont,Caledonia,Lyndonville,Northern Vermont University-Lyndon,1,VT,50005,44.5352,-72.0016
+Virginia,Rockingham,Harrisonburg,James Madison University,1650,VA,51660,38.4361,-78.8735
+Virginia,Montgomery,Blacksburg,Virginia Tech,1535,VA,51121,37.23,-80.4279
+Virginia,Charlottesville,Charlottesville,University of Virginia,1229,VA,51540,38.0375,-78.4855
+Virginia,Campbell,Lynchburg,Liberty University,906,VA,51680,37.4003,-79.1909
+Virginia,Radford,Radford,Radford University,548,VA,51750,37.1229,-80.5587
+Virginia,Lynchburg,Lynchburg,University of Lynchburg,539,VA,51680,37.4003,-79.1909
+Virginia,Richmond,Richmond,Virginia Commonwealth University,454,VA,51760,37.5295,-77.4756
+Virginia,Norfolk,Norfolk,Old Dominion University,187,VA,51710,36.8945,-76.259
+Virginia,Fairfax,Fairfax,George Mason University,175,VA,51600,38.8531,-77.2998
+Virginia,Newport News,Newport News,Christopher Newport University,146,VA,51700,37.1051,-76.5185
+Washington,Whitman,Pullman,Washington State University,1407,WA,53075,46.734,-117.1669
+Washington,King,Seattle,University of Washington,875,WA,53033,47.6211,-122.3244
+Washington,Spokane,Cheney,Eastern Washington University,229,WA,53063,47.4901,-117.579
+Washington,Kittitas,Ellensburg,Central Washington University,188,WA,53037,46.9994,-120.5477
+Washington,Spokane,Spokane,Gonzaga University,160,WA,53063,47.6671,-117.433
+Washington,Spokane,Spokane,Whitworth University,71,WA,53063,47.6671,-117.433
+Washington,King,Seattle,Seattle University,48,WA,53033,47.6211,-122.3244
+Washington,Pierce,Tacoma,University of Washington Tacoma,23,WA,53053,47.2431,-122.4531
+Washington,Spokane,Spokane,Spokane Community College,22,WA,53063,47.6671,-117.433
+Washington,Pierce,Tacoma,University of Puget Sound,21,WA,53053,47.2431,-122.4531
+West Virginia,Monongalia,Morgantown,West Virginia University,871,WV,54061,39.638,-79.9468
+West Virginia,Cabell,Huntington,Marshall University,282,WV,54011,38.4109,-82.4344
+West Virginia,Kanawha,Charleston,University of Charleston,76,WV,54039,38.3484,-81.6323
+West Virginia,Jefferson,Shepherdstown,Shepherd University,73,WV,54037,39.4318,-77.8048
+West Virginia,Kanawha,Institute,West Virginia State University,71,NA,NA,38.380541,-81.765034
+West Virginia,Mercer,Athens,Concord University,66,WV,54055,37.423,-81.0148
+West Virginia,Randolph,Elkins,Davis & Elkins College,65,WV,54083,38.9237,-79.854
+West Virginia,Marion,Fairmont,Fairmont State University,61,WV,54049,39.4768,-80.1491
+West Virginia,Ohio,West Liberty,West Liberty University,61,WV,54069,40.1647,-80.5972
+West Virginia,Barbour,Philippi,Alderson Broaddus University,48,WV,54001,39.1487,-80.0418
+Wisconsin,Dane,Madison,University of Wisconsin-Madison,4193,WI,55025,43.0826,-89.3931
+Wisconsin,Winnebago,Oshkosh,University of Wisconsin-Oshkosh,1183,WI,55139,44.0228,-88.5619
+Wisconsin,Milwaukee,Milwaukee,University of Wisconsin-Milwaukee,1128,WI,55079,43.0642,-87.9673
+Wisconsin,Milwaukee,Milwaukee,Marquette University,963,WI,55079,43.0642,-87.9673
+Wisconsin,Eau Claire,Eau Claire,University of Wisconsin-Eau Claire,776,WI,55035,44.8199,-91.4949
+Wisconsin,Walworth,Whitewater,University of Wisconsin-Whitewater,666,WI,55127,42.8372,-88.7341
+Wisconsin,Portage,Stevens Point,University of Wisconsin-Stevens Point,537,WI,55097,44.5241,-89.5508
+Wisconsin,Grant,Platteville,University of Wisconsin-Platteville,500,WI,55043,42.728,-90.4676
+Wisconsin,La Crosse,La Crosse,University of Wisconsin-La Crosse,492,WI,55063,43.824,-91.2268
+Wisconsin,Pierce,River Falls,University of Wisconsin-River Falls,366,WI,55093,44.861,-92.6248
+Wyoming,Albany,Laramie,University of Wyoming,1597,WY,56001,41.3099,-105.6085
+Wyoming,Natrona,Casper,Casper College,249,WY,56025,42.842,-106.3207
+Wyoming,Sweetwater,Rock Springs,Western Wyoming Community College,41,WY,56037,41.5951,-109.2238
+Wyoming,Goshen,Torrington,Eastern Wyoming College,10,WY,56015,42.0658,-104.1623
