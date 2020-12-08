@@ -33,6 +33,7 @@ library(dplyr)
 library(purrr)
 library(plotly)
 library(leaflet.extras)
+library(htmltools)
 
 ```
 
@@ -153,6 +154,12 @@ college_location_final$cases_type <- ifelse(college_location_final$cases <= 100,
                                      ifelse(college_location_final$cases > 500,
                                             "severe (>500)", "NA")))
 
+labs <- lapply(seq(nrow(college_location_final)), function(i){
+  paste0('<p>', college_location_final[i, "college"], '<p></p>', "Total Cases: ",
+         college_location_final[i, "cases"], '</p>')
+})
+
+
 ui <- fluidPage(
   mainPanel( 
 #this will create a space for us to display our map
@@ -186,9 +193,9 @@ server <- function(input, output, session) {
                  lat = ~ college_location_final$lat,
                  lng = ~ college_location_final$long, 
                  weight = 1, radius = ~sqrt(cases)*1000,
-                 popup = ~as.character(cases), 
-                 label = ~as.character(paste0(college, sep =", ", "Cases: ", 
-                                              sep = " ", cases)), 
+                 popup = paste(college_location_final$cases), 
+                 label = lapply(labs, htmltools::HTML),
+                   #HTML(paste0("<p>", college_location_final$college, ", ", "</p> Cases: ", college_location_final$cases)), 
                  color = ~pal(cases), fillOpacity = 0.5)
   })
   
@@ -199,11 +206,7 @@ server <- function(input, output, session) {
     if (input$markers) {
       proxy %>% addCircleMarkers(stroke = FALSE, color = ~pal2(cases_type),
                                  fillOpacity = 0.2, 
-                                 label = ~as.character(paste0(college, 
-                                                              sep =", ",
-                                                              "Cases: ", 
-                                                              sep = " ", 
-                                                              cases))) %>%
+                                 label = lapply(labs, htmltools::HTML)) %>%
         addLegend("bottomright", pal = pal2, 
                   values = college_location_final$cases_type,
                   title = "Case Type",
