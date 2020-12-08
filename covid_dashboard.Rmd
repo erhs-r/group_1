@@ -155,8 +155,8 @@ college_location_final$cases_type <- ifelse(college_location_final$cases <= 100,
                                             "severe (>500)", "NA")))
 
 labs <- lapply(seq(nrow(college_location_final)), function(i){
-  paste0('<p>', college_location_final[i, "college"], '<p></p>', "Total Cases: ",
-         college_location_final[i, "cases"], '</p>')
+  paste0('<p>', college_location_final[i, "college"], '<p></p>', 
+         "Total Cases: ", college_location_final[i, "cases"], '</p>')
 })
 
 
@@ -174,13 +174,13 @@ absolutePanel(top = 60, left = 20,
 server <- function(input, output, session) {
 #define the color pallate for the magnitidue of the earthquake
  pal <- colorNumeric(
-    palette = c('gold', 'orange', 'dark orange', 
+    palette = c('goldenrod1', 'orange', 'dark orange', 
                 'orange red', 'red', 'dark red'),
     domain = college_location_final$cases)
   
 #define the color of for the depth of the earquakes
  pal2 <- colorFactor(
-    palette = c('blue', 'yellow', 'red'),
+    palette = c('green', 'yellow', 'blue'),
     domain = college_location_final$cases_type
   )
  
@@ -195,7 +195,6 @@ server <- function(input, output, session) {
                  weight = 1, radius = ~sqrt(cases)*1000,
                  popup = paste(college_location_final$cases), 
                  label = lapply(labs, htmltools::HTML),
-                   #HTML(paste0("<p>", college_location_final$college, ", ", "</p> Cases: ", college_location_final$cases)), 
                  color = ~pal(cases), fillOpacity = 0.5)
   })
   
@@ -230,23 +229,14 @@ server <- function(input, output, session) {
     
   })
   
-}
+
+  }
 
 shinyApp(ui, server)
 
 
-
-
 ```
 
-
-
-
-## Blurb Color Spot
-
-```{r}
-
-```
 
 
 
