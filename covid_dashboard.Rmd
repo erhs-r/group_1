@@ -41,59 +41,30 @@ library(leaflet.extras)
 
 
 ```{r}
-penn_state <- read_excel("PennStateCovidTables_new.xlsx")
-penn_cases <- penn_state %>%
-  mutate(Week = week(Week)) %>%
-  select(Week, Total_Positive) %>%
-  rename(Positive = Total_Positive)
+#penn_state <- read_excel("PennStateCovidTables_new.xlsx")
+#penn_cases <- penn_state %>%
+  #mutate(Week = week(Week)) %>%
+  #select(Week, Total_Positive) %>%
+  #rename(Positive = Total_Positive)
 
-dygraph(penn_cases[,1:2], group = "cases") %>% 
-  dySeries(c("Positive"), label = "Penn State")
-
-osu <- read_excel("Ohio State COVID-19 Dashboard Data Tables.xlsx", skip = 5)
-osu_cases <- osu %>%
-  select(`Test Date`, `Positive Tests...9`) %>%
-  rename(Week = `Test Date`, 
-         Positive = `Positive Tests...9`) %>%
-  mutate(Week = week(Week)) %>%
-  group_by(Week) %>%
-  summarise(sum(Positive))
-
-dygraph(osu_cases[,1:2], group = "cases") %>% 
-  dySeries(c("sum(Positive)"), label = "Ohio State")
-
-clemson <- read_excel("clemsonDashboard.xlsx", sheet = "Daily Data") 
-
-clemson_cases <- clemson %>%
-  select(Date, Positive) %>%
-  mutate(Date = week(Date)) %>%
-  group_by(Date) %>%
-  summarise(sum(Positive)) %>%
-  slice(1:10) %>%
-  rename(Week = Date)
-
-dygraph(clemson_cases[,1:2], group = "cases") %>% 
-  dySeries(c("sum(Positive)"), label = "Clemson")
+#dygraph(penn_cases[,1:2], group = "cases") %>% 
+  #dySeries(c("Positive"), label = "Penn State")
 
 
-u_of_g <- read_excel("UG_covid_data.xlsx")
+clemson <- read_csv("clemson_cases.csv")
 
-ug_cases <- u_of_g %>%
-  mutate(Week = week(`Reporting Week`)) %>%
-  rename(Positive = `Total Number of Positive Student Tests*`) %>%
-  mutate(College = "UG") %>%
-  select(Positive:College)
+dygraph(clemson[,1:2], group = "cases") %>% 
+  dySeries(c("Positive"), label = "Clemson")
 
-dygraph(ug_cases[,1:2], group = "cases") %>% 
+
+u_of_g <- read_csv("ug_cases.csv")
+
+dygraph(u_of_g[,1:2], group = "cases") %>% 
   dySeries(c("Positive"), label = "University of Georgia")
 
-uf <- read_excel("UF_covid_data.xlsx")
+uf <- read_csv("uf_cases.csv")
 
-uf_cases <- uf %>%
-  mutate(Week = week(Week)) %>%
-  mutate(College = "UF")
-
-dygraph(uf_cases[,1:2], group = "cases") %>% 
+dygraph(uf[,1:2], group = "cases") %>% 
   dySeries(c("Positive"), label = "University of Florida")
 ```
 
