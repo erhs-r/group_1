@@ -4,15 +4,18 @@ author: "Kellin, Valerie, Sophia, Beth"
 date: "12/9/2020"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
-    social: menu
-    source_code: embed
+    orientation: rows
+    theme: cerulean
+    
 ---
-
----
-
+Row
+-------------------------------------
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE,
+                      cache = FALSE,
+                      eval = TRUE)
 library(ggplot2)
 library(tidyverse)
 library(viridis)
@@ -38,67 +41,13 @@ library(htmltools)
 ```
 
 
-## Time Series Plot
+### Interactive Map Plot
 
-
-```{r}
-College_Dygrapgh <- read_csv("raw data/College_Dygrapgh.txt")
-dygraph(College_Dygrapgh, main = "Cases by Top Trending Schools") %>%
-  dyOptions(colors = RColorBrewer::brewer.pal(4,"Set2")) %>% 
-  dyAxis("y", label = "Cases") %>% 
-  dyAxis("x", label = "Week Number (August 3,2020 - November 29,2020)") %>% 
-  dySeries("casesuf", label = "U of Florida") %>% 
-  dySeries("casesug", label= "U of Georgia") %>% 
-  dySeries("casesclem", label = "Clemson") %>% 
-  dySeries("casesps", label = "Penn State") %>% 
-  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
- 
-```
-
-
-
-## South Carolina County Plot
-
-```{r}
-sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
-
-sc_counties <- read_csv("sc_covid_counties2.csv") #if we don't like labels can put back to1
-sc_counties$fips <- as.character(sc_counties$fips)
-
-sc_fips <- sc_county %>% 
-  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
-  full_join(sc_counties, by = "fips") 
-
-
-
-ggplot() + 
-  geom_sf(data = sc_fips, aes(fill = cases)) +
-  scale_fill_viridis() +
-  labs(fill = "Number of cases\n per county\n") +
-  ggtitle("South Carolina Covid Cases by County",
-          subtitle = "Top Three Colleges by Cases") + 
-  geom_sf_label(data = sc_fips, aes(label = college), nudge_x = c(0.5, 0, 0),
-                nudge_y = c(-0.2,0,0)) +
-  theme_tufte() +
-  theme(axis.ticks = element_blank(),
-        axis.text = element_blank())
-
-```
-
-
-
-
-
-
-## Interactive Map Plot
-
-# data cleaned for the map
 ```{r datamap}
 
 college_location_final <- read_csv("college_location_final.csv")
 
 ```
-# map code
 
 ```{r}
 
@@ -118,7 +67,7 @@ labs <- lapply(seq(nrow(college_location_final)), function(i){
 ui <- fluidPage(
   mainPanel( 
 #this will create a space for us to display our map
-leafletOutput(outputId = "mymap"), 
+leafletOutput(outputId = "mymap", width = 1200, height = 1000), 
 #this allows me to put the checkmarks ontop of the map to allow people to view earthquake depth or overlay a heatmap
 absolutePanel(top =60, left = 20, 
       checkboxInput("markers", "Case Type", FALSE),
@@ -142,7 +91,7 @@ server <- function(input, output, session) {
  #create the map
   output$mymap <- renderLeaflet({
     leaflet(college_location_final) %>% 
-      setView(lng = -99, lat = 40, zoom = 3.5)  %>% #setting the view over ~ center of North America
+      setView(lng = -99, lat = 12, zoom = 3.5)  %>% #setting the view over ~ center of North America
       addTiles() %>% 
       addCircles(data = college_location_final, 
                  lat = ~ college_location_final$lat,
@@ -192,6 +141,49 @@ shinyApp(ui, server)
 
 ```
 
+Row
+-------------------------------------
+
+### South Carolina County Plot
+
+```{r}
+sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
+
+sc_counties <- read_csv("sc_covid_counties2.csv") #if we don't like labels can put back to1
+sc_counties$fips <- as.character(sc_counties$fips)
+
+sc_fips <- sc_county %>% 
+  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
+  full_join(sc_counties, by = "fips") 
 
 
 
+ggplot() + 
+  geom_sf(data = sc_fips, aes(fill = cases)) +
+  scale_fill_viridis() +
+  labs(fill = "Number of cases\n per county\n") +
+  ggtitle("South Carolina Covid Cases by County",
+          subtitle = "Top Three Colleges by Cases") + 
+  geom_sf_label(data = sc_fips, aes(label = college), nudge_x = c(0.5, 0, 0),
+                nudge_y = c(-0.2,0,0)) +
+  theme_tufte() +
+  theme(axis.ticks = element_blank(),
+        axis.text = element_blank())
+
+```
+
+### Time Series Plot
+
+```{r}
+College_Dygrapgh <- read_csv("raw data/College_Dygrapgh.txt")
+dygraph(College_Dygrapgh, main = "Cases by Top Trending Schools") %>%
+  dyOptions(colors = RColorBrewer::brewer.pal(4,"Set1")) %>% 
+  dyAxis("y", label = "Cases") %>% 
+  dyAxis("x", label = "Week of the Year (August 3,2020 - November 29,2020)") %>% 
+  dySeries("casesuf", label = "U of Florida") %>% 
+  dySeries("casesug", label= "U of Georgia") %>% 
+  dySeries("casesclem", label = "Clemson") %>% 
+  dySeries("casesps", label = "Penn State") %>% 
+  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
+ 
+```
