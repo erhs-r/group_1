@@ -71,7 +71,7 @@ ui <- fluidPage(
 #this will create a space for us to display our map
 leafletOutput(outputId = "mymap"), 
 #this allows me to put the checkmarks ontop of the map to allow people to view earthquake depth or overlay a heatmap
-absolutePanel(top = 60, left = 20, 
+absolutePanel(top =60, left = 20, 
       checkboxInput("markers", "Case Type", FALSE),
       checkboxInput("heat", "Rank", FALSE)
     )
