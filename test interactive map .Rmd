@@ -1,0 +1,96 @@
+---
+title: "Untitled"
+author: "Kellin D Slater"
+date: "12/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(flexdashboard)
+library(shiny)
+library(jsonlite)
+library(maptools)
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(purrr)
+library(leaflet)
+library(plotly)
+library(leaflet.extras)
+
+```
+
+
+
+```{r}
+college_location_final$cases_type <- ifelse(college_location_final$cases <= 100, "low", ifelse(college_location_final$cases <= 500, "moderate", ifelse(college_location_final$cases > 500, "severe", "NA")))
+
+ui <- fluidPage(
+  mainPanel( 
+#this will create a space for us to display our map
+leafletOutput(outputId = "mymap"), 
+#this allows me to put the checkmarks ontop of the map to allow people to view earthquake depth or overlay a heatmap
+absolutePanel(top = 60, left = 20, 
+      checkboxInput("markers", "College", FALSE),
+      checkboxInput("heat", "what do you do", FALSE)
+    )
+))
+
+server <- function(input, output, session) {
+#define the color pallate for the magnitidue of the earthquake
+ pal <- colorNumeric(
+    palette = c('gold', 'orange', 'dark orange', 'orange red', 'red', 'dark red'),
+    domain = college_location_final$cases)
+  
+#define the color of for the depth of the earquakes
+ pal2 <- colorFactor(
+    palette = c('blue', 'yellow', 'red'),
+    domain = college_location_final$cases_type
+  )
+ 
+ #create the map
+  output$mymap <- renderLeaflet({
+    leaflet(college_location_final) %>% 
+      setView(lng = -99, lat = 45, zoom = 4)  %>% #setting the view over ~ center of North America
+      addTiles() %>% 
+      addCircles(data = college_location_final, lat = ~ college_location_final$lat, lng = ~ college_location_final$long, weight = 1, radius = ~sqrt(cases)*1000, popup = ~as.character(cases), label = ~as.character(paste0("Cases: ", sep = " ", cases, sep = " ", "County: ", sep = " ",county.x)), color = ~pal(cases), fillOpacity = 0.5)
+  })
+  
+  #next we use the observe function to make the checkboxes dynamic. If you leave this part out you will see that the checkboxes, when clicked on the first time, display our filters...But if you then uncheck them they stay on. So we need to tell the server to update the map when the checkboxes are unchecked.
+  observe({
+    proxy <- leafletProxy("mymap", data = college_location_final)
+    proxy %>% clearMarkers()
+    if (input$markers) {
+      proxy %>% addCircleMarkers(stroke = FALSE, color = ~pal2(cases),
+                                 fillOpacity = 0.2, 
+                                 label = ~as.character(paste0("College: ", 
+                                                              sep = " ", college))) %>%
+        addLegend("bottomright", pal = pal2, values = college_location_final$cases_type
+                  title = "Case Type",
+                  opacity = 1)}
+    else {
+      proxy %>% clearMarkers() %>% clearControls()
+    }
+  })
+  
+  observe({
+    proxy <- leafletProxy("mymap", data = college_location_final)
+    proxy %>% clearMarkers()
+    if (input$heat) {
+      proxy %>%  addHeatmap(lng=~long, lat=~lat, intensity = ~cases, blur =  10, max = 0.05, radius = 15) 
+      }
+    else{
+      proxy %>% clearHeatmap()
+      }
+    
+    
+  })
+  
+}
+
+shinyApp(ui, server)
+
+```
+

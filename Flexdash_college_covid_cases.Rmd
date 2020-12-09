@@ -14,11 +14,14 @@ knitr::opts_chunk$set(echo = TRUE)
 library(dygraphs)
 library(quantmod)
 library(flexdashboard)
+library(readr)
+library(readxl)
+library(tidyverse)
 ```
 
 ```{r}
-penn_state <- read_excel("PennStateCovidTables_new.xlsx")
 
+penn_state <- read_excel("PennStateCovidTables_new.xlsx")
 penn_cases <- penn_state %>%
   mutate(Week = week(Week)) %>%
   select(Week, Total_Positive) %>%
