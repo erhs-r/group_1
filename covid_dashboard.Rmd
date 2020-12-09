@@ -1,23 +1,18 @@
 ---
-title: "Covid Cases By College Dashboard"
+title: "Covid Dashboard"
 author: "Kellin, Valerie, Sophia, Beth"
-date: "11/30/2020"
+date: "12/9/2020"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: rows
-  
+    orientation: columns
+    social: menu
+    source_code: embed
 ---
 
-rows
--------------------------------------
+---
 
 ```{r setup, include=FALSE}
-
-knitr::opts_chunk$set(echo = FALSE,
-                      warning = FALSE,
-                      message = FALSE,
-                      cache = FALSE,
-                      eval = TRUE)
+knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
 library(tidyverse)
 library(viridis)
@@ -39,17 +34,120 @@ library(purrr)
 library(plotly)
 library(leaflet.extras)
 library(htmltools)
-library(htmlwidgets)
 
 ```
 
 
-### Interactive Map Plot
+## Time Series Plot
+
+
+```{r}
+penn_state <- read_excel("PennStateCovidTables_new.xlsx")
+penn_cases <- penn_state %>%
+  mutate(Week = week(Week)) %>%
+  select(Week, Total_Positive) %>%
+  rename(Positive = Total_Positive)
+
+dygraph(penn_cases[,1:2], group = "cases") %>% 
+  dySeries(c("Positive"), label = "Penn State")
+
+osu <- read_excel("Ohio State COVID-19 Dashboard Data Tables.xlsx", skip = 5)
+osu_cases <- osu %>%
+  select(`Test Date`, `Positive Tests...9`) %>%
+  rename(Week = `Test Date`, 
+         Positive = `Positive Tests...9`) %>%
+  mutate(Week = week(Week)) %>%
+  group_by(Week) %>%
+  summarise(sum(Positive))
+
+dygraph(osu_cases[,1:2], group = "cases") %>% 
+  dySeries(c("sum(Positive)"), label = "Ohio State")
+
+clemson <- read_excel("clemsonDashboard.xlsx", sheet = "Daily Data") 
+
+clemson_cases <- clemson %>%
+  select(Date, Positive) %>%
+  mutate(Date = week(Date)) %>%
+  group_by(Date) %>%
+  summarise(sum(Positive)) %>%
+  slice(1:10) %>%
+  rename(Week = Date)
+
+dygraph(clemson_cases[,1:2], group = "cases") %>% 
+  dySeries(c("sum(Positive)"), label = "Clemson")
+
+
+u_of_g <- read_excel("UG_covid_data.xlsx")
+
+ug_cases <- u_of_g %>%
+  mutate(Week = week(`Reporting Week`)) %>%
+  rename(Positive = `Total Number of Positive Student Tests*`) %>%
+  mutate(College = "UG") %>%
+  select(Positive:College)
+
+dygraph(ug_cases[,1:2], group = "cases") %>% 
+  dySeries(c("Positive"), label = "University of Georgia")
+
+uf <- read_excel("UF_covid_data.xlsx")
+
+uf_cases <- uf %>%
+  mutate(Week = week(Week)) %>%
+  mutate(College = "UF")
+
+dygraph(uf_cases[,1:2], group = "cases") %>% 
+  dySeries(c("Positive"), label = "University of Florida")
+```
+
+
+
+
+
+
+
+
+
+## South Carolina County Plot
+
+```{r}
+sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
+
+sc_counties <- read_csv("sc_covid_counties2.csv") #if we don't like labels can put back to1
+sc_counties$fips <- as.character(sc_counties$fips)
+
+sc_fips <- sc_county %>% 
+  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
+  full_join(sc_counties, by = "fips") 
+
+
+
+ggplot() + 
+  geom_sf(data = sc_fips, aes(fill = cases)) +
+  scale_fill_viridis() +
+  labs(fill = "Number of cases\n per county\n") +
+  ggtitle("South Carolina Covid Cases by County",
+          subtitle = "Top Three Colleges by Cases") + 
+  geom_sf_label(data = sc_fips, aes(label = college), nudge_x = c(0.5, 0, 0),
+                nudge_y = c(-0.2,0,0)) +
+  theme_tufte() +
+  theme(axis.ticks = element_blank(),
+        axis.text = element_blank())
+
+```
+
+
+
+
+
+
+## Interactive Map Plot
+
+# data cleaned for the map
 ```{r datamap}
 
 college_location_final <- read_csv("college_location_final.csv")
 
 ```
+# map code
 
 ```{r}
 
@@ -112,7 +210,7 @@ server <- function(input, output, session) {
       proxy %>% addCircleMarkers(stroke = FALSE, color = ~pal2(cases_type),
                                  fillOpacity = 0.2, 
                                  label = lapply(labs, htmltools::HTML)) %>%
-        addLegend("bottomleft", pal = pal2, 
+        addLegend("bottomright", pal = pal2, 
                   values = college_location_final$cases_type,
                   title = "Case Type",
                   opacity = 1)}
@@ -141,53 +239,8 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 
 
-
-```
-
-rows 
--------------------------------------
-
-### South Carolina County Plot
-
-```{r, message=FALSE}
-sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
-
-sc_counties <- read_csv("sc_covid_counties2.csv") #if we don't like labels can put back to1
-sc_counties$fips <- as.character(sc_counties$fips)
-
-sc_fips <- sc_county %>% 
-  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
-  full_join(sc_counties, by = "fips") 
-
-
-
-ggplot() + 
-  geom_sf(data = sc_fips, aes(fill = cases)) +
-  scale_fill_viridis() +
-  labs(fill = "Number of cases\n per county\n") +
-  ggtitle("Total Number of South Carolina Cases by County") + 
-  geom_sf_label(data = sc_fips, aes(label = college), nudge_x = c(0.5, 0, 0),
-                nudge_y = c(-0.2,0,0)) +
-  theme_tufte() +
-  theme(axis.ticks = element_blank(),
-        axis.text = element_blank())
-
 ```
 
 
 
-### Time Series Plot
-```{r}
-College_Dygrapgh <- read_csv("raw data/College_Dygrapgh.txt")
-
-dygraph(College_Dygrapgh, main = "Cases by Top Trending Schools") %>%
-  dyOptions(colors = RColorBrewer::brewer.pal(4,"Set2")) %>% 
-  dyAxis("y", label = "Cases") %>% 
-  dyAxis("x", label = "Week Number (August 3,2020 - November 29,2020)") %>% 
-  dySeries("casesuf", label = "U of Florida") %>% 
-  dySeries("casesug", label= "U of Georgia") %>% 
-  dySeries("casesclem", label = "Clemson") %>% 
-  dySeries("casesps", label = "Penn State") %>% 
-  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
-```
 
