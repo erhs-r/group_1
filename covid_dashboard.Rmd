@@ -1,18 +1,19 @@
 ---
-title: "Covid Dashboard"
+title: "Covid Cases By College Dashboard"
 author: "Kellin, Valerie, Sophia, Beth"
 date: "11/30/2020"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
-    social: menu
-    source_code: embed
----
-
+    orientation: column
+  
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE,
+                      cache = FALSE)
 library(ggplot2)
 library(tidyverse)
 library(viridis)
@@ -34,52 +35,32 @@ library(purrr)
 library(plotly)
 library(leaflet.extras)
 library(htmltools)
+library(htmlwidgets)
 
 ```
+
 
 
 ## Time Series Plot
-
-
 ```{r}
-#penn_state <- read_excel("PennStateCovidTables_new.xlsx")
-#penn_cases <- penn_state %>%
-  #mutate(Week = week(Week)) %>%
-  #select(Week, Total_Positive) %>%
-  #rename(Positive = Total_Positive)
+College_Dygrapgh <- read_csv("raw data/College_Dygrapgh.txt")
 
-#dygraph(penn_cases[,1:2], group = "cases") %>% 
-  #dySeries(c("Positive"), label = "Penn State")
-
-
-clemson <- read_csv("clemson_cases.csv")
-
-dygraph(clemson[,1:2], group = "cases") %>% 
-  dySeries(c("Positive"), label = "Clemson")
-
-
-u_of_g <- read_csv("ug_cases.csv")
-
-dygraph(u_of_g[,1:2], group = "cases") %>% 
-  dySeries(c("Positive"), label = "University of Georgia")
-
-uf <- read_csv("uf_cases.csv")
-
-dygraph(uf[,1:2], group = "cases") %>% 
-  dySeries(c("Positive"), label = "University of Florida")
+dygraph(College_Dygrapgh, main = "Cases by Top Trending Schools") %>%
+  dyOptions(colors = RColorBrewer::brewer.pal(4,"Set2")) %>% 
+  dyAxis("y", label = "Cases") %>% 
+  dyAxis("x", label = "Week Number (August 3,2020 - November 29,2020)") %>% 
+  dySeries("casesuf", label = "U of Florida") %>% 
+  dySeries("casesug", label= "U of Georgia") %>% 
+  dySeries("casesclem", label = "Clemson") %>% 
+  dySeries("casesps", label = "Penn State") %>% 
+  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
 ```
-
-
-
-
-
-
 
 
 
 ## South Carolina County Plot
 
-```{r}
+```{r, message=FALSE}
 sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
 
 sc_counties <- read_csv("sc_covid_counties.csv")
@@ -105,10 +86,7 @@ ggplot() +
 
 
 
-
 ## Interactive Map Plot
-
-# data cleaned for the map
 ```{r datamap}
 
 college_location_final <- read_csv("college_location_final.csv")
