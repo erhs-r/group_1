@@ -210,7 +210,7 @@ server <- function(input, output, session) {
       proxy %>% addCircleMarkers(stroke = FALSE, color = ~pal2(cases_type),
                                  fillOpacity = 0.2, 
                                  label = lapply(labs, htmltools::HTML)) %>%
-        addLegend("bottomright", pal = pal2, 
+        addLegend("topright", pal = pal2, 
                   values = college_location_final$cases_type,
                   title = "Case Type",
                   opacity = 1)}
