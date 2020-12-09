@@ -4,16 +4,20 @@ author: "Kellin, Valerie, Sophia, Beth"
 date: "11/30/2020"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: column
+    orientation: rows
   
 ---
+
+rows
+-------------------------------------
 
 ```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE,
                       message = FALSE,
-                      cache = FALSE)
+                      cache = FALSE,
+                      eval = TRUE)
 library(ggplot2)
 library(tidyverse)
 library(viridis)
@@ -40,62 +44,12 @@ library(htmlwidgets)
 ```
 
 
-
-## Time Series Plot
-```{r}
-College_Dygrapgh <- read_csv("raw data/College_Dygrapgh.txt")
-
-dygraph(College_Dygrapgh, main = "Cases by Top Trending Schools") %>%
-  dyOptions(colors = RColorBrewer::brewer.pal(4,"Set2")) %>% 
-  dyAxis("y", label = "Cases") %>% 
-  dyAxis("x", label = "Week Number (August 3,2020 - November 29,2020)") %>% 
-  dySeries("casesuf", label = "U of Florida") %>% 
-  dySeries("casesug", label= "U of Georgia") %>% 
-  dySeries("casesclem", label = "Clemson") %>% 
-  dySeries("casesps", label = "Penn State") %>% 
-  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
-```
-
-
-
-## South Carolina County Plot
-
-```{r, message=FALSE}
-sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
-
-sc_counties <- read_csv("sc_covid_counties2.csv") #if we don't like labels can put back to1
-sc_counties$fips <- as.character(sc_counties$fips)
-
-sc_fips <- sc_county %>% 
-  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
-  full_join(sc_counties, by = "fips") 
-
-
-
-ggplot() + 
-  geom_sf(data = sc_fips, aes(fill = cases)) +
-  scale_fill_viridis() +
-  labs(fill = "Number of cases\n per county\n") +
-  ggtitle("Total Number of South Carolina Cases by County") + 
-  geom_sf_label(data = sc_fips, aes(label = college), nudge_x = c(0.5, 0, 0),
-                nudge_y = c(-0.2,0,0)) +
-  theme_tufte() +
-  theme(axis.ticks = element_blank(),
-        axis.text = element_blank())
-
-```
-
-
-
-
-
-## Interactive Map Plot
+### Interactive Map Plot
 ```{r datamap}
 
 college_location_final <- read_csv("college_location_final.csv")
 
 ```
-# map code
 
 ```{r}
 
@@ -158,7 +112,7 @@ server <- function(input, output, session) {
       proxy %>% addCircleMarkers(stroke = FALSE, color = ~pal2(cases_type),
                                  fillOpacity = 0.2, 
                                  label = lapply(labs, htmltools::HTML)) %>%
-        addLegend("bottomright", pal = pal2, 
+        addLegend("bottomleft", pal = pal2, 
                   values = college_location_final$cases_type,
                   title = "Case Type",
                   opacity = 1)}
@@ -187,8 +141,53 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 
 
+
+```
+
+rows 
+-------------------------------------
+
+### South Carolina County Plot
+
+```{r, message=FALSE}
+sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
+
+sc_counties <- read_csv("sc_covid_counties2.csv") #if we don't like labels can put back to1
+sc_counties$fips <- as.character(sc_counties$fips)
+
+sc_fips <- sc_county %>% 
+  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
+  full_join(sc_counties, by = "fips") 
+
+
+
+ggplot() + 
+  geom_sf(data = sc_fips, aes(fill = cases)) +
+  scale_fill_viridis() +
+  labs(fill = "Number of cases\n per county\n") +
+  ggtitle("Total Number of South Carolina Cases by County") + 
+  geom_sf_label(data = sc_fips, aes(label = college), nudge_x = c(0.5, 0, 0),
+                nudge_y = c(-0.2,0,0)) +
+  theme_tufte() +
+  theme(axis.ticks = element_blank(),
+        axis.text = element_blank())
+
 ```
 
 
 
+### Time Series Plot
+```{r}
+College_Dygrapgh <- read_csv("raw data/College_Dygrapgh.txt")
+
+dygraph(College_Dygrapgh, main = "Cases by Top Trending Schools") %>%
+  dyOptions(colors = RColorBrewer::brewer.pal(4,"Set2")) %>% 
+  dyAxis("y", label = "Cases") %>% 
+  dyAxis("x", label = "Week Number (August 3,2020 - November 29,2020)") %>% 
+  dySeries("casesuf", label = "U of Florida") %>% 
+  dySeries("casesug", label= "U of Georgia") %>% 
+  dySeries("casesclem", label = "Clemson") %>% 
+  dySeries("casesps", label = "Penn State") %>% 
+  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
+```
 
