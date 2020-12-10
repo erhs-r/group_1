@@ -145,8 +145,7 @@ Row
 -------------------------------------
 
 ### South Carolina County Plot
-
-```{r}
+```{r message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
 sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
 
 sc_counties <- read_csv("sc_covid_counties2.csv") #if we don't like labels can put back to1
@@ -155,8 +154,10 @@ sc_counties$fips <- as.character(sc_counties$fips)
 sc_fips <- sc_county %>% 
   mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
   full_join(sc_counties, by = "fips") 
+```
 
 
+```{r}
 
 ggplot() + 
   geom_sf(data = sc_fips, aes(fill = cases)) +
