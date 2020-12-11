@@ -1,0 +1,193 @@
+---
+title: "Covid Dashboard"
+author: "Kellin, Valerie, Sophia, Beth"
+date: "12/9/2020"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    theme: cerulean
+    
+---
+Row
+-------------------------------------
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE,
+                      cache = FALSE,
+                      eval = TRUE)
+library(ggplot2)
+library(tidyverse)
+library(viridis)
+library(tigris)
+library(ggthemes)
+library(quantmod)
+library(flexdashboard)
+library(dygraphs)
+library(readr)
+library(readxl)
+library(lubridate)
+library(leaflet)
+library(leaflet.extras)
+library(shiny)
+library(jsonlite)
+library(maptools)
+library(dplyr)
+library(purrr)
+library(plotly)
+library(leaflet.extras)
+library(htmltools)
+
+```
+
+
+### Interactive Map Plot
+
+```{r datamap}
+
+college_location_final <- read_csv("college_location_final.csv")
+
+```
+
+```{r}
+
+college_location_final$cases_type <- ifelse(college_location_final$cases <= 100,
+                                            "low (<100)", 
+                                     ifelse(college_location_final$cases <= 500, 
+                                            "moderate (100-500)",
+                                     ifelse(college_location_final$cases > 500,
+                                            "severe (>500)", "NA")))
+
+labs <- lapply(seq(nrow(college_location_final)), function(i){
+  paste0('<p>', college_location_final[i, "college"], '<p></p>', 
+         "Total Cases: ", college_location_final[i, "cases"], '</p>')
+})
+
+
+ui <- fluidPage(
+  mainPanel( 
+#this will create a space for us to display our map
+leafletOutput(outputId = "mymap", width = 1200, height = 1000), 
+#this allows me to put the checkmarks ontop of the map to allow people to view earthquake depth or overlay a heatmap
+absolutePanel(top =60, left = 20, 
+      checkboxInput("markers", "Case Type", FALSE),
+      checkboxInput("heat", "Rank", FALSE)
+    )
+))
+
+server <- function(input, output, session) {
+#define the color pallate for the magnitidue of the earthquake
+ pal <- colorNumeric(
+    palette = c('goldenrod1', 'orange', 'dark orange', 
+                'orange red', 'red', 'dark red'),
+    domain = college_location_final$cases)
+  
+#define the color of for the depth of the earquakes
+ pal2 <- colorFactor(
+    palette = c('green', 'yellow', 'blue'),
+    domain = college_location_final$cases_type
+  )
+ 
+ #create the map
+  output$mymap <- renderLeaflet({
+    leaflet(college_location_final) %>% 
+      setView(lng = -99, lat = 12, zoom = 3.5)  %>% #setting the view over ~ center of North America
+      addTiles() %>% 
+      addCircles(data = college_location_final, 
+                 lat = ~ college_location_final$lat,
+                 lng = ~ college_location_final$long, 
+                 weight = 1, radius = ~sqrt(cases)*1000,
+                 popup = paste(college_location_final$cases), 
+                 label = lapply(labs, htmltools::HTML),
+                 color = ~pal(cases), fillOpacity = 0.5)
+  })
+  
+  #next we use the observe function to make the checkboxes dynamic. If you leave this part out you will see that the checkboxes, when clicked on the first time, display our filters...But if you then uncheck them they stay on. So we need to tell the server to update the map when the checkboxes are unchecked.
+  observe({
+    proxy <- leafletProxy("mymap", data = college_location_final)
+    proxy %>% clearMarkers()
+    if (input$markers) {
+      proxy %>% addCircleMarkers(stroke = FALSE, color = ~pal2(cases_type),
+                                 fillOpacity = 0.2, 
+                                 label = lapply(labs, htmltools::HTML)) %>%
+        addLegend("topright", pal = pal2, 
+                  values = college_location_final$cases_type,
+                  title = "Case Type",
+                  opacity = 1)}
+    else {
+      proxy %>% clearMarkers() %>% clearControls()
+    }
+  })
+  
+  observe({
+    proxy <- leafletProxy("mymap", data = college_location_final)
+    proxy %>% clearMarkers()
+    if (input$heat) {
+      proxy %>%  addHeatmap(lng=~long, lat=~lat, intensity = ~cases,
+                            blur =  10, max = 0.05, radius = 15) 
+      }
+    else{
+      proxy %>% clearHeatmap()
+      }
+    
+    
+  })
+  
+
+  }
+
+shinyApp(ui, server)
+
+
+```
+
+Row
+-------------------------------------
+
+### South Carolina County Plot
+```{r message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
+sc_county <- counties(state = "SC", cb = TRUE, class = "sf")
+
+sc_counties <- read_csv("sc_covid_counties2.csv") #if we don't like labels can put back to1
+sc_counties$fips <- as.character(sc_counties$fips)
+
+sc_fips <- sc_county %>% 
+  mutate(fips = paste0(STATEFP, COUNTYFP)) %>% 
+  full_join(sc_counties, by = "fips") 
+```
+
+
+```{r}
+
+ggplot() + 
+  geom_sf(data = sc_fips, aes(fill = cases)) +
+  scale_fill_viridis(labels=function(cases) format(cases, 
+                                                   big.mark = ",")) +
+  labs(fill = "Number of cases\n per county\n") +
+  ggtitle("South Carolina Covid Cases by County",
+          subtitle = "Top Three Colleges by Cases") + 
+  geom_sf_label(data = sc_fips, aes(label = college), nudge_x = c(0.5, 0, 0),
+                nudge_y = c(-0.2,0,0),
+                alpha = 0.5) +
+  theme_tufte() +
+  theme(axis.ticks = element_blank(),
+        axis.text = element_blank(), 
+        axis.title = element_blank())
+
+```
+
+### Time Series Plot
+
+```{r}
+College_Dygrapgh <- read_csv("raw data/College_Dygrapgh.txt")
+dygraph(College_Dygrapgh, main = "Cases by Top Trending Schools") %>%
+  dyOptions(colors = RColorBrewer::brewer.pal(4,"Set1")) %>% 
+  dyAxis("y", label = "Cases") %>% 
+  dyAxis("x", label = "Week of the Year (August 3,2020 - November 29,2020)") %>% 
+  dySeries("casesuf", label = "U of Florida") %>% 
+  dySeries("casesug", label= "U of Georgia") %>% 
+  dySeries("casesclem", label = "Clemson") %>% 
+  dySeries("casesps", label = "Penn State") %>% 
+  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
+ 
+```
