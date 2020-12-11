@@ -124,6 +124,17 @@ shinyApp(ui, server)
 
 ```
 
+### About This Page
+
+In the **interactive map**, we show the top 5 universities per state with the highest number of COVID-19 positive tests*. Data from the New York Times was used to generate this map. Color indicates severity of cases, where green is universities with less than 100 cases, yellow is universities with cases between 100-500, purple is case counts above 500, grey indicates no data available.
+
+In the **time series**, data shows the top 4 universities with the most COVID-19 cases in the United States. Clemson University, Ohio State University, University of Florida, and University of Georgia had the most cases, but Penn State data was used in this graph due to lack of data available for Ohio State University. X-axis represents time (in weeks) since each university’s fall 2020 start date. Y-axis represented number of cases per week. By scrolling over each week, users can visualize the number of cases per week for each school.
+
+For the **South Carolina Density Plot,** Clemson University had the greatest number of COVID-19 positive cases of November 30, 2020 (date of data collection). Therefore, we assigned the number of cases per county in South Carolina. The top 3 universities in South Carolina are highlighted.
+
+*Number of positive tests included students and staff.
+
+
 Row
 -------------------------------------
 
