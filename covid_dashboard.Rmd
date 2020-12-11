@@ -161,15 +161,18 @@ sc_fips <- sc_county %>%
 
 ggplot() + 
   geom_sf(data = sc_fips, aes(fill = cases)) +
-  scale_fill_viridis() +
+  scale_fill_viridis(labels=function(cases) format(cases, 
+                                                   big.mark = ",")) +
   labs(fill = "Number of cases\n per county\n") +
   ggtitle("South Carolina Covid Cases by County",
           subtitle = "Top Three Colleges by Cases") + 
   geom_sf_label(data = sc_fips, aes(label = college), nudge_x = c(0.5, 0, 0),
-                nudge_y = c(-0.2,0,0)) +
+                nudge_y = c(-0.2,0,0),
+                alpha = 0.5) +
   theme_tufte() +
   theme(axis.ticks = element_blank(),
-        axis.text = element_blank())
+        axis.text = element_blank(), 
+        axis.title = element_blank())
 
 ```
 
