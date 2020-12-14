@@ -67,9 +67,9 @@ labs <- lapply(seq(nrow(college_location_final)), function(i){
 ui <- fluidPage(
   mainPanel( 
 #this will create a space for us to display our map
-leafletOutput(outputId = "mymap", width = 1200, height = 1000), 
+leafletOutput(outputId = "mymap", width = 650, height = 300), #1200, 1000. 620, 300
 #this allows me to put the checkmarks ontop of the map to allow people to view earthquake depth or overlay a heatmap
-absolutePanel(top =60, left = 20, 
+absolutePanel(top =60, left = 20, #60, 20
       checkboxInput("markers", "Case Type", FALSE)
     )
 ))
@@ -90,7 +90,7 @@ server <- function(input, output, session) {
  #create the map
   output$mymap <- renderLeaflet({
     leaflet(college_location_final) %>% 
-      setView(lng = -90, lat = 30, zoom = 3.5)  %>% #setting the view  -99, 12 are OG
+      setView(lng = -96, lat = 39, zoom = 3.4)  %>% #setting the view  -99, 12 are OG, -80, 20 ok
       addTiles() %>% 
       addCircles(data = college_location_final, 
                  lat = ~ college_location_final$lat,
