@@ -90,7 +90,15 @@ server <- function(input, output, session) {
  #create the map
   output$mymap <- renderLeaflet({
     leaflet(college_location_final) %>% 
+<<<<<<< HEAD
       setView(lng = -96, lat = 39, zoom = 3.4)  %>% #setting the view  -99, 12 are OG, -80, 20 ok
+=======
+<<<<<<< HEAD
+      setView(lng = -99, lat = 55, zoom = 3.5)  %>% #setting the view over ~ center of North America
+=======
+      setView(lng = -90, lat = 30, zoom = 3.5)  %>% #setting the view  -99, 12 are OG
+>>>>>>> 3a7dd9822f8ce9b26d7108512f3efc3937fdc939
+>>>>>>> c7f4e75cb695ac6d918bc3c9c0a7fdfecf47f7de
       addTiles() %>% 
       addCircles(data = college_location_final, 
                  lat = ~ college_location_final$lat,
