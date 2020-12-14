@@ -1,7 +1,7 @@
 ---
-title: "Covid Dashboard"
+title: "COVID Cases by University"
 author: "Kellin, Valerie, Sophia, Beth"
-date: "12/9/2020"
+date: "12/15/2020"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
